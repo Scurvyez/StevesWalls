@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--========================= Glitter Glass Wall Base =============================-->
+
+    <ThingDef ParentName="BuildingBase" Name="SW_GlitterGlassWallBase" Abstract="True">
+        <defName>SW_GlitterGlassWall</defName>
+        <label> glitter glass wall</label>
+        <description>An impassable wall. Capable of holding up a roof.</description>
+        <thingClass>Building</thingClass>
+        <category>Building</category>
+        <uiIconPath>Things/Building/Linked/SW_GlitterGlassWall_MenuIcon</uiIconPath>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <WorkToBuild>135</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <MeditationFocusStrength>0.22</MeditationFocusStrength>
+        </statBases>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>Impassable</passability>
+        <blockWind>true</blockWind>
+        <castEdgeShadows>true</castEdgeShadows>
+        <fillPercent>1</fillPercent>
+        <coversFloor>true</coversFloor>
+        <placingDraggableDimensions>1</placingDraggableDimensions>
+        <tickerType>Never</tickerType>
+        <rotatable>false</rotatable>
+        <selectable>true</selectable>
+        <neverMultiSelect>true</neverMultiSelect>
+        <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <holdsRoof>true</holdsRoof>
+        <designationCategory>Structure</designationCategory>
+        <staticSunShadowHeight>1.0</staticSunShadowHeight>
+        <blockLight>true</blockLight>
+        <canOverlapZones>false</canOverlapZones>
+        <fertility>0</fertility>
+        <costList>
+            <Steel>20</Steel>
+        </costList>
+        <building>
+            <isInert>true</isInert>
+            <ai_chillDestination>false</ai_chillDestination>
+            <blueprintGraphicData>
+                <texPath>Things/Building/Linked/SW_GlitterGlassWall_Blueprint_Atlas</texPath>
+            </blueprintGraphicData>
+        </building>
+        <researchPrerequisites>
+            <li>GlitterGlassResearch</li>
+        </researchPrerequisites>
+        <comps>
+            <li Class="CompProperties_MeditationFocus">
+                <statDef>MeditationFocusStrength</statDef>
+                <focusTypes>
+                <li>Minimal</li>
+                </focusTypes>
+            </li>
+        </comps>
+        <designationHotKey>Misc3</designationHotKey>
+    </ThingDef>
+
+</Defs>

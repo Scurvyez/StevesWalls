@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <DesignatorDropdownGroupDef>
+        <defName>SW_GlitterGlassWall</defName>
+        <label>glitter glass wall</label>
+    </DesignatorDropdownGroupDef>
+
+    <DesignatorDropdownGroupDef>
+        <defName>SW_CurvedGlitterGlassWall</defName>
+        <label>curved glitter glass wall</label>
+    </DesignatorDropdownGroupDef>
+
+</Defs>
