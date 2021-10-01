@@ -49,14 +49,14 @@
         <researchPrerequisites>
             <li>GlitterGlassResearch</li>
         </researchPrerequisites>
-        <comps>
+        <!-- <comps>
             <li Class="CompProperties_MeditationFocus">
                 <statDef>MeditationFocusStrength</statDef>
                 <focusTypes>
                 <li>Minimal</li>
                 </focusTypes>
             </li>
-        </comps>
+        </comps> -->
         <designationHotKey>Misc3</designationHotKey>
     </ThingDef>
 

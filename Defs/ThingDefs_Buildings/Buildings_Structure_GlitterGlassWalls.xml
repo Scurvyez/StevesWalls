@@ -66,16 +66,10 @@
             </blueprintGraphicData>
         </building>
         <comps>
-            <li Class="CompProperties_MeditationFocus">
-                <statDef>MeditationFocusStrength</statDef>
-                <focusTypes>
-                <li>Minimal</li>
-                </focusTypes>
-            </li>
-            <li Class="CompProperties_Flickable"/>
             <li Class="CompProperties_Power">
-                <compClass>CompPowerTrader</compClass>
+                <compClass>CompPowerTransmitter</compClass>
                 <basePowerConsumption>1</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
             </li>
             <li Class="CompProperties_Glower">
                 <glowRadius>3</glowRadius>
@@ -149,16 +143,10 @@
             </blueprintGraphicData>
         </building>
         <comps>
-            <li Class="CompProperties_MeditationFocus">
-                <statDef>MeditationFocusStrength</statDef>
-                <focusTypes>
-                <li>Minimal</li>
-                </focusTypes>
-            </li>
-            <li Class="CompProperties_Flickable"/>
             <li Class="CompProperties_Power">
-                <compClass>CompPowerTrader</compClass>
+                <compClass>CompPowerTransmitter</compClass>
                 <basePowerConsumption>1</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
             </li>
             <li Class="CompProperties_Glower">
                 <glowRadius>3</glowRadius>
@@ -232,16 +220,10 @@
             </blueprintGraphicData>
         </building>
         <comps>
-            <li Class="CompProperties_MeditationFocus">
-                <statDef>MeditationFocusStrength</statDef>
-                <focusTypes>
-                <li>Minimal</li>
-                </focusTypes>
-            </li>
-            <li Class="CompProperties_Flickable"/>
             <li Class="CompProperties_Power">
-                <compClass>CompPowerTrader</compClass>
+                <compClass>CompPowerTransmitter</compClass>
                 <basePowerConsumption>1</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
             </li>
             <li Class="CompProperties_Glower">
                 <glowRadius>3</glowRadius>
@@ -315,16 +297,10 @@
             </blueprintGraphicData>
         </building>
         <comps>
-            <li Class="CompProperties_MeditationFocus">
-                <statDef>MeditationFocusStrength</statDef>
-                <focusTypes>
-                <li>Minimal</li>
-                </focusTypes>
-            </li>
-            <li Class="CompProperties_Flickable"/>
             <li Class="CompProperties_Power">
-                <compClass>CompPowerTrader</compClass>
+                <compClass>CompPowerTransmitter</compClass>
                 <basePowerConsumption>1</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
             </li>
             <li Class="CompProperties_Glower">
                 <glowRadius>3</glowRadius>
@@ -398,16 +374,10 @@
             </blueprintGraphicData>
         </building>
         <comps>
-            <li Class="CompProperties_MeditationFocus">
-                <statDef>MeditationFocusStrength</statDef>
-                <focusTypes>
-                <li>Minimal</li>
-                </focusTypes>
-            </li>
-            <li Class="CompProperties_Flickable"/>
             <li Class="CompProperties_Power">
-                <compClass>CompPowerTrader</compClass>
+                <compClass>CompPowerTransmitter</compClass>
                 <basePowerConsumption>1</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
             </li>
             <li Class="CompProperties_Glower">
                 <glowRadius>3</glowRadius>
@@ -481,16 +451,10 @@
             </blueprintGraphicData>
         </building>
         <comps>
-            <li Class="CompProperties_MeditationFocus">
-                <statDef>MeditationFocusStrength</statDef>
-                <focusTypes>
-                <li>Minimal</li>
-                </focusTypes>
-            </li>
-            <li Class="CompProperties_Flickable"/>
             <li Class="CompProperties_Power">
-                <compClass>CompPowerTrader</compClass>
+                <compClass>CompPowerTransmitter</compClass>
                 <basePowerConsumption>1</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
             </li>
             <li Class="CompProperties_Glower">
                 <glowRadius>3</glowRadius>
@@ -564,16 +528,10 @@
             </blueprintGraphicData>
         </building>
         <comps>
-            <li Class="CompProperties_MeditationFocus">
-                <statDef>MeditationFocusStrength</statDef>
-                <focusTypes>
-                <li>Minimal</li>
-                </focusTypes>
-            </li>
-            <li Class="CompProperties_Flickable"/>
             <li Class="CompProperties_Power">
-                <compClass>CompPowerTrader</compClass>
+                <compClass>CompPowerTransmitter</compClass>
                 <basePowerConsumption>1</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
             </li>
             <li Class="CompProperties_Glower">
                 <glowRadius>3</glowRadius>
