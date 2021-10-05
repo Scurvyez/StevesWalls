@@ -32,8 +32,9 @@
         <statBases>
             <MaxHitPoints>500</MaxHitPoints>
             <WorkToBuild>135</WorkToBuild>
-            <Flammability>1.0</Flammability>
+            <Flammability>0.05</Flammability>
             <MeditationFocusStrength>0.22</MeditationFocusStrength>
+            <Beauty>0.5</Beauty>
         </statBases>
         <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
         <altitudeLayer>Building</altitudeLayer>
@@ -110,8 +111,9 @@
         <statBases>
             <MaxHitPoints>500</MaxHitPoints>
             <WorkToBuild>135</WorkToBuild>
-            <Flammability>1.0</Flammability>
+            <Flammability>0.05</Flammability>
             <MeditationFocusStrength>0.22</MeditationFocusStrength>
+            <Beauty>0.5</Beauty>
         </statBases>
         <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
         <altitudeLayer>Building</altitudeLayer>
@@ -187,8 +189,9 @@
         <statBases>
             <MaxHitPoints>500</MaxHitPoints>
             <WorkToBuild>135</WorkToBuild>
-            <Flammability>1.0</Flammability>
+            <Flammability>0.05</Flammability>
             <MeditationFocusStrength>0.22</MeditationFocusStrength>
+            <Beauty>0.5</Beauty>
         </statBases>
         <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
         <altitudeLayer>Building</altitudeLayer>
@@ -264,8 +267,9 @@
         <statBases>
             <MaxHitPoints>500</MaxHitPoints>
             <WorkToBuild>135</WorkToBuild>
-            <Flammability>1.0</Flammability>
+            <Flammability>0.05</Flammability>
             <MeditationFocusStrength>0.22</MeditationFocusStrength>
+            <Beauty>0.5</Beauty>
         </statBases>
         <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
         <altitudeLayer>Building</altitudeLayer>
@@ -341,8 +345,9 @@
         <statBases>
             <MaxHitPoints>500</MaxHitPoints>
             <WorkToBuild>135</WorkToBuild>
-            <Flammability>1.0</Flammability>
+            <Flammability>0.05</Flammability>
             <MeditationFocusStrength>0.22</MeditationFocusStrength>
+            <Beauty>0.5</Beauty>
         </statBases>
         <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
         <altitudeLayer>Building</altitudeLayer>
@@ -418,8 +423,9 @@
         <statBases>
             <MaxHitPoints>500</MaxHitPoints>
             <WorkToBuild>135</WorkToBuild>
-            <Flammability>1.0</Flammability>
+            <Flammability>0.05</Flammability>
             <MeditationFocusStrength>0.22</MeditationFocusStrength>
+            <Beauty>0.5</Beauty>
         </statBases>
         <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
         <altitudeLayer>Building</altitudeLayer>
@@ -495,8 +501,9 @@
         <statBases>
             <MaxHitPoints>500</MaxHitPoints>
             <WorkToBuild>135</WorkToBuild>
-            <Flammability>1.0</Flammability>
+            <Flammability>0.05</Flammability>
             <MeditationFocusStrength>0.22</MeditationFocusStrength>
+            <Beauty>0.5</Beauty>
         </statBases>
         <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
         <altitudeLayer>Building</altitudeLayer>

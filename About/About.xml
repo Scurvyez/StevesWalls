@@ -12,7 +12,14 @@
   <description>
 O.o + Scurvyez + o.O
 
-This mod adds several new walls and sub-variations to the game.
+This mod adds several new glowing neon walls to the game.
+
+~ Must be unlocked via research
+~ Two types, rounded and squared
+~ Let light through
+~ Act as power transmitters
+~ 3-tile wide glow radius
+~ Not flickable, glow is always on
   </description>
 
 </ModMetaData>

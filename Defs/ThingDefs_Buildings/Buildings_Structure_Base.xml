@@ -13,8 +13,9 @@
         <statBases>
             <MaxHitPoints>300</MaxHitPoints>
             <WorkToBuild>135</WorkToBuild>
-            <Flammability>1.0</Flammability>
+            <Flammability>0.05</Flammability>
             <MeditationFocusStrength>0.22</MeditationFocusStrength>
+            <Beauty>0.5</Beauty>
         </statBases>
         <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
         <altitudeLayer>Building</altitudeLayer>
@@ -49,14 +50,6 @@
         <researchPrerequisites>
             <li>GlitterGlassResearch</li>
         </researchPrerequisites>
-        <!-- <comps>
-            <li Class="CompProperties_MeditationFocus">
-                <statDef>MeditationFocusStrength</statDef>
-                <focusTypes>
-                <li>Minimal</li>
-                </focusTypes>
-            </li>
-        </comps> -->
         <designationHotKey>Misc3</designationHotKey>
     </ThingDef>
 
