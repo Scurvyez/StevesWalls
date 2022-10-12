@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--========================= Glitter Glass Bill Creation =============================-->
+
+    <WorkGiverDef>
+        <defName>SW_DoBillsGlitterGlass3DPrinter</defName>
+        <label>print things</label>
+        <giverClass>WorkGiver_DoBill</giverClass>
+        <workType>Crafting</workType>
+        <priorityInType>51</priorityInType>
+        <fixedBillGiverDefs>
+            <li>SW_GlitterGlass3DPrinter</li>
+        </fixedBillGiverDefs>
+        <verb>print</verb>
+        <gerund>printing things at</gerund>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+        <prioritizeSustains>true</prioritizeSustains>
+    </WorkGiverDef>
+
+</Defs>

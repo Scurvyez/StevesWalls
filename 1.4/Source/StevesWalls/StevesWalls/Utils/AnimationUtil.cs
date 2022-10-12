@@ -1,0 +1,26 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+using RimWorld;
+using Verse;
+
+namespace StevesWalls
+{
+    public static class AnimationUtil
+    {
+		public static float EaseInOutCubic(float value, float start = 0f, float end = 1f)
+		{
+			value /= 0.5f;
+			end -= start;
+			if (value < 1f)
+			{
+				return end * 0.5f * value * value * value + start;
+			}
+			value -= 2f;
+			return end * 0.5f * (value * value * value + 2f) + start;
+		}
+	}
+}

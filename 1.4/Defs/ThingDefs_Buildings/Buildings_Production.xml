@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--========================= Glitter Glass 3D Printer =============================-->
+
+    <ThingDef ParentName="BenchBase">
+        <defName>SW_GlitterGlass3DPrinter</defName>
+        <label>glitter glass 3-d printer</label>
+        <description>A huge 3-d printer capable of turning raw materials into otherworldly strong glass panes.</description>
+        <thingClass>StevesWalls.Building_3DPrinter_GlitterGlass</thingClass> <!-- !!! -->
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <pathCost>50</pathCost>
+        <minifiedDef />
+        <thingCategories Inherit="false" />
+        <size>(3, 3)</size>
+        <castEdgeShadows>true</castEdgeShadows>
+        <staticSunShadowHeight>0.90</staticSunShadowHeight>
+        <fillPercent>0.85</fillPercent>
+        <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+        <hasInteractionCell>true</hasInteractionCell>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <designationCategory>Production</designationCategory>
+        <uiOrder>2530</uiOrder>
+        <surfaceType>Item</surfaceType>
+        <designationHotKey>Misc12</designationHotKey>
+        <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <tickerType>Normal</tickerType>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <WorkToBuild>5000</WorkToBuild>
+            <Flammability>1.0</Flammability>
+        </statBases>
+        <costList>
+            <Steel>200</Steel>
+            <ComponentIndustrial>12</ComponentIndustrial>
+            <ComponentSpacer>2</ComponentSpacer>
+        </costList>
+        <comps>
+            <li Class="CompProperties_AffectedByFacilities">
+                <linkableFacilities>
+                    <li>ToolCabinet</li>
+                </linkableFacilities>
+            </li>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>300</basePowerConsumption>
+                <shortCircuitInRain>true</shortCircuitInRain>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Breakdownable"/>
+        </comps>
+        <recipes>
+            <li>Make_GlitterGlassPane</li>
+        </recipes>
+        <graphicData>
+            <texPath>Things/Building/Workbenches/SW_GlitterGlass3DPrinter</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(3, 3)</drawSize>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <inspectorTabs>
+            <li>ITab_Bills</li>
+        </inspectorTabs>
+        <building>
+            <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+        </building>
+        <placeWorkers>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+        </placeWorkers>
+        <researchPrerequisites>
+            <li>Fabrication</li>
+            <li>Electricity</li>
+			<li>MicroelectronicsBasics</li>
+        </researchPrerequisites>
+      </ThingDef>
+
+</Defs>

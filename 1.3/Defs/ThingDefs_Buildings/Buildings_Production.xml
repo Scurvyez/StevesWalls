@@ -7,18 +7,31 @@
         <defName>SW_GlitterGlass3DPrinter</defName>
         <label>glitter glass 3-d printer</label>
         <description>A huge 3-d printer capable of turning raw materials into otherworldly strong glass panes.</description>
-        <thingClass>Building_WorkTable</thingClass>
+        <thingClass>StevesWalls.Building_3DPrinter_GlitterGlass</thingClass> <!-- !!! -->
         <altitudeLayer>Building</altitudeLayer>
         <passability>PassThroughOnly</passability>
         <pathCost>50</pathCost>
+        <minifiedDef />
+        <thingCategories Inherit="false" />
+        <size>(3, 3)</size>
+        <castEdgeShadows>true</castEdgeShadows>
+        <staticSunShadowHeight>0.90</staticSunShadowHeight>
+        <fillPercent>0.85</fillPercent>
+        <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+        <hasInteractionCell>true</hasInteractionCell>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <designationCategory>Production</designationCategory>
+        <uiOrder>2530</uiOrder>
+        <surfaceType>Item</surfaceType>
+        <designationHotKey>Misc12</designationHotKey>
+        <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <tickerType>Normal</tickerType>
         <statBases>
             <MaxHitPoints>300</MaxHitPoints>
             <WorkToBuild>5000</WorkToBuild>
             <Flammability>1.0</Flammability>
         </statBases>
-        <minifiedDef />
-        <thingCategories Inherit="false" />
-        <size>(3, 3)</size>
         <costList>
             <Steel>200</Steel>
             <ComponentIndustrial>12</ComponentIndustrial>
@@ -53,23 +66,12 @@
                 <cornerBR>Damage/Corner</cornerBR>
             </damageData>
         </graphicData>
-        <castEdgeShadows>true</castEdgeShadows>
-        <staticSunShadowHeight>0.90</staticSunShadowHeight>
         <inspectorTabs>
             <li>ITab_Bills</li>
         </inspectorTabs>
         <building>
             <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
         </building>
-        <fillPercent>0.85</fillPercent>
-        <interactionCellOffset>(0,0,-2)</interactionCellOffset>
-        <hasInteractionCell>true</hasInteractionCell>
-        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-        <designationCategory>Production</designationCategory>
-        <uiOrder>2530</uiOrder>
-        <surfaceType>Item</surfaceType>
-        <designationHotKey>Misc12</designationHotKey>
-        <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
         <placeWorkers>
             <li>PlaceWorker_ShowFacilitiesConnections</li>
             <li>PlaceWorker_PreventInteractionSpotOverlap</li>
@@ -79,6 +81,6 @@
             <li>Electricity</li>
 			<li>MicroelectronicsBasics</li>
         </researchPrerequisites>
-      </ThingDef>
+    </ThingDef>
 
 </Defs>

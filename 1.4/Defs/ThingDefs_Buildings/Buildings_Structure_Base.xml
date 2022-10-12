@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--========================= Glitter Glass Wall Base =============================-->
+
+    <ThingDef ParentName="BuildingBase" Name="SW_GlitterGlassWallBase" Abstract="True">
+        <description>A clear and elegant wall capable of supporting a roof. The seemless glass-like panels allow light to enter unhindered. Expertly constructed and intricately designed, yet snug-fitting, damage-resistant panels make this a solid choice among colonies under constant threat of invaders. The constant glow eases the hearts and minds of those who slumber behind them in the dark hours of night.</description> <!-- MAKE BETTER -->
+        <thingClass>Building</thingClass>
+        <category>Building</category>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>Impassable</passability>
+        <blockWind>true</blockWind>
+        <castEdgeShadows>true</castEdgeShadows>
+        <fillPercent>1</fillPercent>
+        <coversFloor>false</coversFloor> <!-- WHAT DO? -->
+        <placingDraggableDimensions>1</placingDraggableDimensions>
+        <tickerType>Never</tickerType>
+        <rotatable>false</rotatable>
+        <selectable>true</selectable>
+        <neverMultiSelect>false</neverMultiSelect>
+        <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <holdsRoof>true</holdsRoof>
+        <designationCategory>Structure</designationCategory>
+        <staticSunShadowHeight>1.0</staticSunShadowHeight>
+        <blockLight>false</blockLight>
+        <canOverlapZones>false</canOverlapZones>
+        <fertility>0</fertility>
+        <designationHotKey>Misc3</designationHotKey>
+        <designatorDropdown>SW_GlitterGlassWall</designatorDropdown>
+        <uiIconPath>Things/Building/Linked/SW_GlitterGlassWall_MenuIcon</uiIconPath>
+        <graphicData>
+            <graphicClass>Graphic_Appearances</graphicClass>
+            <linkType>CornerFiller</linkType>
+            <linkFlags>
+                <li>Wall</li>
+                <li>Rock</li>
+            </linkFlags>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+                <edgeTop>Damage/Edge</edgeTop>
+                <edgeBot>Damage/Edge</edgeBot>
+                <edgeLeft>Damage/Edge</edgeLeft>
+                <edgeRight>Damage/Edge</edgeRight>
+            </damageData>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>750</MaxHitPoints>
+            <WorkToBuild>135</WorkToBuild>
+            <Flammability>0.00</Flammability>
+            <MeditationFocusStrength>0.22</MeditationFocusStrength>
+            <Beauty>0.025</Beauty>
+        </statBases>
+        <costList>
+            <Steel>20</Steel>
+        </costList>
+        <building>
+            <isInert>true</isInert>
+            <ai_chillDestination>false</ai_chillDestination>
+        </building>
+        <researchPrerequisites>
+            <li>GlitterGlassResearch</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+    <!--========================= Normal Glitter Glass Wall Base =============================-->
+
+    <ThingDef ParentName="SW_GlitterGlassWallBase" Name="SW_NormalGlitterGlassWallBase" Abstract="True">
+        <designatorDropdown>SW_GlitterGlassWall</designatorDropdown>
+        <uiIconPath>Things/Building/Linked/SW_GlitterGlassWall_MenuIcon</uiIconPath>
+        <building>
+            <blueprintGraphicData>
+                <texPath>Things/Building/Linked/SW_GlitterGlassWall_Blueprint_Atlas</texPath>
+            </blueprintGraphicData>
+        </building>
+    </ThingDef>
+
+    <!--========================= Rounded Glitter Glass Wall Base =============================-->
+
+    <ThingDef ParentName="SW_GlitterGlassWallBase" Name="SW_RoundedGlitterGlassWallBase" Abstract="True">
+        <designatorDropdown>SW_RoundedGlitterGlassWall</designatorDropdown>
+        <uiIconPath>Things/Building/Linked/SW_RoundedGlitterGlassWall_MenuIcon</uiIconPath>
+        <building>
+            <blueprintGraphicData>
+                <texPath>Things/Building/Linked/SW_RoundedGlitterGlassWall_Blueprint_Atlas</texPath>
+            </blueprintGraphicData>
+        </building>
+    </ThingDef>
+
+</Defs>

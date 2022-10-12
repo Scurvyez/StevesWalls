@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--========================= Blue Rounded Glitter-Glass Wall =============================-->
+
+    <ThingDef ParentName="SW_RoundedGlitterGlassWallBase">
+        <defName>SW_BlueRoundedGlitterGlassWall</defName>
+        <label>blue rounded glitter glass wall</label>
+        <graphicData>
+            <texPath>Things/Building/Linked/SW_RoundedGlitterGlassWall/Blue</texPath>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>1</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>3</glowRadius>
+                <glowColor>(0,183,255)</glowColor>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!--========================= Green Rounded Glitter-Glass Wall =============================-->
+
+    <ThingDef ParentName="SW_RoundedGlitterGlassWallBase">
+        <defName>SW_GreenRoundedGlitterGlassWall</defName>
+        <label>green rounded glitter glass wall</label>
+        <graphicData>
+            <texPath>Things/Building/Linked/SW_RoundedGlitterGlassWall/Green</texPath>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>1</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>3</glowRadius>
+                <glowColor>(0,235,86)</glowColor>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!--========================= Yellow Rounded Glitter-Glass Wall =============================-->
+
+    <ThingDef ParentName="SW_RoundedGlitterGlassWallBase">
+        <defName>SW_YellowRoundedGlitterGlassWall</defName>
+        <label>yellow rounded glitter glass wall</label>
+        <graphicData>
+            <texPath>Things/Building/Linked/SW_RoundedGlitterGlassWall/Yellow</texPath>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>1</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>3</glowRadius>
+                <glowColor>(226,233,28)</glowColor>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!--========================= Orange Rounded Glitter-Glass Wall =============================-->
+
+    <ThingDef ParentName="SW_RoundedGlitterGlassWallBase">
+        <defName>SW_OrangeRoundedGlitterGlassWall</defName>
+        <label>orange rounded glitter glass wall</label>
+        <graphicData>
+            <texPath>Things/Building/Linked/SW_RoundedGlitterGlassWall/Orange</texPath>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>1</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>3</glowRadius>
+                <glowColor>(236,121,14)</glowColor>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!--========================= Red Rounded Glitter-Glass Wall =============================-->
+
+    <ThingDef ParentName="SW_RoundedGlitterGlassWallBase">
+        <defName>SW_RedRoundedGlitterGlassWall</defName>
+        <label>red rounded glitter glass wall</label>
+        <graphicData>
+            <texPath>Things/Building/Linked/SW_RoundedGlitterGlassWall/Red</texPath>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>1</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>3</glowRadius>
+                <glowColor>(236,21,41)</glowColor>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!--========================= Pink Rounded Glitter-Glass Wall =============================-->
+
+    <ThingDef ParentName="SW_RoundedGlitterGlassWallBase">
+        <defName>SW_PinkRoundedGlitterGlassWall</defName>
+        <label>pink rounded glitter glass wall</label>
+        <graphicData>
+            <texPath>Things/Building/Linked/SW_RoundedGlitterGlassWall/Pink</texPath>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>1</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>3</glowRadius>
+                <glowColor>(235,15,147)</glowColor>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!--========================= Purple Rounded Glitter-Glass Wall =============================-->
+
+    <ThingDef ParentName="SW_RoundedGlitterGlassWallBase">
+        <defName>SW_PurpleRoundedGlitterGlassWall</defName>
+        <label>purple rounded glitter glass wall</label>
+        <graphicData>
+            <texPath>Things/Building/Linked/SW_RoundedGlitterGlassWall/Purple</texPath>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>1</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>3</glowRadius>
+                <glowColor>(166,14,236)</glowColor>
+            </li>
+        </comps>
+    </ThingDef>
+
+</Defs>

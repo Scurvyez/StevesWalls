@@ -1,0 +1,4 @@
+S:\Games\Steam\steamapps\common\RimWorld\Mods\StevesWalls\1.4\Assemblies\StevesWalls.dll
+S:\Games\Steam\steamapps\common\RimWorld\Mods\StevesWalls\1.4\Source\StevesWalls\StevesWalls\obj\Debug\StevesWalls.csproj.AssemblyReference.cache
+S:\Games\Steam\steamapps\common\RimWorld\Mods\StevesWalls\1.4\Source\StevesWalls\StevesWalls\obj\Debug\StevesWalls.csproj.CoreCompileInputs.cache
+S:\Games\Steam\steamapps\common\RimWorld\Mods\StevesWalls\1.4\Source\StevesWalls\StevesWalls\obj\Debug\StevesWalls.dll
