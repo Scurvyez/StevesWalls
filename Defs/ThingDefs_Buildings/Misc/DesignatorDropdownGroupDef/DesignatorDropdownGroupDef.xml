@@ -7,8 +7,8 @@
     </DesignatorDropdownGroupDef>
 
     <DesignatorDropdownGroupDef>
-        <defName>SW_CurvedGlitterGlassWall</defName>
-        <label>curved glitter glass wall</label>
+        <defName>SW_RoundedGlitterGlassWall</defName>
+        <label>rounded glitter glass wall</label>
     </DesignatorDropdownGroupDef>
 
 </Defs>

@@ -11,10 +11,8 @@
         <prerequisites>
 			<li>Electricity</li>
 			<li>MicroelectronicsBasics</li>
-		</prerequisites>
-        <hiddenPrerequisites>
             <li>SterileMaterials</li>
-        </hiddenPrerequisites>
+		</prerequisites>
         <researchViewX>5.00</researchViewX>
         <researchViewY>2.90</researchViewY>
     </ResearchProjectDef>
