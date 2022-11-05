@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--========================= 3D Printing Effecter =============================-->
+
+    <EffecterDef>
+        <defName>SW_3DPrinting</defName>
+        <children>
+            <li>
+                <subEffecterClass>SubEffecter_Sustainer</subEffecterClass>
+                <soundDef>Interact_Drill</soundDef>
+            </li>
+            <li>
+                <subEffecterClass>SubEffecter_SoundTriggered</subEffecterClass>
+                <soundDef>BiosculpterPod_Start</soundDef>
+            </li>
+        </children>
+    </EffecterDef>
+
+</Defs>

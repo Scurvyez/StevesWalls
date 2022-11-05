@@ -17,17 +17,33 @@ This mod adds several new glowing neon walls to the game.
 
 ~ Must be unlocked via research
 ~ Two types, rounded and squared
-~ Let light through
-~ Act as power transmitters
+~ Lets light through
+~ Power required to glow
 ~ 3-tile wide glow radius
-~ Not flickable, glow is always on
+~ Can be flicked on and off
     </description>
 
-    <!-- 
+    <!--
         TO-DO
-            - glitter glass resource
-            - workbench to make the glitter glass
-            - [DONE] balance wall HP and rest of stats?
+            + [DONE] glitter glass resource
+                - glass panes
+            + glitter glass powder resource
+                - powder, ina  drum?
+                - fill new workbench with a full drum?
+                - produce a set amount from a full drum?
+            + workbench to make the glitter glass
+                - change the location, color, size + whatever else of the progress bar. :)
+                - change location of unfinished product when crafting
+                    - this shit blocks the beautiful viewing window!!!
+                - make keypad red when in use
+            + [DONE] balance wall HP and rest of stats?
+            + make new texture for the unfinished glitter glass resource
+            + [DONE] make walls actually require being built out of glitter glass
+            + add some sort of dying agent for the different colors of each wall type?
+            + fix art for rounded walls
+            + new motes / flecks for workbenches and the walls themselves?
+            + workbench to make material to make glitter glass
+                - stone chunks + steel = 1 "glitter glass powder"?
     -->
 
 </ModMetaData>

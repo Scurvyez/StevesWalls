@@ -24,7 +24,7 @@
         </thingCategories>
         <statBases>
             <MarketValue>3.25</MarketValue>
-            <Mass>0.6</Mass>
+            <Mass>1.25</Mass>
             <StuffPower_Armor_Sharp>0.78</StuffPower_Armor_Sharp>
             <StuffPower_Armor_Blunt>0.90</StuffPower_Armor_Blunt>
             <StuffPower_Armor_Heat>0.60</StuffPower_Armor_Heat>
@@ -34,13 +34,7 @@
             <BluntDamageMultiplier>1</BluntDamageMultiplier>
         </statBases>
         <stuffProps>
-            <categories>
-                <li>Metallic</li> <!-- MAKE A NEW ONE -->
-            </categories>
-            <appearance>Metal</appearance> <!-- CHANGE? -->
             <commonality>1.00</commonality>
-            <constructEffect>ConstructMetal</constructEffect> <!-- MAKE A NEW ONE -->
-            <color>(105,105,105)</color>
             <soundImpactStuff>BulletImpact_Metal</soundImpactStuff> <!-- MAKE A NEW ONE -->
             <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp> <!-- MAKE A NEW ONE -->
             <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt> <!-- MAKE A NEW ONE -->
@@ -51,9 +45,6 @@
             </statFactors>
             <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
         </stuffProps>
-        <!-- <deepCommonality>4</deepCommonality>
-        <deepCountPerPortion>45</deepCountPerPortion>
-        <deepLumpSizeRange>20~30</deepLumpSizeRange> -->
-      </ThingDef>
+    </ThingDef>
 
 </Defs>

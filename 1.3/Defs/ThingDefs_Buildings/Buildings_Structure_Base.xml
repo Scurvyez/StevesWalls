@@ -23,7 +23,7 @@
         <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
         <holdsRoof>true</holdsRoof>
         <designationCategory>Structure</designationCategory>
-        <staticSunShadowHeight>1.0</staticSunShadowHeight>
+        <staticSunShadowHeight>0</staticSunShadowHeight>
         <blockLight>false</blockLight>
         <canOverlapZones>false</canOverlapZones>
         <fertility>0</fertility>
@@ -56,7 +56,7 @@
             <Beauty>0.025</Beauty>
         </statBases>
         <costList>
-            <Steel>20</Steel>
+            <SW_GlitterGlass>1</SW_GlitterGlass>
         </costList>
         <building>
             <isInert>true</isInert>

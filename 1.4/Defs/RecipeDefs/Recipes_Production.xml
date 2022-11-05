@@ -9,10 +9,9 @@
         <description>Print a pane of glitter glass.</description>
         <jobString>Printing glitter glass.</jobString>
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-        <effectWorking>Cook</effectWorking>
-        <soundWorking>Recipe_Machining</soundWorking>
+        <effectWorking>SW_3DPrinting</effectWorking>
         <workAmount>500</workAmount>
-        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef> <!-- CHANGE THIS -->
+        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef> <!-- MAKE A NEW ONE -->
         <ingredients> <!-- IF WE ADD SOMETHING HERE, ADD IT TO THE fixedIngredientFilter AS WELL -->
             <li>
                 <filter>
@@ -29,7 +28,7 @@
             </thingDefs>
         </fixedIngredientFilter>
         <products>
-            <SW_GlitterGlass>1</SW_GlitterGlass> <!-- MAKE THIS DEF -->
+            <SW_GlitterGlass>1</SW_GlitterGlass>
         </products>
         <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>

@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using RimWorld;
 using Verse;
 using StevesWalls;
+using UnityEngine;
 
 namespace StevesWalls
 {
@@ -44,16 +45,27 @@ namespace StevesWalls
         protected virtual void UpdateAnimationState()
         {
             animationFrame++;
-            if (animationFrame > 239) animationFrame = 0;
+            if (animationFrame > 239)
+            {
+                animationFrame = 0;
+            }
 
             directionalProgress = AnimationUtil.EaseInOutCubic((animationFrame % 120) / 120f);
-            if (animationFrame > 119) directionalProgress = 1f - directionalProgress;
+            if (animationFrame > 119)
+            {
+                directionalProgress = 1f - directionalProgress;
+            }
 
             int headAnimationFrame = (animationFrame % 80);
             armProgress = AnimationUtil.EaseInOutCubic((headAnimationFrame % 40) / 40f, -0.5f, 0.5f);
-            if (headAnimationFrame > 39) armProgress *= -1f;
+            if (headAnimationFrame > 39)
+            {
+                armProgress *= -1f;
+            }
         }
 
         protected abstract void DrawArm();
+
+        //protected abstract void DrawViewWindow();
     }
 }

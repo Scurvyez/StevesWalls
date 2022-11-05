@@ -7,18 +7,18 @@
         <defName>SW_GlitterGlass3DPrinter</defName>
         <label>glitter glass 3-d printer</label>
         <description>A huge 3-d printer capable of turning raw materials into otherworldly strong glass panes.</description>
-        <thingClass>StevesWalls.Building_3DPrinter_GlitterGlass</thingClass> <!-- !!! -->
+        <thingClass>StevesWalls.Building_3DPrinter_GlitterGlass</thingClass>
         <altitudeLayer>Building</altitudeLayer>
         <passability>PassThroughOnly</passability>
-        <pathCost>50</pathCost>
+        <pathCost>250</pathCost>
         <minifiedDef />
         <thingCategories Inherit="false" />
-        <size>(3, 3)</size>
+        <size>(4, 3)</size>
         <castEdgeShadows>true</castEdgeShadows>
-        <staticSunShadowHeight>0.90</staticSunShadowHeight>
         <fillPercent>0.85</fillPercent>
         <interactionCellOffset>(0,0,-2)</interactionCellOffset>
         <hasInteractionCell>true</hasInteractionCell>
+        <interactionCellIcon>SW_PrinterInteractionCellIcon</interactionCellIcon>
         <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
         <designationCategory>Production</designationCategory>
         <uiOrder>2530</uiOrder>
@@ -58,13 +58,16 @@
             <texPath>Things/Building/Workbenches/SW_GlitterGlass3DPrinter</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
             <shaderType>CutoutComplex</shaderType>
-            <drawSize>(3, 3)</drawSize>
+            <drawSize>(4, 3)</drawSize>
             <damageData>
                 <cornerTL>Damage/Corner</cornerTL>
                 <cornerTR>Damage/Corner</cornerTR>
                 <cornerBL>Damage/Corner</cornerBL>
                 <cornerBR>Damage/Corner</cornerBR>
             </damageData>
+            <shadowData>
+                <volume>(0.90, 0.90, 0.90)</volume>
+            </shadowData>
         </graphicData>
         <inspectorTabs>
             <li>ITab_Bills</li>
@@ -81,6 +84,16 @@
             <li>Electricity</li>
 			<li>MicroelectronicsBasics</li>
         </researchPrerequisites>
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>SW_PrinterInteractionCellIcon</defName>
+        <label>printer interaction cell icon</label>
+        <description>PLACEHOLDER</description>
+        <graphicData>
+            <texPath>Things/Building/Workbenches/SW_PrinterInteractionCellIcon</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
     </ThingDef>
 
 </Defs>
