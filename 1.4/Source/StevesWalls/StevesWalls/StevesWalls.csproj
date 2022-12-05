@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="0Harmony, Version=2.2.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Lib.Harmony.2.2.2\lib\net472\0Harmony.dll</HintPath>
+    </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
@@ -51,16 +54,29 @@
       <HintPath>..\..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DefModExtensions\ModExtension_Synthesizer.cs" />
     <Compile Include="DefOfs\SW_DefOf.cs" />
     <Compile Include="MapComps\StevesWallsMapComponent.cs" />
     <Compile Include="ThingClasses\Building_3DPrinter_GlitterGlass.cs" />
-    <Compile Include="UIAssets.cs" />
+    <Compile Include="Misc\Assets.cs" />
     <Compile Include="StevesWallsMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThingClasses\Building_3DPrinter.cs" />
+    <Compile Include="ThingClasses\Building_Synthesizer.cs" />
     <Compile Include="Utils\AnimationUtil.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

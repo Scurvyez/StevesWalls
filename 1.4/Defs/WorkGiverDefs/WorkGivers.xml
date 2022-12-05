@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <!--========================= Glitter Glass Bill Creation =============================-->
+    <!--========================= Glitter Glass Powder Bill Creation =============================-->
+
+    <WorkGiverDef>
+        <defName>SW_DoBillsGlitterGlassSythesize</defName>
+        <label>synthesize materials</label>
+        <giverClass>WorkGiver_DoBill</giverClass>
+        <workType>Crafting</workType>
+        <priorityInType>51</priorityInType>
+        <fixedBillGiverDefs>
+            <li>SW_GlitterGlassSynthesizer</li>
+        </fixedBillGiverDefs>
+        <verb>synthesize</verb>
+        <gerund>synthesizing materials at</gerund>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+        <prioritizeSustains>true</prioritizeSustains>
+    </WorkGiverDef>
+
+    <!--========================= Glitter Glass Pane Bill Creation =============================-->
 
     <WorkGiverDef>
         <defName>SW_DoBillsGlitterGlass3DPrinter</defName>
-        <label>print things</label>
+        <label>print materials</label>
         <giverClass>WorkGiver_DoBill</giverClass>
         <workType>Crafting</workType>
         <priorityInType>51</priorityInType>
@@ -13,7 +32,7 @@
             <li>SW_GlitterGlass3DPrinter</li>
         </fixedBillGiverDefs>
         <verb>print</verb>
-        <gerund>printing things at</gerund>
+        <gerund>printing materials at</gerund>
         <requiredCapacities>
             <li>Manipulation</li>
         </requiredCapacities>

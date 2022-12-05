@@ -1,7 +1,55 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <!--========================= Make Glitter Glass =============================-->
+    <!--========================= Make Glitter Glass Powder =============================-->
+
+    <RecipeDef>
+        <defName>Make_GlitterGlassPowder</defName>
+        <label>make glitter glass powder</label>
+        <description>Synthesize glitter glass powder.</description>
+        <jobString>Synthesizing glitter glass powder.</jobString>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>SW_3DPrinting</effectWorking>
+        <workAmount>250</workAmount>
+        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef> <!-- MAKE A NEW ONE -->
+        <ingredients> <!-- IF WE ADD SOMETHING HERE, ADD IT TO THE fixedIngredientFilter AS WELL -->
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+            <li>
+                <filter>
+                    <categories>
+                        <li>StoneChunks</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+            </thingDefs>
+            <categories>
+                <li>StoneChunks</li>
+            </categories>
+        </fixedIngredientFilter>
+        <products>
+            <SW_GlitterGlass>1</SW_GlitterGlass> <!-- MAKE A NEW THINGDEF -->
+        </products>
+        <researchPrerequisite>Fabrication</researchPrerequisite>
+        <skillRequirements>
+            <Crafting>6</Crafting>
+        </skillRequirements>
+        <workSkill>Crafting</workSkill>
+        <displayPriority>10</displayPriority>
+    </RecipeDef>
+
+    <!--========================= Make Glitter Glass Pane =============================-->
 
     <RecipeDef>
         <defName>Make_GlitterGlassPane</defName>
@@ -30,7 +78,7 @@
         <products>
             <SW_GlitterGlass>1</SW_GlitterGlass>
         </products>
-        <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
+        <researchPrerequisite>Fabrication</researchPrerequisite>
         <skillRequirements>
             <Crafting>8</Crafting>
         </skillRequirements>

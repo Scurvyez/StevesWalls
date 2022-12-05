@@ -13,56 +13,11 @@ namespace StevesWalls
 	[StaticConstructorOnStartup]
 	public class Building_3DPrinter_GlitterGlass : Building_3DPrinter
 	{
-		// power bar stuff
-		private static readonly Vector2 BarSize = new Vector2(1.3f, 0.35f);
-		private static readonly Vector3 BarOffsetNorth = new Vector3(0.0f, 0.0f, 0.05f);
-		private static readonly Vector3 BarOffsetEast = new Vector3(0.05f, 0.0f, 0.0f);
-		private static readonly Vector3 BarOffsetSouth = new Vector3(0.0f, 0.0f, -0.05f);
-		private static readonly Vector3 BarOffsetWest = new Vector3(-0.05f, 0.0f, 0.0f);
-		private static readonly Material BatteryBarFilledMat = SolidColorMaterials.SimpleSolidColorMaterial(new Color(1.0f, 0.568f, 0.188f));
-		private static readonly Material BatteryBarUnfilledMat = SolidColorMaterials.SimpleSolidColorMaterial(new Color(0.3f, 0.3f, 0.3f, 0.0f));
-
 		public float MaxPercent = 0.0f;
 
 		public override void Draw()
         {
 			base.Draw();
-
-			CompFlickable comp = GetComp<CompFlickable>();
-			if (comp.SwitchIsOn == true)
-            {
-				MaxPercent = 1.0f;
-
-				GenDraw.FillableBarRequest r = new GenDraw.FillableBarRequest
-				{
-					center = DrawPos,
-					size = BarSize,
-					fillPercent = 0.1f / MaxPercent,
-					filledMat = BatteryBarFilledMat,
-					unfilledMat = BatteryBarUnfilledMat,
-					margin = 0.0f,
-
-				};
-				Rot4 rotation = Rotation;
-				rotation.Rotate(RotationDirection.Clockwise);
-				r.rotation = rotation;
-
-				if (Rotation == Rot4.North)
-				{
-					r.center = DrawPos + BarOffsetNorth;
-				}
-				else if (Rotation == Rot4.South)
-				{
-					r.center = DrawPos + BarOffsetSouth;
-				}
-				else if (Rotation == Rot4.East)
-				{
-					r.center = DrawPos + BarOffsetEast;
-				}
-				else r.center = DrawPos + BarOffsetWest;
-
-				GenDraw.DrawFillableBar(r);
-			}
 			
 			Vector3 matDrawPos = DrawPos;
 			Vector3 frontWallDrawPos = matDrawPos;
@@ -120,27 +75,27 @@ namespace StevesWalls
 			}
 
 			// printing mat inside machine
-			Matrix4x4 matMatrix = default(Matrix4x4);
+			Matrix4x4 matMatrix = default;
 			matMatrix.SetTRS(matDrawPos, Quaternion.identity, matDrawSize);
 			Graphics.DrawMesh(MeshPool.plane10, matMatrix, matMat, 0);
 
 			// front wall
-			Matrix4x4 frontWallMatrix = default(Matrix4x4);
+			Matrix4x4 frontWallMatrix = default;
 			frontWallMatrix.SetTRS(frontWallDrawPos, Quaternion.identity, frontWallDrawSize);
 			Graphics.DrawMesh(MeshPool.plane10, frontWallMatrix, frontWallMat, 0);
 
 			// view window
-			Matrix4x4 viewWindowMatrix = default(Matrix4x4);
+			Matrix4x4 viewWindowMatrix = default;
 			viewWindowMatrix.SetTRS(viewWindowDrawPos, Quaternion.identity, viewWindowDrawSize);
 			Graphics.DrawMesh(MeshPool.plane10, viewWindowMatrix, viewWindowMat, 0);
 
 			// roof
-			Matrix4x4 roofMatrix = default(Matrix4x4);
+			Matrix4x4 roofMatrix = default;
 			roofMatrix.SetTRS(roofDrawPos, Quaternion.identity, roofDrawSize);
 			Graphics.DrawMesh(MeshPool.plane10, roofMatrix, roofMat, 0);
 
 			// power on indicator
-			Matrix4x4 powerOnIndicatorMatrix = default(Matrix4x4);
+			Matrix4x4 powerOnIndicatorMatrix = default;
 			powerOnIndicatorMatrix.SetTRS(powerOnIndicatorDrawPos, Quaternion.identity, powerOnIndicatorDrawSize);
 			Graphics.DrawMesh(MeshPool.plane10, powerOnIndicatorMatrix, powerOnIndicatorMat, 0);
 		}
@@ -185,12 +140,12 @@ namespace StevesWalls
 			}
 
 			// printer arm
-			Matrix4x4 matrix = default(Matrix4x4);
+			Matrix4x4 matrix = default;
 			matrix.SetTRS(armDrawPos, Quaternion.identity, armDrawSize);
 			Graphics.DrawMesh(MeshPool.plane10, matrix, armMat, 0);
 
 			// printer head
-			matrix = default(Matrix4x4);
+			matrix = default;
 			matrix.SetTRS(headDrawPos, Quaternion.identity, headDrawSize);
 			Graphics.DrawMesh(MeshPool.plane10, matrix, headMat, 0);
 		}

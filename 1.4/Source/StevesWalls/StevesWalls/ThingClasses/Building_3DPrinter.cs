@@ -65,7 +65,5 @@ namespace StevesWalls
         }
 
         protected abstract void DrawArm();
-
-        //protected abstract void DrawViewWindow();
     }
 }
