@@ -28,7 +28,7 @@
             </thingDefs>
         </fixedIngredientFilter>
         <products>
-            <SW_GlitterGlass>1</SW_GlitterGlass>
+            <SW_GlitterGlassSheet>1</SW_GlitterGlassSheet>
         </products>
         <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>

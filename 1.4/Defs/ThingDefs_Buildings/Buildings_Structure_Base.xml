@@ -56,7 +56,7 @@
             <Beauty>0.025</Beauty>
         </statBases>
         <costList>
-            <SW_GlitterGlass>1</SW_GlitterGlass>
+            <SW_GlitterGlassSheet>1</SW_GlitterGlassSheet>
         </costList>
         <building>
             <isInert>true</isInert>

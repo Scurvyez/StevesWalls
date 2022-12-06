@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <!--========================= Glitter Glass Resource =============================-->
+    <!--========================= Glitter Glass Sheet Resource =============================-->
 
     <ThingDef ParentName="ResourceBase">
-        <defName>SW_GlitterGlass</defName>
-        <label>glitter glass</label>
+        <defName>SW_GlitterGlassSheet</defName>
+        <label>glitter glass sheet</label>
         <description>An extremely durable and scratch-proof glitter-world glass variant.</description>
         <useHitPoints>false</useHitPoints>
         <healthAffectsPrice>false</healthAffectsPrice>
@@ -16,7 +16,7 @@
         <smeltable>false</smeltable>
         <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
         <graphicData>
-            <texPath>Things/Item/Resource/GlitterGlass</texPath>
+            <texPath>Things/Item/Resource/GlitterGlassSheets</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <thingCategories>

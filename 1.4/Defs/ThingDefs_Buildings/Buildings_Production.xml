@@ -31,7 +31,7 @@
         <statBases>
             <MaxHitPoints>300</MaxHitPoints>
             <WorkToBuild>5000</WorkToBuild>
-            <Flammability>1.0</Flammability>
+            <Flammability>0.15</Flammability>
         </statBases>
         <costList>
             <Steel>200</Steel>
@@ -133,7 +133,7 @@
         <statBases>
             <MaxHitPoints>300</MaxHitPoints>
             <WorkToBuild>5000</WorkToBuild>
-            <Flammability>1.0</Flammability>
+            <Flammability>0.15</Flammability>
         </statBases>
         <costList>
             <Steel>200</Steel>
@@ -155,7 +155,7 @@
             <li Class="CompProperties_Breakdownable"/>
         </comps>
         <recipes>
-            <li>Make_GlitterGlassPane</li>
+            <li>Make_GlitterGlassSheet</li>
         </recipes>
         <graphicData>
             <texPath>Things/Building/Workbenches/SW_GlitterGlass3DPrinter</texPath>

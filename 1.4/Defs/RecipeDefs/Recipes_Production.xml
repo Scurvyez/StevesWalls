@@ -39,7 +39,7 @@
             </categories>
         </fixedIngredientFilter>
         <products>
-            <SW_GlitterGlass>1</SW_GlitterGlass> <!-- MAKE A NEW THINGDEF -->
+            <SW_GlitterGlassSheet>1</SW_GlitterGlassSheet> <!-- MAKE A NEW THINGDEF -->
         </products>
         <researchPrerequisite>Fabrication</researchPrerequisite>
         <skillRequirements>
@@ -49,12 +49,12 @@
         <displayPriority>10</displayPriority>
     </RecipeDef>
 
-    <!--========================= Make Glitter Glass Pane =============================-->
+    <!--========================= Make Glitter Glass Sheet =============================-->
 
     <RecipeDef>
-        <defName>Make_GlitterGlassPane</defName>
-        <label>make glitter glass panes</label>
-        <description>Print a pane of glitter glass.</description>
+        <defName>Make_GlitterGlassSheet</defName>
+        <label>make glitter glass sheets</label>
+        <description>Print a sheet of glitter glass.</description>
         <jobString>Printing glitter glass.</jobString>
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
         <effectWorking>SW_3DPrinting</effectWorking>
@@ -76,7 +76,7 @@
             </thingDefs>
         </fixedIngredientFilter>
         <products>
-            <SW_GlitterGlass>1</SW_GlitterGlass>
+            <SW_GlitterGlassSheet>1</SW_GlitterGlassSheet>
         </products>
         <researchPrerequisite>Fabrication</researchPrerequisite>
         <skillRequirements>
