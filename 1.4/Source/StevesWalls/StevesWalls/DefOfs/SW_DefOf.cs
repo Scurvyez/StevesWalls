@@ -12,7 +12,8 @@ namespace StevesWalls
 	[DefOf]
 	public class SW_DefOf
 	{
-		public static ThingDef SW_GlitterGlass3DPrinter;
+		public static ThingDef SW_GlitterGlassPrinter;
+		public static ThingDef SW_GlitterGlassSynthesizer;
 
 		static SW_DefOf()
 		{

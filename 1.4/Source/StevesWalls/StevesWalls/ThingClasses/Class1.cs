@@ -11,7 +11,7 @@ using UnityEngine;
 
 namespace StevesWalls
 {
-    public abstract class Building_3DPrinter : Building_WorkTable
+    public abstract class Building_PrinterBase : Building_WorkTable
     {
         protected bool usedLastTick = false;
         protected int animationFrame = 0;

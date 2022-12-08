@@ -11,15 +11,27 @@ namespace StevesWalls
 {
 	public class StevesWallsMapComponent : MapComponent
 	{
-
-		private static void FixNanofabricators(Map map)
+		
+		private static void FixPrinters(Map map)
 		{
-			foreach (Building item in map.listerBuildings.AllBuildingsColonistOfDef(SW_DefOf.SW_GlitterGlass3DPrinter))
+			foreach (Building item in map.listerBuildings.AllBuildingsColonistOfDef(SW_DefOf.SW_GlitterGlassPrinter))
 			{
-				Building_3DPrinter building_3DPrinter = item as Building_3DPrinter;
+				Building_Printer building_3DPrinter = item as Building_Printer;
 				if (building_3DPrinter == null && item.Spawned)
 				{
-					CopyWorkBench(map, item, SW_DefOf.SW_GlitterGlass3DPrinter);
+					CopyWorkBench(map, item, SW_DefOf.SW_GlitterGlassPrinter);
+				}
+			}
+		}
+
+		private static void FixSynthesizers(Map map)
+        {
+			foreach (Building item in map.listerBuildings.AllBuildingsColonistOfDef(SW_DefOf.SW_GlitterGlassSynthesizer))
+			{
+				Building_Synthesizer building_Synthesizer = item as Building_Synthesizer;
+				if (building_Synthesizer == null && item.Spawned)
+				{
+					CopyWorkBench(map, item, SW_DefOf.SW_GlitterGlassSynthesizer);
 				}
 			}
 		}
@@ -54,7 +66,8 @@ namespace StevesWalls
 		public override void FinalizeInit()
 		{
 			base.FinalizeInit();
-			FixNanofabricators(map);
+			FixPrinters(map);
+			FixSynthesizers(map);
 		}
 	}
 }

@@ -11,7 +11,7 @@
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
         <effectWorking>SW_3DPrinting</effectWorking>
         <workAmount>250</workAmount>
-        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef> <!-- MAKE A NEW ONE -->
+        <unfinishedThingDef>SW_UnfinishedGlitterGlassPowder</unfinishedThingDef>
         <ingredients> <!-- IF WE ADD SOMETHING HERE, ADD IT TO THE fixedIngredientFilter AS WELL -->
             <li>
                 <filter>
@@ -39,7 +39,7 @@
             </categories>
         </fixedIngredientFilter>
         <products>
-            <SW_GlitterGlassSheet>1</SW_GlitterGlassSheet> <!-- MAKE A NEW THINGDEF -->
+            <SW_GlitterGlassPowder>1</SW_GlitterGlassPowder>
         </products>
         <researchPrerequisite>Fabrication</researchPrerequisite>
         <skillRequirements>
@@ -59,12 +59,12 @@
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
         <effectWorking>SW_3DPrinting</effectWorking>
         <workAmount>500</workAmount>
-        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef> <!-- MAKE A NEW ONE -->
+        <unfinishedThingDef>SW_UnfinishedGlitterGlassSheet</unfinishedThingDef>
         <ingredients> <!-- IF WE ADD SOMETHING HERE, ADD IT TO THE fixedIngredientFilter AS WELL -->
             <li>
                 <filter>
                     <thingDefs>
-                        <li>Steel</li>
+                        <li>SW_GlitterGlassPowder</li>
                     </thingDefs>
                 </filter>
                 <count>2</count>
@@ -72,7 +72,7 @@
         </ingredients>
         <fixedIngredientFilter>
             <thingDefs>
-                <li>Steel</li>
+                <li>SW_GlitterGlassPowder</li>
             </thingDefs>
         </fixedIngredientFilter>
         <products>

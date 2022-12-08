@@ -29,7 +29,7 @@
         <workType>Crafting</workType>
         <priorityInType>51</priorityInType>
         <fixedBillGiverDefs>
-            <li>SW_GlitterGlass3DPrinter</li>
+            <li>SW_GlitterGlassPrinter</li>
         </fixedBillGiverDefs>
         <verb>print</verb>
         <gerund>printing materials at</gerund>

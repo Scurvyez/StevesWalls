@@ -12,12 +12,12 @@ namespace StevesWalls
 {
     public class Building_Synthesizer : Building_WorkTable_HeatPush
     {
-        public ModExtension_Synthesizer Extension_Synthesizer;
+        public ModExtension_BuildingGraphics Extension_BuildingGraphics;
 
         public override void PostMake()
         {
             base.PostMake();
-            Extension_Synthesizer = def.GetModExtension<ModExtension_Synthesizer>();
+            Extension_BuildingGraphics = def.GetModExtension<ModExtension_BuildingGraphics>();
         }
 
         public override void Draw()
@@ -25,13 +25,13 @@ namespace StevesWalls
             CompFlickable compFlickable = GetComp<CompFlickable>();
             CompPowerTrader compPower = GetComp<CompPowerTrader>();
 
-            if (Extension_Synthesizer != null && def != null)
+            if (Extension_BuildingGraphics != null && def != null)
             {
                 if (!compPower.PowerOn)
                 {
-                    for (int i = 0; i < Extension_Synthesizer.graphicsOff.Count; i++)
+                    for (int i = 0; i < Extension_BuildingGraphics.graphicsOff.Count; i++)
                     {
-                        Extension_Synthesizer.graphicsOff[i].Graphic.Draw(DrawPos, Rotation, this, 0f);
+                        Extension_BuildingGraphics.graphicsOff[i].Graphic.Draw(DrawPos, Rotation, this, 0f);
                     }
                 }
 
@@ -39,17 +39,17 @@ namespace StevesWalls
                 {
                     if (!compFlickable.SwitchIsOn)
                     {
-                        for (int i = 0; i < Extension_Synthesizer.graphicsOff.Count; i++)
+                        for (int i = 0; i < Extension_BuildingGraphics.graphicsOff.Count; i++)
                         {
-                            Extension_Synthesizer.graphicsOff[i].Graphic.Draw(DrawPos, Rotation, this, 0f);
+                            Extension_BuildingGraphics.graphicsOff[i].Graphic.Draw(DrawPos, Rotation, this, 0f);
                         }
                     }
 
                     else
                     {
-                        for (int i = 0; i < Extension_Synthesizer.graphicsOn.Count; i++)
+                        for (int i = 0; i < Extension_BuildingGraphics.graphicsOn.Count; i++)
                         {
-                            Extension_Synthesizer.graphicsOn[i].Graphic.Draw(DrawPos, Rotation, this, 0f);
+                            Extension_BuildingGraphics.graphicsOn[i].Graphic.Draw(DrawPos, Rotation, this, 0f);
                         }
                     }
                 }

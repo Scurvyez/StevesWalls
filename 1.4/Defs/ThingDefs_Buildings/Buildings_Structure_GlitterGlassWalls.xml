@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <!--========================= Glitter-Glass Wall =============================-->
+    <!--========================= Glitter Glass Wall =============================-->
 
     <ThingDef ParentName="SW_NormalGlitterGlassWallBase">
         <defName>SW_NormalGlitterGlassWall</defName>
@@ -17,7 +17,7 @@
                 <transmitsPower>true</transmitsPower>
             </li>
             <li Class="CompProperties_Glower">
-                <glowRadius>3</glowRadius>
+                <glowRadius>4</glowRadius>
                 <colorPickerEnabled>true</colorPickerEnabled>
             </li>
         </comps>

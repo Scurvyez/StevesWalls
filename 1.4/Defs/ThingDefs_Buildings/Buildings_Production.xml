@@ -13,12 +13,12 @@
         <pathCost>250</pathCost>
         <minifiedDef />
         <thingCategories Inherit="false" />
-        <size>(3, 3)</size>
+        <size>(3, 2)</size>
         <castEdgeShadows>false</castEdgeShadows>
         <fillPercent>0.90</fillPercent>
-        <interactionCellOffset>(0, 0, -2)</interactionCellOffset>
+        <interactionCellOffset>(0, 0, -1)</interactionCellOffset>
         <hasInteractionCell>true</hasInteractionCell>
-        <interactionCellIcon>SW_PrinterInteractionCellIcon</interactionCellIcon> <!-- CHANGE -->
+        <interactionCellIcon>SW_PrinterInteractionCellIcon</interactionCellIcon>
         <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
         <designationCategory>Production</designationCategory>
         <uiOrder>2530</uiOrder>
@@ -59,10 +59,10 @@
             </li>
         </comps>
         <modExtensions>
-            <li Class="StevesWalls.ModExtension_Synthesizer">
+            <li Class="StevesWalls.ModExtension_BuildingGraphics">
                 <graphicsOff>
                     <li>
-                        <texPath>Things/Building/Workbenches/Synthesizer/OFF/SW_GlitterGlassSynthesizerOFF</texPath>
+                        <texPath>Things/Building/Workbenches/Synthesizer/Off/SW_GlitterGlassSynthesizerOff</texPath>
                         <graphicClass>Graphic_Single</graphicClass>
                         <shaderType>Cutout</shaderType>
                         <drawSize>(3, 3)</drawSize>
@@ -70,7 +70,7 @@
                 </graphicsOff>
                 <graphicsOn>
                     <li>
-                        <texPath>Things/Building/Workbenches/Synthesizer/ON/SW_GlitterGlassSynthesizerON</texPath>
+                        <texPath>Things/Building/Workbenches/Synthesizer/On/SW_GlitterGlassSynthesizerOn</texPath>
                         <graphicClass>Graphic_Single</graphicClass>
                         <shaderType>Cutout</shaderType>
                         <drawSize>(3, 3)</drawSize>
@@ -85,7 +85,7 @@
             <texPath>Things/Building/Workbenches/Synthesizer/SW_GlitterGlassSynthesizerBlank</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>Cutout</shaderType>
-            <drawSize>(4, 4)</drawSize>
+            <drawSize>(3, 3)</drawSize>
         </graphicData>
         <inspectorTabs>
             <li>ITab_Bills</li>
@@ -104,22 +104,22 @@
         </researchPrerequisites>
     </ThingDef>
 
-    <!--========================= Glitter Glass 3D Printer =============================-->
+    <!--========================= Glitter Glass Printer =============================-->
 
     <ThingDef ParentName="BenchBase">
-        <defName>SW_GlitterGlass3DPrinter</defName>
-        <label>glitter glass 3-d printer</label>
-        <description>A huge 3-d printer capable of turning raw materials into otherworldly strong glass panes.</description>
-        <thingClass>StevesWalls.Building_3DPrinter_GlitterGlass</thingClass>
+        <defName>SW_GlitterGlassPrinter</defName>
+        <label>glitter glass printer</label>
+        <description>A huge printer capable of turning raw materials into otherworldly strong glass panes.</description>
+        <thingClass>StevesWalls.Building_Printer</thingClass>
         <altitudeLayer>Building</altitudeLayer>
         <passability>PassThroughOnly</passability>
         <pathCost>250</pathCost>
         <minifiedDef />
         <thingCategories Inherit="false" />
-        <size>(4, 3)</size>
+        <size>(3, 2)</size>
         <castEdgeShadows>false</castEdgeShadows>
         <fillPercent>0.90</fillPercent>
-        <interactionCellOffset>(0, 0, -2)</interactionCellOffset>
+        <interactionCellOffset>(0, 0, -1)</interactionCellOffset>
         <hasInteractionCell>true</hasInteractionCell>
         <interactionCellIcon>SW_PrinterInteractionCellIcon</interactionCellIcon>
         <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
@@ -153,15 +153,47 @@
             </li>
             <li Class="CompProperties_Flickable"/>
             <li Class="CompProperties_Breakdownable"/>
+            <li Class="CompProperties_Glower">
+                <glowRadius>4</glowRadius>
+                <colorPickerEnabled>true</colorPickerEnabled>
+            </li>
         </comps>
+        <modExtensions>
+            <li Class="StevesWalls.ModExtension_BuildingGraphics">
+                <graphicsOff>
+                    <li>
+                        <texPath>Things/Building/Workbenches/Printer/Off/SW_PrinterOff</texPath>
+                        <graphicClass>Graphic_Single</graphicClass>
+                        <shaderType>Cutout</shaderType>
+                        <drawSize>(3, 3)</drawSize>
+                    </li>
+                </graphicsOff>
+                <graphicsOn>
+                    <li>
+                        <texPath>Things/Building/Workbenches/Printer/On/SW_PrinterOn</texPath>
+                        <graphicClass>Graphic_Single</graphicClass>
+                        <shaderType>Cutout</shaderType>
+                        <drawSize>(3, 3)</drawSize>
+                    </li>
+                </graphicsOn>
+                <graphicsOnAndWorking>
+                    <li>
+                        <texPath>Things/Building/Workbenches/Printer/On/SW_PrinterOnAndWorking</texPath>
+                        <graphicClass>Graphic_Single</graphicClass>
+                        <shaderType>Cutout</shaderType>
+                        <drawSize>(3, 3)</drawSize>
+                    </li>
+                </graphicsOnAndWorking>
+            </li>
+        </modExtensions>
         <recipes>
             <li>Make_GlitterGlassSheet</li>
         </recipes>
         <graphicData>
-            <texPath>Things/Building/Workbenches/SW_GlitterGlass3DPrinter</texPath>
-            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/Workbenches/Printer/SW_PrinterBlank</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
             <shaderType>Cutout</shaderType>
-            <drawSize>(4, 3)</drawSize>
+            <drawSize>(3, 3)</drawSize>
             <damageData>
                 <cornerTL>Damage/Corner</cornerTL>
                 <cornerTR>Damage/Corner</cornerTR>
