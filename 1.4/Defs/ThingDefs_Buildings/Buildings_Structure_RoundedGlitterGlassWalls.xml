@@ -17,7 +17,7 @@
                 <transmitsPower>true</transmitsPower>
             </li>
             <li Class="CompProperties_Glower">
-                <glowRadius>4</glowRadius>
+                <glowRadius>3</glowRadius>
                 <colorPickerEnabled>true</colorPickerEnabled>
             </li>
         </comps>

@@ -17,6 +17,7 @@ This mod adds several new glowing neon walls to the game.
 
 ~ Must be unlocked via research
 ~ Two types, rounded and squared
+~ Two new workbenches
 ~ Lets light through
 ~ Power required to glow
 ~ 3-tile wide glow radius
@@ -25,23 +26,35 @@ This mod adds several new glowing neon walls to the game.
 
     <!--
         TO-DO
-            + [DONE] glitter glass resource
-                - glass panes
-            + glitter glass powder resource
-                - powder, in a drum?
-                - fill new workbench with a full drum?
-                - produce a set amount from a full drum?
-            + workbench to make the glitter glass
-                - change the location, color, size + whatever else of the progress bar. :)
-                - change location of unfinished product when crafting
-                    - this shit blocks the beautiful viewing window!!!
-                - make keypad red when in use
+            + fix the texture saving issue -_-
+
+            + [DONE] glitter glass panes resource
+                - [DONE] textures
+                - [DONE] xml
+
+            + [DONE] glitter glass powder resource
+                - [DONE] textures
+                - [DONE] xml
+                - [DONE] fill new workbench with a full drum?
+
+            + [DONE] workbench to make the glitter glass panes (Printer)
+                - [DONE] change location of unfinished product when crafting
+                - [DONE] graphics for...
+                    - [DONE] off
+                    - [DONE] on
+                    - [DONE] on and in use
+
+            + [DONE] workbench to make the glass powder (Synthesizer)
+                - [DONE] change location of unfinished product when crafting
+                - [DONE] graphics for...
+                    - [DONE] off
+                    - [DONE] on
+
             + [DONE] balance wall HP and rest of stats?
-            + [DONE] make new texture for the unfinished glitter glass resource
+
             + [DONE] make walls actually require being built out of glitter glass
-            + new motes / flecks for workbenches and the walls themselves?
-            + workbench to make material to make glitter glass
-                - stone chunks + steel = 1 "glitter glass powder"?
+
+            + [OPTIONAL] new motes / flecks for workbenches and the walls themselves?
     -->
 
 </ModMetaData>

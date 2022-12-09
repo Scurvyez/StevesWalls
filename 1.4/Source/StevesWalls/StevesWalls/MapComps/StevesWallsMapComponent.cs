@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using RimWorld;
+﻿using RimWorld;
 using Verse;
 
 namespace StevesWalls
@@ -14,24 +8,24 @@ namespace StevesWalls
 		
 		private static void FixPrinters(Map map)
 		{
-			foreach (Building item in map.listerBuildings.AllBuildingsColonistOfDef(SW_DefOf.SW_GlitterGlassPrinter))
+			foreach (Building item in map.listerBuildings.AllBuildingsColonistOfDef(SW_DefOf.SW_Printer))
 			{
-				Building_Printer building_3DPrinter = item as Building_Printer;
-				if (building_3DPrinter == null && item.Spawned)
+				Building_Printer building_Printer = item as Building_Printer;
+				if (building_Printer == null && item.Spawned)
 				{
-					CopyWorkBench(map, item, SW_DefOf.SW_GlitterGlassPrinter);
+					CopyWorkBench(map, item, SW_DefOf.SW_Printer);
 				}
 			}
 		}
 
 		private static void FixSynthesizers(Map map)
         {
-			foreach (Building item in map.listerBuildings.AllBuildingsColonistOfDef(SW_DefOf.SW_GlitterGlassSynthesizer))
+			foreach (Building item in map.listerBuildings.AllBuildingsColonistOfDef(SW_DefOf.SW_Synthesizer))
 			{
 				Building_Synthesizer building_Synthesizer = item as Building_Synthesizer;
 				if (building_Synthesizer == null && item.Spawned)
 				{
-					CopyWorkBench(map, item, SW_DefOf.SW_GlitterGlassSynthesizer);
+					CopyWorkBench(map, item, SW_DefOf.SW_Synthesizer);
 				}
 			}
 		}

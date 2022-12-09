@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using RimWorld;
+﻿using RimWorld;
 using Verse;
 
 namespace StevesWalls
@@ -12,8 +6,8 @@ namespace StevesWalls
 	[DefOf]
 	public class SW_DefOf
 	{
-		public static ThingDef SW_GlitterGlassPrinter;
-		public static ThingDef SW_GlitterGlassSynthesizer;
+		public static ThingDef SW_Printer;
+		public static ThingDef SW_Synthesizer;
 
 		static SW_DefOf()
 		{

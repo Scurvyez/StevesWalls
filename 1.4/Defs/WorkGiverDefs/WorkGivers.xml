@@ -4,13 +4,13 @@
     <!--========================= Glitter Glass Powder Bill Creation =============================-->
 
     <WorkGiverDef>
-        <defName>SW_DoBillsGlitterGlassSythesize</defName>
+        <defName>SW_DoBillsSythesize</defName>
         <label>synthesize materials</label>
         <giverClass>WorkGiver_DoBill</giverClass>
         <workType>Crafting</workType>
         <priorityInType>51</priorityInType>
         <fixedBillGiverDefs>
-            <li>SW_GlitterGlassSynthesizer</li>
+            <li>SW_Synthesizer</li>
         </fixedBillGiverDefs>
         <verb>synthesize</verb>
         <gerund>synthesizing materials at</gerund>
@@ -23,13 +23,13 @@
     <!--========================= Glitter Glass Pane Bill Creation =============================-->
 
     <WorkGiverDef>
-        <defName>SW_DoBillsGlitterGlass3DPrinter</defName>
+        <defName>SW_DoBillsPrinter</defName>
         <label>print materials</label>
         <giverClass>WorkGiver_DoBill</giverClass>
         <workType>Crafting</workType>
         <priorityInType>51</priorityInType>
         <fixedBillGiverDefs>
-            <li>SW_GlitterGlassPrinter</li>
+            <li>SW_Printer</li>
         </fixedBillGiverDefs>
         <verb>print</verb>
         <gerund>printing materials at</gerund>

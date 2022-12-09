@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using RimWorld;
 using Verse;
+using HarmonyLib;
 
 namespace StevesWalls
 {
@@ -14,6 +15,9 @@ namespace StevesWalls
         static StevesWallsMain()
         {
             Log.Message("<color=#4494E3FF>Hope you like glowing stuff!</color>");
+
+            var harmony = new Harmony("com.steveswalls");
+            harmony.PatchAll();
         }
     }
 }

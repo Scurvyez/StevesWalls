@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using UnityEngine;
+﻿using UnityEngine;
 using Verse;
 using RimWorld;
 
@@ -158,5 +152,10 @@ namespace StevesWalls
 			matrix.SetTRS(headDrawPos, Quaternion.identity, headDrawSize);
 			Graphics.DrawMesh(MeshPool.plane10, matrix, headMat, 0);
 		}
-	}
+
+        public override void ExposeData()
+        {
+            base.ExposeData();
+        }
+    }
 }

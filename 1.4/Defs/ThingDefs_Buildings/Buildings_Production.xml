@@ -4,7 +4,7 @@
     <!--========================= Glitter Glass Synthesizer =============================-->
 
     <ThingDef ParentName="BenchBase">
-        <defName>SW_GlitterGlassSynthesizer</defName>
+        <defName>SW_Synthesizer</defName>
         <label>glitter glass synthesizer</label>
         <description>A powerful machine capable of crushing stone and steel into fine powder.\n\nThrough means of a crystilline lens within, the powder is then inbued with an additive hue to produce any one of seven differently colored powders.</description>
         <thingClass>StevesWalls.Building_Synthesizer</thingClass>
@@ -22,6 +22,8 @@
         <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
         <designationCategory>Production</designationCategory>
         <uiOrder>2530</uiOrder>
+        <uiIconPath>Things/Building/Workbenches/Synthesizer/On/SW_GlitterGlassSynthesizerOn</uiIconPath>
+        <uiIconScale>1.10</uiIconScale>
         <surfaceType>None</surfaceType>
         <designationHotKey>Misc12</designationHotKey>
         <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
@@ -35,10 +37,10 @@
         </statBases>
         <costList>
             <Steel>200</Steel>
-            <ComponentIndustrial>5</ComponentIndustrial>
-            <Plasteel>4</Plasteel>
-            <Gold>2</Gold>
-            <ComponentSpacer>2</ComponentSpacer>
+            <ComponentIndustrial>3</ComponentIndustrial>
+            <Plasteel>3</Plasteel>
+            <Gold>1</Gold>
+            <ComponentSpacer>1</ComponentSpacer>
         </costList>
         <comps>
             <li Class="CompProperties_AffectedByFacilities">
@@ -54,7 +56,7 @@
             <li Class="CompProperties_Flickable"/>
             <li Class="CompProperties_Breakdownable"/>
             <li Class="CompProperties_Glower">
-                <glowRadius>4</glowRadius>
+                <glowRadius>3</glowRadius>
                 <colorPickerEnabled>true</colorPickerEnabled>
             </li>
         </comps>
@@ -107,7 +109,7 @@
     <!--========================= Glitter Glass Printer =============================-->
 
     <ThingDef ParentName="BenchBase">
-        <defName>SW_GlitterGlassPrinter</defName>
+        <defName>SW_Printer</defName>
         <label>glitter glass printer</label>
         <description>A huge printer capable of turning raw materials into otherworldly strong glass panes.</description>
         <thingClass>StevesWalls.Building_Printer</thingClass>
@@ -125,11 +127,14 @@
         <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
         <designationCategory>Production</designationCategory>
         <uiOrder>2530</uiOrder>
+        <uiIconPath>Things/Building/Workbenches/Printer/On/SW_PrinterOn</uiIconPath>
+        <uiIconScale>1.10</uiIconScale>
         <surfaceType>None</surfaceType>
         <designationHotKey>Misc12</designationHotKey>
         <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
         <drawerType>MapMeshAndRealTime</drawerType>
         <tickerType>Normal</tickerType>
+        <rotatable>false</rotatable>
         <statBases>
             <MaxHitPoints>300</MaxHitPoints>
             <WorkToBuild>5000</WorkToBuild>
@@ -137,7 +142,9 @@
         </statBases>
         <costList>
             <Steel>200</Steel>
-            <ComponentIndustrial>12</ComponentIndustrial>
+            <ComponentIndustrial>5</ComponentIndustrial>
+            <Plasteel>3</Plasteel>
+            <Gold>1</Gold>
             <ComponentSpacer>2</ComponentSpacer>
         </costList>
         <comps>
@@ -154,7 +161,7 @@
             <li Class="CompProperties_Flickable"/>
             <li Class="CompProperties_Breakdownable"/>
             <li Class="CompProperties_Glower">
-                <glowRadius>4</glowRadius>
+                <glowRadius>3</glowRadius>
                 <colorPickerEnabled>true</colorPickerEnabled>
             </li>
         </comps>
