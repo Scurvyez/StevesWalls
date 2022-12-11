@@ -7,7 +7,7 @@
         <defName>SW_Synthesizer</defName>
         <label>glitter glass synthesizer</label>
         <description>A powerful machine capable of crushing stone and steel into fine powder.\n\nThrough means of a crystilline lens within, the powder is then inbued with an additive hue to produce any one of seven differently colored powders.</description>
-        <thingClass>StevesWalls.Building_Synthesizer</thingClass>
+        <thingClass>Building_WorkTable_HeatPush</thingClass>
         <altitudeLayer>Building</altitudeLayer>
         <passability>PassThroughOnly</passability>
         <pathCost>250</pathCost>
@@ -59,27 +59,25 @@
                 <glowRadius>3</glowRadius>
                 <colorPickerEnabled>true</colorPickerEnabled>
             </li>
-        </comps>
-        <modExtensions>
-            <li Class="StevesWalls.ModExtension_BuildingGraphics">
-                <graphicsOff>
+            <li Class="StevesWalls.CompProperties_BuildingGraphics">
+                <graphicLayersOff>
                     <li>
                         <texPath>Things/Building/Workbenches/Synthesizer/Off/SW_GlitterGlassSynthesizerOff</texPath>
                         <graphicClass>Graphic_Single</graphicClass>
                         <shaderType>Cutout</shaderType>
                         <drawSize>(3, 3)</drawSize>
                     </li>
-                </graphicsOff>
-                <graphicsOn>
+                </graphicLayersOff>
+                <graphicLayersOn>
                     <li>
                         <texPath>Things/Building/Workbenches/Synthesizer/On/SW_GlitterGlassSynthesizerOn</texPath>
                         <graphicClass>Graphic_Single</graphicClass>
                         <shaderType>Cutout</shaderType>
                         <drawSize>(3, 3)</drawSize>
                     </li>
-                </graphicsOn>
+                </graphicLayersOn>
             </li>
-        </modExtensions>
+        </comps>
         <recipes>
             <li>Make_GlitterGlassPowder</li>
         </recipes>
@@ -164,35 +162,33 @@
                 <glowRadius>3</glowRadius>
                 <colorPickerEnabled>true</colorPickerEnabled>
             </li>
-        </comps>
-        <modExtensions>
-            <li Class="StevesWalls.ModExtension_BuildingGraphics">
-                <graphicsOff>
+            <li Class="StevesWalls.CompProperties_BuildingGraphics">
+                <graphicLayersOff>
                     <li>
                         <texPath>Things/Building/Workbenches/Printer/Off/SW_PrinterOff</texPath>
                         <graphicClass>Graphic_Single</graphicClass>
                         <shaderType>Cutout</shaderType>
                         <drawSize>(3, 3)</drawSize>
                     </li>
-                </graphicsOff>
-                <graphicsOn>
+                </graphicLayersOff>
+                <graphicLayersOn>
                     <li>
                         <texPath>Things/Building/Workbenches/Printer/On/SW_PrinterOn</texPath>
                         <graphicClass>Graphic_Single</graphicClass>
                         <shaderType>Cutout</shaderType>
                         <drawSize>(3, 3)</drawSize>
                     </li>
-                </graphicsOn>
-                <graphicsOnAndWorking>
+                </graphicLayersOn>
+                <graphicLayersOnAndInUse>
                     <li>
                         <texPath>Things/Building/Workbenches/Printer/On/SW_PrinterOnAndWorking</texPath>
                         <graphicClass>Graphic_Single</graphicClass>
                         <shaderType>Cutout</shaderType>
                         <drawSize>(3, 3)</drawSize>
                     </li>
-                </graphicsOnAndWorking>
+                </graphicLayersOnAndInUse>
             </li>
-        </modExtensions>
+        </comps>
         <recipes>
             <li>Make_GlitterGlassSheet</li>
         </recipes>

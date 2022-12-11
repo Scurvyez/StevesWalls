@@ -9,13 +9,6 @@ namespace StevesWalls
 	{
 		public float MaxPercent = 0.0f;
 		public bool usedThisTick = false;
-		public ModExtension_BuildingGraphics Extension_BuildingGraphics;
-
-		public override void PostMake()
-		{
-			base.PostMake();
-			Extension_BuildingGraphics = def.GetModExtension<ModExtension_BuildingGraphics>();
-		}
 
         public override void UsedThisTick()
         {
@@ -52,55 +45,6 @@ namespace StevesWalls
 			Matrix4x4 matMatrix = default;
 			matMatrix.SetTRS(matDrawPos, Quaternion.identity, matDrawSize);
 			Graphics.DrawMesh(MeshPool.plane10, matMatrix, matMat, 0);
-
-			CompFlickable compFlickable = GetComp<CompFlickable>();
-			CompPowerTrader compPower = GetComp<CompPowerTrader>();
-
-			if (Extension_BuildingGraphics != null && def != null)
-			{
-				// if powered
-				if (!compPower.PowerOn)
-				{
-					for (int i = 0; i < Extension_BuildingGraphics.graphicsOff.Count; i++)
-					{
-						Extension_BuildingGraphics.graphicsOff[i].Graphic.Draw(DrawPos, Rotation, this, 0f);
-					}
-				}
-
-				// if unpowered
-				else
-				{
-					// if turned off
-					if (!compFlickable.SwitchIsOn)
-					{
-						for (int i = 0; i < Extension_BuildingGraphics.graphicsOff.Count; i++)
-						{
-							Extension_BuildingGraphics.graphicsOff[i].Graphic.Draw(DrawPos, Rotation, this, 0f);
-						}
-					}
-
-					// if turned on
-					else if (compFlickable.SwitchIsOn)
-					{
-						// if being used by a pawn
-						if (usedThisTick)
-                        {
-							for (int i = 0; i < Extension_BuildingGraphics.graphicsOnAndWorking.Count; i++)
-							{
-								Extension_BuildingGraphics.graphicsOnAndWorking[i].Graphic.Draw(DrawPos, Rotation, this, 0f);
-							}
-						}
-
-                        else
-                        {
-							for (int i = 0; i < Extension_BuildingGraphics.graphicsOn.Count; i++)
-							{
-								Extension_BuildingGraphics.graphicsOn[i].Graphic.Draw(DrawPos, Rotation, this, 0f);
-							}
-						}
-					}
-				}
-			}
 		}
 
 		protected override void DrawArm()
@@ -152,10 +96,5 @@ namespace StevesWalls
 			matrix.SetTRS(headDrawPos, Quaternion.identity, headDrawSize);
 			Graphics.DrawMesh(MeshPool.plane10, matrix, headMat, 0);
 		}
-
-        public override void ExposeData()
-        {
-            base.ExposeData();
-        }
     }
 }
