@@ -13,8 +13,8 @@
 			<li>MicroelectronicsBasics</li>
             <li>SterileMaterials</li>
 		</prerequisites>
-        <researchViewX>5.00</researchViewX>
-        <researchViewY>2.90</researchViewY>
+        <researchViewX>0.00</researchViewX>
+        <researchViewY>2.10</researchViewY>
     </ResearchProjectDef>
 
 </Defs>

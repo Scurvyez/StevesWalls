@@ -22,14 +22,12 @@ namespace StevesWalls
         public override void Draw()
         {
             base.Draw();
-
             DrawArm();
         }
 
         public override void UsedThisTick()
         {
             base.UsedThisTick();
-
             usedLastTick = true;
         }
 

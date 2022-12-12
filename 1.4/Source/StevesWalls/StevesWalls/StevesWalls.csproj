@@ -74,8 +74,10 @@
     <Compile Include="ThingClasses\Building_Printer.cs" />
     <Compile Include="ThingClasses\Building_PrinterBase.cs" />
     <Compile Include="ThingClasses\Building_Synthesizer.cs" />
-    <Compile Include="ThingComps\CompProperties\CompProperties_BuildingGraphics.cs" />
-    <Compile Include="ThingComps\Comp_BuildingGraphics.cs" />
+    <Compile Include="ThingComps\CompProperties\CompProperties_SynthesizerGraphics.cs" />
+    <Compile Include="ThingComps\CompProperties\CompProperties_PrinterGraphics.cs" />
+    <Compile Include="ThingComps\Comp_SynthesizerGraphics.cs" />
+    <Compile Include="ThingComps\Comp_PrinterGraphics.cs" />
     <Compile Include="Utils\AnimationUtil.cs" />
     <Compile Include="Utils\PowerState.cs" />
   </ItemGroup>

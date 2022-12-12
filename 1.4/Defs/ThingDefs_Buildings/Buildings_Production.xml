@@ -7,7 +7,7 @@
         <defName>SW_Synthesizer</defName>
         <label>glitter glass synthesizer</label>
         <description>A powerful machine capable of crushing stone and steel into fine powder.\n\nThrough means of a crystilline lens within, the powder is then inbued with an additive hue to produce any one of seven differently colored powders.</description>
-        <thingClass>Building_WorkTable_HeatPush</thingClass>
+        <thingClass>StevesWalls.Building_Synthesizer</thingClass>
         <altitudeLayer>Building</altitudeLayer>
         <passability>PassThroughOnly</passability>
         <pathCost>250</pathCost>
@@ -59,7 +59,7 @@
                 <glowRadius>3</glowRadius>
                 <colorPickerEnabled>true</colorPickerEnabled>
             </li>
-            <li Class="StevesWalls.CompProperties_BuildingGraphics">
+            <li Class="StevesWalls.CompProperties_SynthesizerGraphics">
                 <graphicLayersOff>
                     <li>
                         <texPath>Things/Building/Workbenches/Synthesizer/Off/SW_GlitterGlassSynthesizerOff</texPath>
@@ -76,6 +76,14 @@
                         <drawSize>(3, 3)</drawSize>
                     </li>
                 </graphicLayersOn>
+                <graphicLayersOnAndInUse>
+                    <li>
+                        <texPath>Things/Building/Workbenches/Synthesizer/On/SW_GlitterGlassSynthesizerOn</texPath>
+                        <graphicClass>Graphic_Single</graphicClass>
+                        <shaderType>Cutout</shaderType>
+                        <drawSize>(3, 3)</drawSize>
+                    </li>
+                </graphicLayersOnAndInUse>
             </li>
         </comps>
         <recipes>
@@ -162,7 +170,7 @@
                 <glowRadius>3</glowRadius>
                 <colorPickerEnabled>true</colorPickerEnabled>
             </li>
-            <li Class="StevesWalls.CompProperties_BuildingGraphics">
+            <li Class="StevesWalls.CompProperties_PrinterGraphics">
                 <graphicLayersOff>
                     <li>
                         <texPath>Things/Building/Workbenches/Printer/Off/SW_PrinterOff</texPath>

@@ -51,7 +51,7 @@
         <statBases>
             <MaxHitPoints>750</MaxHitPoints>
             <WorkToBuild>135</WorkToBuild>
-            <Flammability>0.00</Flammability>
+            <Flammability>0.02</Flammability>
             <MeditationFocusStrength>0.22</MeditationFocusStrength>
             <Beauty>0.025</Beauty>
         </statBases>

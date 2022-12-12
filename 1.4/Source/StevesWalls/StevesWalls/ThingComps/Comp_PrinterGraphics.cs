@@ -1,19 +1,39 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using RimWorld;
+﻿using RimWorld;
 using Verse;
 using UnityEngine;
 
 namespace StevesWalls
 {
-    public class Comp_BuildingGraphics : ThingComp
+    public class Comp_PrinterGraphics : ThingComp
     {
-        public CompProperties_BuildingGraphics Props => (CompProperties_BuildingGraphics)props;
-        private readonly Building_Printer Printer;
+        public CompProperties_PrinterGraphics Props => (CompProperties_PrinterGraphics)props;
+
+        public CompPowerTrader _powerComp;
+        public CompFlickable _flickableComp;
+        
+        public CompPowerTrader PowerComp
+        {
+            get
+            {
+                if (_powerComp == null)
+                {
+                    _powerComp = parent.GetComp<CompPowerTrader>();
+                }
+                return _powerComp;
+            }
+        }
+
+        public CompFlickable FlickableComp
+        {
+            get
+            {
+                if (_flickableComp == null)
+                {
+                    _flickableComp = parent.GetComp<CompFlickable>();
+                }
+                return _flickableComp;
+            }
+        }
 
         /// <summary>
         /// Renders additional graphics on a parent thing.
@@ -22,41 +42,45 @@ namespace StevesWalls
         public override void PostDraw()
         {
             base.PostDraw();
-            CompFlickable compFlickable = parent.GetComp<CompFlickable>();
-            CompPowerTrader compPower = parent.GetComp<CompPowerTrader>();
+            Color color1 = new Color(0.145f, 0.588f, 0.745f, 1f); // for debugging text
 
-            if (parent.def != null && compFlickable != null && compPower != null)
+            // if not powered
+            if (!PowerComp.PowerOn)
             {
-                // if not powered
-                if (!compPower.PowerOn)
+                for (int i = 0; i < Props.graphicLayersOff.Count; i++)
+                {
+                    Props.graphicLayersOff[i].Graphic.Draw(parent.DrawPos, parent.Rotation, parent);
+                }
+            }
+
+            // if powered
+            else
+            {
+
+                // if switched off
+                if (!FlickableComp.SwitchIsOn)
                 {
                     for (int i = 0; i < Props.graphicLayersOff.Count; i++)
                     {
                         Props.graphicLayersOff[i].Graphic.Draw(parent.DrawPos, parent.Rotation, parent);
                     }
                 }
-                // if powered
+
+                // if switched on
                 else
                 {
-                    // if switched off
-                    if (!compFlickable.SwitchIsOn)
-                    {
-                        for (int i = 0; i < Props.graphicLayersOff.Count; i++)
-                        {
-                            Props.graphicLayersOff[i].Graphic.Draw(parent.DrawPos, parent.Rotation, parent);
-                        }
-                    }
-                    // if switched on
-                    else
+                    // if the building is a printer
+                    if (parent is Building_Printer printer)
                     {
                         // if not in use by a pawn
-                        if (!Printer.usedThisTick)
+                        if (!printer.usedThisTick)
                         {
                             for (int i = 0; i < Props.graphicLayersOn.Count; i++)
                             {
                                 Props.graphicLayersOn[i].Graphic.Draw(parent.DrawPos, parent.Rotation, parent);
                             }
                         }
+
                         // if in use by a pawn
                         else
                         {
