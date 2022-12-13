@@ -78,7 +78,7 @@
                 </graphicLayersOn>
                 <graphicLayersOnAndInUse>
                     <li>
-                        <texPath>Things/Building/Workbenches/Synthesizer/On/SW_GlitterGlassSynthesizerOn</texPath>
+                        <texPath>Things/Building/Workbenches/Synthesizer/On/SW_GlitterGlassSynthesizerOnAndInUse</texPath>
                         <graphicClass>Graphic_Single</graphicClass>
                         <shaderType>Cutout</shaderType>
                         <drawSize>(3, 3)</drawSize>
@@ -235,7 +235,7 @@
     <ThingDef ParentName="BuildingBase">
         <defName>SW_PrinterInteractionCellIcon</defName>
         <label>printer interaction cell icon</label>
-        <description>PLACEHOLDER</description>
+        <description>this had to be a full def... so yeah, here it is</description>
         <graphicData>
             <texPath>Things/Building/Workbenches/SW_PrinterInteractionCellIcon</texPath>
             <graphicClass>Graphic_Single</graphicClass>

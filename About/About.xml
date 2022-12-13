@@ -26,6 +26,14 @@ This mod adds several new glowing walls to the game.
 
     <!--
         TO-DO
+            + info graphics for steam page
+                - for walls
+                    + types, colors, flickable on/off, power, color picker
+                - for synthesizer
+                - for printer
+            
+            + Compat for Diagonal Walls?
+
             + [DONE] fix the texture saving issue -_-
 
             + [DONE] glitter glass panes resource
