@@ -53,7 +53,7 @@
             <WorkToBuild>135</WorkToBuild>
             <Flammability>0.02</Flammability>
             <MeditationFocusStrength>0.22</MeditationFocusStrength>
-            <Beauty>0.025</Beauty>
+            <Beauty>1.25</Beauty>
         </statBases>
         <costList>
             <SW_GlitterGlassSheet>1</SW_GlitterGlassSheet>

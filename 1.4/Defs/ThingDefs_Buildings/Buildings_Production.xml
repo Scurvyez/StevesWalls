@@ -15,7 +15,7 @@
         <thingCategories Inherit="false" />
         <size>(3, 2)</size>
         <castEdgeShadows>false</castEdgeShadows>
-        <fillPercent>0.90</fillPercent>
+        <fillPercent>0.5</fillPercent>
         <interactionCellOffset>(0, 0, -1)</interactionCellOffset>
         <hasInteractionCell>true</hasInteractionCell>
         <interactionCellIcon>SW_PrinterInteractionCellIcon</interactionCellIcon>
@@ -126,7 +126,7 @@
         <thingCategories Inherit="false" />
         <size>(3, 2)</size>
         <castEdgeShadows>false</castEdgeShadows>
-        <fillPercent>0.90</fillPercent>
+        <fillPercent>0.5</fillPercent>
         <interactionCellOffset>(0, 0, -1)</interactionCellOffset>
         <hasInteractionCell>true</hasInteractionCell>
         <interactionCellIcon>SW_PrinterInteractionCellIcon</interactionCellIcon>
