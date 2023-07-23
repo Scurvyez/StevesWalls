@@ -3,6 +3,7 @@ using Verse;
 
 namespace StevesWalls
 {
+	/*
 	public class StevesWallsMapComponent : MapComponent
 	{
 		
@@ -64,4 +65,5 @@ namespace StevesWalls
 			FixSynthesizers(map);
 		}
 	}
+	*/
 }

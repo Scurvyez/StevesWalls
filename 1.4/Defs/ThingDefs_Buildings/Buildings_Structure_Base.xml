@@ -56,7 +56,7 @@
             <Beauty>1.25</Beauty>
         </statBases>
         <costList>
-            <SW_GlitterGlassSheet>1</SW_GlitterGlassSheet>
+            <Steel>2</Steel>
         </costList>
         <building>
             <isInert>true</isInert>

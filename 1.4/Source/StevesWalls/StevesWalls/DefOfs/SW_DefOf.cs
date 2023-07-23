@@ -6,8 +6,8 @@ namespace StevesWalls
 	[DefOf]
 	public class SW_DefOf
 	{
-		public static ThingDef SW_Printer;
-		public static ThingDef SW_Synthesizer;
+		//public static ThingDef SW_Printer;
+		//public static ThingDef SW_Synthesizer;
 
 		static SW_DefOf()
 		{

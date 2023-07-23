@@ -3,7 +3,7 @@
 
     <!--========================= 3D Printing Effecter =============================-->
 
-    <EffecterDef>
+    <!-- <EffecterDef>
         <defName>SW_3DPrinting</defName>
         <children>
             <li>
@@ -15,6 +15,6 @@
                 <soundDef>BiosculpterPod_Start</soundDef>
             </li>
         </children>
-    </EffecterDef>
+    </EffecterDef> -->
 
 </Defs>

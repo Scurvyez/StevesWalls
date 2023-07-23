@@ -3,7 +3,7 @@
 
     <!--========================= Make Glitter Glass Powder =============================-->
 
-    <RecipeDef>
+    <!-- <RecipeDef>
         <defName>Make_GlitterGlassPowder</defName>
         <label>make glitter glass powder</label>
         <description>Synthesize glitter glass powder.</description>
@@ -12,8 +12,8 @@
         <effectWorking>SW_3DPrinting</effectWorking>
         <workAmount>250</workAmount>
         <unfinishedThingDef>SW_UnfinishedGlitterGlassPowder</unfinishedThingDef>
-        <ingredients> <!-- IF WE ADD SOMETHING HERE, ADD IT TO THE fixedIngredientFilter AS WELL -->
-            <li>
+        <ingredients> --> <!-- IF WE ADD SOMETHING HERE, ADD IT TO THE fixedIngredientFilter AS WELL -->
+            <!-- <li>
                 <filter>
                     <thingDefs>
                         <li>Steel</li>
@@ -47,11 +47,11 @@
         </skillRequirements>
         <workSkill>Crafting</workSkill>
         <displayPriority>10</displayPriority>
-    </RecipeDef>
+    </RecipeDef> -->
 
     <!--========================= Make Glitter Glass Sheet =============================-->
 
-    <RecipeDef>
+    <!-- <RecipeDef>
         <defName>Make_GlitterGlassSheet</defName>
         <label>make glitter glass sheets</label>
         <description>Print a sheet of glitter glass.</description>
@@ -60,8 +60,8 @@
         <effectWorking>SW_3DPrinting</effectWorking>
         <workAmount>500</workAmount>
         <unfinishedThingDef>SW_UnfinishedGlitterGlassSheet</unfinishedThingDef>
-        <ingredients> <!-- IF WE ADD SOMETHING HERE, ADD IT TO THE fixedIngredientFilter AS WELL -->
-            <li>
+        <ingredients> --> <!-- IF WE ADD SOMETHING HERE, ADD IT TO THE fixedIngredientFilter AS WELL -->
+            <!-- <li>
                 <filter>
                     <thingDefs>
                         <li>SW_GlitterGlassPowder</li>
@@ -84,6 +84,6 @@
         </skillRequirements>
         <workSkill>Crafting</workSkill>
         <displayPriority>10</displayPriority>
-    </RecipeDef>
+    </RecipeDef> -->
 
 </Defs>

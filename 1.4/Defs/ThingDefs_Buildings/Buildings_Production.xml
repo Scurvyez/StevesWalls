@@ -3,7 +3,7 @@
 
     <!--========================= Glitter Glass Synthesizer =============================-->
 
-    <ThingDef ParentName="BenchBase">
+    <!-- <ThingDef ParentName="BenchBase">
         <defName>SW_Synthesizer</defName>
         <label>glitter glass synthesizer</label>
         <description>A powerful machine capable of crushing stone and steel into fine powder.\n\nThrough means of a crystilline lens within, the powder is then inbued with an additive hue to produce any one of seven differently colored powders.</description>
@@ -110,11 +110,11 @@
             <li>Electricity</li>
 			<li>MicroelectronicsBasics</li>
         </researchPrerequisites>
-    </ThingDef>
+    </ThingDef> -->
 
     <!--========================= Glitter Glass Printer =============================-->
 
-    <ThingDef ParentName="BenchBase">
+    <!-- <ThingDef ParentName="BenchBase">
         <defName>SW_Printer</defName>
         <label>glitter glass printer</label>
         <description>A huge printer capable of turning raw materials into otherworldly strong glass panes.</description>
@@ -227,12 +227,12 @@
             <li>Electricity</li>
 			<li>MicroelectronicsBasics</li>
         </researchPrerequisites>
-    </ThingDef>
+    </ThingDef> -->
 
     <!-- Interaction Cell Icon -->
     <!-- It requires a whole ThingDef... so... here we are. :amDissapointed: -->
 
-    <ThingDef ParentName="BuildingBase">
+    <!-- <ThingDef ParentName="BuildingBase">
         <defName>SW_PrinterInteractionCellIcon</defName>
         <label>printer interaction cell icon</label>
         <description>this had to be a full def... so yeah, here it is</description>
@@ -240,6 +240,6 @@
             <texPath>Things/Building/Workbenches/SW_PrinterInteractionCellIcon</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
-    </ThingDef>
+    </ThingDef> -->
 
 </Defs>
