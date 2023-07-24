@@ -11,7 +11,6 @@ namespace StevesWalls
 {
     public class CompProperties_AlertEffects : CompProperties
     {
-        public FleckDef fleckDefRef = null;
 
         public CompProperties_AlertEffects() => compClass = typeof(Comp_AlertEffects);
     }

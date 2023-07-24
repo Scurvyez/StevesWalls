@@ -23,7 +23,7 @@
                 <colorPickerEnabled>true</colorPickerEnabled>
             </li>
             <li Class="StevesWalls.CompProperties_AlertEffects">
-                <fleckDefRef>SW_WallAlertFleck</fleckDefRef>
+                <!-- <fleckDefRef>SW_WallAlertFleck</fleckDefRef> -->
             </li>
         </comps>
     </ThingDef>

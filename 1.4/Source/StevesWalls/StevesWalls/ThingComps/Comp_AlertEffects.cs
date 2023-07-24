@@ -14,27 +14,26 @@ namespace StevesWalls
         private Effecter alertEffect;
         private FleckDef alertFleckDef;
         private int ticksUntilNextAlert = 0;
-        private const int AlertIntervalTicks = 180; // Adjust this value as needed
+        private const int AlertIntervalTicks = 120; // Adjust this value as needed
 
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
             base.PostSpawnSetup(respawningAfterLoad);
             glowerComp = parent.GetComp<CompGlower>();
-            alertFleckDef = Props.fleckDefRef;
+            alertFleckDef = SW_DefOf.SW_WallAlertFleck;
         }
 
         public override void CompTick()
         {
             base.CompTick();
 
-            if (glowerComp != null && alertFleckDef != null)
+            if (glowerComp != null && glowerComp.Glows)
             {
                 exGraphicColor = glowerComp.GlowColor.ToColor;
-                alertFleckDef.graphicData.color = exGraphicColor;
-                //alertFleckDef.graphicData.colorTwo = exGraphicColor;
-
                 Log.Message($"glow color: {exGraphicColor}");
-                Log.Message($"alert color: {alertFleckDef.graphicData.color}");
+                alertFleckDef.graphicData.colorTwo = exGraphicColor;
+                alertFleckDef.graphicData.colorTwo.a = 1f;
+                Log.Message($"alert color: {alertFleckDef.graphicData.colorTwo}");
 
                 // Decrement the ticksUntilNextAlert by one on each tick
                 if (ticksUntilNextAlert > 0)
@@ -83,10 +82,10 @@ namespace StevesWalls
             alertEffect = SW_DefOf.SW_WallAlert.Spawn();
             alertEffect.Trigger(parent, parent);
 
-            DespawnEffect();
+            StopEmitting();
         }
 
-        public void DespawnEffect()
+        public void StopEmitting()
         {
             alertEffect.Cleanup();
             alertEffect = null;
