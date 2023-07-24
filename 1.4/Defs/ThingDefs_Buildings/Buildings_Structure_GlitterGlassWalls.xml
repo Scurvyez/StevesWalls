@@ -6,6 +6,8 @@
     <ThingDef ParentName="SW_NormalGlitterGlassWallBase">
         <defName>SW_NormalGlitterGlassWall</defName>
         <label>glitter glass wall</label>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <tickerType>Normal</tickerType>
         <graphicData>
             <texPath>Things/Building/Linked/SW_GlitterGlassWall</texPath>
         </graphicData>
@@ -19,6 +21,9 @@
             <li Class="CompProperties_Glower">
                 <glowRadius>3</glowRadius>
                 <colorPickerEnabled>true</colorPickerEnabled>
+            </li>
+            <li Class="StevesWalls.CompProperties_AlertEffects">
+                <fleckDefRef>SW_WallAlertFleck</fleckDefRef>
             </li>
         </comps>
     </ThingDef>

@@ -15,7 +15,6 @@
         <fillPercent>1</fillPercent>
         <coversFloor>false</coversFloor> <!-- WHAT DO? -->
         <placingDraggableDimensions>1</placingDraggableDimensions>
-        <tickerType>Never</tickerType>
         <rotatable>false</rotatable>
         <selectable>true</selectable>
         <neverMultiSelect>false</neverMultiSelect>

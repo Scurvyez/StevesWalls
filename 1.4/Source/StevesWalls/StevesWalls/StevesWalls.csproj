@@ -10,6 +10,7 @@
     <RootNamespace>StevesWalls</RootNamespace>
     <AssemblyName>StevesWalls</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <LangVersion>9.0</LangVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
@@ -74,6 +75,9 @@
     <Compile Include="ThingClasses\Building_Printer.cs" />
     <Compile Include="ThingClasses\Building_PrinterBase.cs" />
     <Compile Include="ThingClasses\Building_Synthesizer.cs" />
+    <Compile Include="ThingClasses\Building_GlitterGlassAlertWall.cs" />
+    <Compile Include="ThingComps\Comp_AlertEffects.cs" />
+    <Compile Include="ThingComps\CompProperties\CompProperties_AlertEffects.cs" />
     <Compile Include="ThingComps\CompProperties\CompProperties_SynthesizerGraphics.cs" />
     <Compile Include="ThingComps\CompProperties\CompProperties_PrinterGraphics.cs" />
     <Compile Include="ThingComps\Comp_SynthesizerGraphics.cs" />

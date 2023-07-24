@@ -17,4 +17,37 @@
         </children>
     </EffecterDef> -->
 
+    <FleckDef ParentName="FleckBase_Thrown">
+        <defName>SW_WallAlertFleck</defName>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <fleckSystemClass>FleckSystemThrown</fleckSystemClass>
+        <fadeInTime>0.75</fadeInTime>
+        <solidTime>1.5</solidTime>
+        <fadeOutTime>0.75</fadeOutTime>
+        <growthRate>0.333</growthRate>
+        <graphicData>
+            <graphicClass>Graphic_FleckPulse</graphicClass>
+            <texPath>Effects/AlertEffect</texPath>
+            <color>(0.65, 0.65, 0.15, 0.6)</color>
+            <shaderType>MoteGlowPulse</shaderType>
+            <shaderParameters>
+                <_Interval>0.475</_Interval>
+            </shaderParameters>
+        </graphicData>
+    </FleckDef>
+
+    <EffecterDef>
+        <defName>SW_WallAlert</defName>
+        <children>
+            <li>
+                <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+                <fleckDef>SW_WallAlertFleck</fleckDef>
+                <scale>3.0~3.0</scale>
+                <spawnLocType>OnSource</spawnLocType>
+                <absoluteAngle>true</absoluteAngle>
+                <attachToSpawnThing>true</attachToSpawnThing>
+            </li>
+        </children>
+    </EffecterDef>
+
 </Defs>

@@ -9,7 +9,10 @@ namespace StevesWalls
 		//public static ThingDef SW_Printer;
 		//public static ThingDef SW_Synthesizer;
 
-		static SW_DefOf()
+		public static EffecterDef SW_WallAlert;
+		//public static ThingDef SW_WallAlertMote;
+
+        static SW_DefOf()
 		{
 			DefOfHelper.EnsureInitializedInCtor(typeof(SW_DefOf));
 		}
