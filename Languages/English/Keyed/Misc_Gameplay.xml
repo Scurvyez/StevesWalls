@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+    <!--==================== Mod Settings ====================-->
+
+    <SW_ModName>Steve's Walls</SW_ModName>
+
+    <SW_AlertPulseIntensity>Pulse Intensity: {0}</SW_AlertPulseIntensity>
+    <SW_AlertPulseIntensityDesc>Adjust the slider to either increase or decrease the intensity (brightness, alpha channel) of the alert wall pulse effect.</SW_AlertPulseIntensityDesc>
+
+</LanguageData>

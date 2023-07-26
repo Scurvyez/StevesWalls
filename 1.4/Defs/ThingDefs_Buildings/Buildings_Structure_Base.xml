@@ -70,6 +70,20 @@
 
     <ThingDef ParentName="SW_GlitterGlassWallBase" Name="SW_NormalGlitterGlassWallBase" Abstract="True">
         <designatorDropdown>SW_GlitterGlassWall</designatorDropdown>
+        <uiIconPath>Things/Building/Linked/SW_GlitterGlassWall_MenuIcon</uiIconPath> <!-- DEFINE THESE IN THE INDIVIDUAL WALL DEFS SO THEY ARE COLORED -->
+        <building>
+            <blueprintGraphicData>
+                <texPath>Things/Building/Linked/SW_GlitterGlassWall_Blueprint_Atlas</texPath>
+            </blueprintGraphicData>
+        </building>
+    </ThingDef>
+
+    <!--========================= Normal Alert Glitter Glass Wall Base =============================-->
+
+    <ThingDef ParentName="SW_GlitterGlassWallBase" Name="SW_NormalAlertGlitterGlassWallBase" Abstract="True">
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <tickerType>Normal</tickerType>
+        <designatorDropdown>SW_AlertGlitterGlassWall</designatorDropdown>
         <uiIconPath>Things/Building/Linked/SW_GlitterGlassWall_MenuIcon</uiIconPath>
         <building>
             <blueprintGraphicData>

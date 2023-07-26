@@ -11,4 +11,9 @@
         <label>rounded glitter glass wall</label>
     </DesignatorDropdownGroupDef>
 
+    <DesignatorDropdownGroupDef>
+        <defName>SW_AlertGlitterGlassWall</defName>
+        <label>alert glitter glass wall</label>
+    </DesignatorDropdownGroupDef>
+
 </Defs>

@@ -6,8 +6,6 @@
     <ThingDef ParentName="SW_NormalGlitterGlassWallBase">
         <defName>SW_NormalGlitterGlassWall</defName>
         <label>glitter glass wall</label>
-        <drawerType>MapMeshAndRealTime</drawerType>
-        <tickerType>Normal</tickerType>
         <graphicData>
             <texPath>Things/Building/Linked/SW_GlitterGlassWall</texPath>
         </graphicData>
@@ -20,12 +18,31 @@
             </li>
             <li Class="CompProperties_Glower">
                 <glowRadius>3</glowRadius>
-                <glowColor>(0, 255, 123, 0.5)</glowColor>
                 <colorPickerEnabled>true</colorPickerEnabled>
             </li>
-            <li Class="StevesWalls.CompProperties_AlertEffects">
-                <!-- <fleckDefRef>SW_WallAlertFleck</fleckDefRef> -->
+        </comps>
+    </ThingDef>
+
+    <!--========================= Alert Glitter Glass Wall =============================-->
+
+    <ThingDef ParentName="SW_NormalAlertGlitterGlassWallBase">
+        <defName>SW_NormalAlertGlitterGlassWall</defName>
+        <label>alert glitter glass wall</label>
+        <graphicData>
+            <texPath>Things/Building/Linked/SW_GlitterGlassWall</texPath>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>1</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
             </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>3</glowRadius>
+                <colorPickerEnabled>true</colorPickerEnabled>
+            </li>
+            <li Class="StevesWalls.CompProperties_AlertEffects" />
         </comps>
     </ThingDef>
 
@@ -53,6 +70,29 @@
         </comps>
     </ThingDef>
 
+    <!--========================= Blue Alert Glitter-Glass Wall =============================-->
+
+    <ThingDef ParentName="SW_NormalAlertGlitterGlassWallBase">
+        <defName>SW_BlueAlertGlitterGlassWall</defName>
+        <label>blue alert glitter glass wall</label>
+        <graphicData>
+            <texPath>Things/Building/Linked/SW_GlitterGlassWall/Blue</texPath>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>1</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>3</glowRadius>
+                <glowColor>(0,183,255)</glowColor>
+            </li>
+            <li Class="StevesWalls.CompProperties_AlertEffects" />
+        </comps>
+    </ThingDef>
+
     <!--========================= Green Glitter-Glass Wall =============================-->
 
     <ThingDef ParentName="SW_NormalGlitterGlassWallBase">
@@ -72,6 +112,29 @@
                 <glowRadius>3</glowRadius>
                 <glowColor>(0,235,86)</glowColor>
             </li>
+        </comps>
+    </ThingDef>
+
+    <!--========================= Green Alert Glitter-Glass Wall =============================-->
+
+    <ThingDef ParentName="SW_NormalAlertGlitterGlassWallBase">
+        <defName>SW_GreenAlertGlitterGlassWall</defName>
+        <label>green alert glitter glass wall</label>
+        <graphicData>
+            <texPath>Things/Building/Linked/SW_GlitterGlassWall/Green</texPath>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>1</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>3</glowRadius>
+                <glowColor>(0,235,86)</glowColor>
+            </li>
+            <li Class="StevesWalls.CompProperties_AlertEffects" />
         </comps>
     </ThingDef>
 
@@ -97,6 +160,29 @@
         </comps>
     </ThingDef>
 
+    <!--========================= Yellow Alert Glitter-Glass Wall =============================-->
+
+    <ThingDef ParentName="SW_NormalAlertGlitterGlassWallBase">
+        <defName>SW_YellowAlertGlitterGlassWall</defName>
+        <label>yellow alert glitter glass wall</label>
+        <graphicData>
+            <texPath>Things/Building/Linked/SW_GlitterGlassWall/Yellow</texPath>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>1</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>3</glowRadius>
+                <glowColor>(226,233,28)</glowColor>
+            </li>
+            <li Class="StevesWalls.CompProperties_AlertEffects" />
+        </comps>
+    </ThingDef>
+
     <!--========================= Orange Glitter-Glass Wall =============================-->
 
     <ThingDef ParentName="SW_NormalGlitterGlassWallBase">
@@ -116,6 +202,29 @@
                 <glowRadius>3</glowRadius>
                 <glowColor>(236,121,14)</glowColor>
             </li>
+        </comps>
+    </ThingDef>
+
+    <!--========================= Orange Alert Glitter-Glass Wall =============================-->
+
+    <ThingDef ParentName="SW_NormalAlertGlitterGlassWallBase">
+        <defName>SW_OrangeAlertGlitterGlassWall</defName>
+        <label>orange alert glitter glass wall</label>
+        <graphicData>
+            <texPath>Things/Building/Linked/SW_GlitterGlassWall/Orange</texPath>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>1</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>3</glowRadius>
+                <glowColor>(236,121,14)</glowColor>
+            </li>
+            <li Class="StevesWalls.CompProperties_AlertEffects" />
         </comps>
     </ThingDef>
 
@@ -141,6 +250,29 @@
         </comps>
     </ThingDef>
 
+    <!--========================= Red Alert Glitter-Glass Wall =============================-->
+
+    <ThingDef ParentName="SW_NormalAlertGlitterGlassWallBase">
+        <defName>SW_RedAlertGlitterGlassWall</defName>
+        <label>red alert glitter glass wall</label>
+        <graphicData>
+            <texPath>Things/Building/Linked/SW_GlitterGlassWall/Red</texPath>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>1</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>3</glowRadius>
+                <glowColor>(236,21,41)</glowColor>
+            </li>
+            <li Class="StevesWalls.CompProperties_AlertEffects" />
+        </comps>
+    </ThingDef>
+
     <!--========================= Pink Glitter-Glass Wall =============================-->
 
     <ThingDef ParentName="SW_NormalGlitterGlassWallBase">
@@ -163,6 +295,29 @@
         </comps>
     </ThingDef>
 
+    <!--========================= Pink Alert Glitter-Glass Wall =============================-->
+
+    <ThingDef ParentName="SW_NormalAlertGlitterGlassWallBase">
+        <defName>SW_PinkAlertGlitterGlassWall</defName>
+        <label>pink alert glitter glass wall</label>
+        <graphicData>
+            <texPath>Things/Building/Linked/SW_GlitterGlassWall/Pink</texPath>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>1</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>3</glowRadius>
+                <glowColor>(235,15,147)</glowColor>
+            </li>
+            <li Class="StevesWalls.CompProperties_AlertEffects" />
+        </comps>
+    </ThingDef>
+
     <!--========================= Purple Glitter-Glass Wall =============================-->
 
     <ThingDef ParentName="SW_NormalGlitterGlassWallBase">
@@ -182,6 +337,29 @@
                 <glowRadius>3</glowRadius>
                 <glowColor>(166,14,236)</glowColor>
             </li>
+        </comps>
+    </ThingDef>
+
+    <!--========================= Purple Alert Glitter-Glass Wall =============================-->
+
+    <ThingDef ParentName="SW_NormalAlertGlitterGlassWallBase">
+        <defName>SW_PurpleAlertGlitterGlassWall</defName>
+        <label>purple alert glitter glass wall</label>
+        <graphicData>
+            <texPath>Things/Building/Linked/SW_GlitterGlassWall/Purple</texPath>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>1</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>3</glowRadius>
+                <glowColor>(166,14,236)</glowColor>
+            </li>
+            <li Class="StevesWalls.CompProperties_AlertEffects" />
         </comps>
     </ThingDef>
 
