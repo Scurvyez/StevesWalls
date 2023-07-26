@@ -1,4 +1,5 @@
-﻿using RimWorld;
+﻿using HarmonyLib;
+using RimWorld;
 using System.Collections.Generic;
 using UnityEngine;
 using Verse;
@@ -10,9 +11,7 @@ namespace StevesWalls
     {
         public CompProperties_AlertEffects Props => (CompProperties_AlertEffects)props;
         private CompGlower glowerComp;
-        private Color exGraphicColor;
         private Effecter alertEffect;
-        private FleckDef alertFleckDef;
         private int ticksUntilNextAlert = 0;
         private const int AlertIntervalTicks = 120; // Adjust this value as needed
 
@@ -20,7 +19,6 @@ namespace StevesWalls
         {
             base.PostSpawnSetup(respawningAfterLoad);
             glowerComp = parent.GetComp<CompGlower>();
-            alertFleckDef = SW_DefOf.SW_WallAlertFleck;
         }
 
         public override void CompTick()
@@ -29,12 +27,6 @@ namespace StevesWalls
 
             if (glowerComp != null && glowerComp.Glows)
             {
-                exGraphicColor = glowerComp.GlowColor.ToColor;
-                Log.Message($"glow color: {exGraphicColor}");
-                alertFleckDef.graphicData.colorTwo = exGraphicColor;
-                alertFleckDef.graphicData.colorTwo.a = 1f;
-                Log.Message($"alert color: {alertFleckDef.graphicData.colorTwo}");
-
                 // Decrement the ticksUntilNextAlert by one on each tick
                 if (ticksUntilNextAlert > 0)
                 {
@@ -81,7 +73,6 @@ namespace StevesWalls
         {
             alertEffect = SW_DefOf.SW_WallAlert.Spawn();
             alertEffect.Trigger(parent, parent);
-
             StopEmitting();
         }
 

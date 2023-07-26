@@ -20,6 +20,7 @@
             </li>
             <li Class="CompProperties_Glower">
                 <glowRadius>3</glowRadius>
+                <glowColor>(0, 255, 123, 0.5)</glowColor>
                 <colorPickerEnabled>true</colorPickerEnabled>
             </li>
             <li Class="StevesWalls.CompProperties_AlertEffects">

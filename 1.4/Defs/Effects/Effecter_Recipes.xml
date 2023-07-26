@@ -28,7 +28,7 @@
         <graphicData>
             <graphicClass>Graphic_FleckPulse</graphicClass>
             <texPath>Effects/AlertEffect</texPath>
-            <color>(0.65, 0.65, 0.15, 0.6)</color>
+            <color>(0.0, 0.82, 0.66, 0.75)</color>
             <shaderType>MoteGlowPulse</shaderType>
             <shaderParameters>
                 <_Interval>0.475</_Interval>
