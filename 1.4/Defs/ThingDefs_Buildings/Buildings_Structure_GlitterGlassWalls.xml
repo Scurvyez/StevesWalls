@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <!--========================= Glitter Glass Wall =============================-->
+    <!--========================= Glitter-Glass Wall =============================-->
 
     <ThingDef ParentName="SW_NormalGlitterGlassWallBase">
         <defName>SW_NormalGlitterGlassWall</defName>
@@ -23,11 +23,11 @@
         </comps>
     </ThingDef>
 
-    <!--========================= Alert Glitter Glass Wall =============================-->
+    <!--========================= Alert Glitter-Glass Wall =============================-->
 
     <ThingDef ParentName="SW_NormalAlertGlitterGlassWallBase">
         <defName>SW_NormalAlertGlitterGlassWall</defName>
-        <label>alert glitter glass wall</label>
+        <label>(Alert) glitter glass wall</label>
         <graphicData>
             <texPath>Things/Building/Linked/SW_GlitterGlassWall</texPath>
         </graphicData>
@@ -46,13 +46,12 @@
         </comps>
     </ThingDef>
 
-    <!-- LEGACY STUFF APPLIED FOR 1.4 :) -->
-
     <!--========================= Blue Glitter-Glass Wall =============================-->
 
     <ThingDef ParentName="SW_NormalGlitterGlassWallBase">
         <defName>SW_BlueGlitterGlassWall</defName>
         <label>blue glitter glass wall</label>
+        <uiIconPath>Things/Building/Linked/Icons/SW_BlueGlitterGlassWall_MenuIcon</uiIconPath>
         <graphicData>
             <texPath>Things/Building/Linked/SW_GlitterGlassWall/Blue</texPath>
         </graphicData>
@@ -74,7 +73,8 @@
 
     <ThingDef ParentName="SW_NormalAlertGlitterGlassWallBase">
         <defName>SW_BlueAlertGlitterGlassWall</defName>
-        <label>blue alert glitter glass wall</label>
+        <label>(Alert) blue glitter glass wall</label>
+        <uiIconPath>Things/Building/Linked/Icons/SW_BlueGlitterGlassWall_MenuIcon</uiIconPath>
         <graphicData>
             <texPath>Things/Building/Linked/SW_GlitterGlassWall/Blue</texPath>
         </graphicData>
@@ -98,6 +98,7 @@
     <ThingDef ParentName="SW_NormalGlitterGlassWallBase">
         <defName>SW_GreenGlitterGlassWall</defName>
         <label>green glitter glass wall</label>
+        <uiIconPath>Things/Building/Linked/Icons/SW_GreenGlitterGlassWall_MenuIcon</uiIconPath>
         <graphicData>
             <texPath>Things/Building/Linked/SW_GlitterGlassWall/Green</texPath>
         </graphicData>
@@ -119,7 +120,8 @@
 
     <ThingDef ParentName="SW_NormalAlertGlitterGlassWallBase">
         <defName>SW_GreenAlertGlitterGlassWall</defName>
-        <label>green alert glitter glass wall</label>
+        <label>(Alert) green glitter glass wall</label>
+        <uiIconPath>Things/Building/Linked/Icons/SW_GreenGlitterGlassWall_MenuIcon</uiIconPath>
         <graphicData>
             <texPath>Things/Building/Linked/SW_GlitterGlassWall/Green</texPath>
         </graphicData>
@@ -143,6 +145,7 @@
     <ThingDef ParentName="SW_NormalGlitterGlassWallBase">
         <defName>SW_YellowGlitterGlassWall</defName>
         <label>yellow glitter glass wall</label>
+        <uiIconPath>Things/Building/Linked/Icons/SW_YellowGlitterGlassWall_MenuIcon</uiIconPath>
         <graphicData>
             <texPath>Things/Building/Linked/SW_GlitterGlassWall/Yellow</texPath>
         </graphicData>
@@ -164,7 +167,8 @@
 
     <ThingDef ParentName="SW_NormalAlertGlitterGlassWallBase">
         <defName>SW_YellowAlertGlitterGlassWall</defName>
-        <label>yellow alert glitter glass wall</label>
+        <label>(Alert) yellow glitter glass wall</label>
+        <uiIconPath>Things/Building/Linked/Icons/SW_YellowGlitterGlassWall_MenuIcon</uiIconPath>
         <graphicData>
             <texPath>Things/Building/Linked/SW_GlitterGlassWall/Yellow</texPath>
         </graphicData>
@@ -188,6 +192,7 @@
     <ThingDef ParentName="SW_NormalGlitterGlassWallBase">
         <defName>SW_OrangeGlitterGlassWall</defName>
         <label>orange glitter glass wall</label>
+        <uiIconPath>Things/Building/Linked/Icons/SW_OrangeGlitterGlassWall_MenuIcon</uiIconPath>
         <graphicData>
             <texPath>Things/Building/Linked/SW_GlitterGlassWall/Orange</texPath>
         </graphicData>
@@ -209,7 +214,8 @@
 
     <ThingDef ParentName="SW_NormalAlertGlitterGlassWallBase">
         <defName>SW_OrangeAlertGlitterGlassWall</defName>
-        <label>orange alert glitter glass wall</label>
+        <label>(Alert) orange glitter glass wall</label>
+        <uiIconPath>Things/Building/Linked/Icons/SW_OrangeGlitterGlassWall_MenuIcon</uiIconPath>
         <graphicData>
             <texPath>Things/Building/Linked/SW_GlitterGlassWall/Orange</texPath>
         </graphicData>
@@ -233,6 +239,7 @@
     <ThingDef ParentName="SW_NormalGlitterGlassWallBase">
         <defName>SW_RedGlitterGlassWall</defName>
         <label>red glitter glass wall</label>
+        <uiIconPath>Things/Building/Linked/Icons/SW_RedGlitterGlassWall_MenuIcon</uiIconPath>
         <graphicData>
             <texPath>Things/Building/Linked/SW_GlitterGlassWall/Red</texPath>
         </graphicData>
@@ -254,7 +261,8 @@
 
     <ThingDef ParentName="SW_NormalAlertGlitterGlassWallBase">
         <defName>SW_RedAlertGlitterGlassWall</defName>
-        <label>red alert glitter glass wall</label>
+        <label>(Alert) red glitter glass wall</label>
+        <uiIconPath>Things/Building/Linked/Icons/SW_RedGlitterGlassWall_MenuIcon</uiIconPath>
         <graphicData>
             <texPath>Things/Building/Linked/SW_GlitterGlassWall/Red</texPath>
         </graphicData>
@@ -278,6 +286,7 @@
     <ThingDef ParentName="SW_NormalGlitterGlassWallBase">
         <defName>SW_PinkGlitterGlassWall</defName>
         <label>pink glitter glass wall</label>
+        <uiIconPath>Things/Building/Linked/Icons/SW_PinkGlitterGlassWall_MenuIcon</uiIconPath>
         <graphicData>
             <texPath>Things/Building/Linked/SW_GlitterGlassWall/Pink</texPath>
         </graphicData>
@@ -299,7 +308,8 @@
 
     <ThingDef ParentName="SW_NormalAlertGlitterGlassWallBase">
         <defName>SW_PinkAlertGlitterGlassWall</defName>
-        <label>pink alert glitter glass wall</label>
+        <label>(Alert) pink glitter glass wall</label>
+        <uiIconPath>Things/Building/Linked/Icons/SW_PinkGlitterGlassWall_MenuIcon</uiIconPath>
         <graphicData>
             <texPath>Things/Building/Linked/SW_GlitterGlassWall/Pink</texPath>
         </graphicData>
@@ -323,6 +333,7 @@
     <ThingDef ParentName="SW_NormalGlitterGlassWallBase">
         <defName>SW_PurpleGlitterGlassWall</defName>
         <label>purple glitter glass wall</label>
+        <uiIconPath>Things/Building/Linked/Icons/SW_PurpleGlitterGlassWall_MenuIcon</uiIconPath>
         <graphicData>
             <texPath>Things/Building/Linked/SW_GlitterGlassWall/Purple</texPath>
         </graphicData>
@@ -344,7 +355,8 @@
 
     <ThingDef ParentName="SW_NormalAlertGlitterGlassWallBase">
         <defName>SW_PurpleAlertGlitterGlassWall</defName>
-        <label>purple alert glitter glass wall</label>
+        <label>(Alert) purple glitter glass wall</label>
+        <uiIconPath>Things/Building/Linked/Icons/SW_PurpleGlitterGlassWall_MenuIcon</uiIconPath>
         <graphicData>
             <texPath>Things/Building/Linked/SW_GlitterGlassWall/Purple</texPath>
         </graphicData>

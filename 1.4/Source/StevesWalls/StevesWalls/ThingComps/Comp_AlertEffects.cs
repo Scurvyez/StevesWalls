@@ -26,7 +26,7 @@ namespace StevesWalls
         public override void PostExposeData()
         {
             base.PostExposeData();
-            Scribe_Values.Look(ref ticksUntilNextAlert, "ticksUntilNextAlert", 0);
+            Scribe_Values.Look(ref ticksUntilNextAlert, "ticksUntilNextAlert", ticksUntilNextAlert);
         }
 
         public override void CompTick()
@@ -65,7 +65,7 @@ namespace StevesWalls
 
                 foreach (IAttackTarget target in targets)
                 {
-                    if (target is Pawn pawn)
+                    if (target is Pawn pawn && !pawn.Fogged())
                     {
                         if (pawn.health != null && !pawn.health.Dead && !pawn.Downed)
                         {

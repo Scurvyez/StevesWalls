@@ -8,4 +8,6 @@
     <SW_AlertPulseIntensity>Pulse Intensity: {0}</SW_AlertPulseIntensity>
     <SW_AlertPulseIntensityDesc>Adjust the slider to either increase or decrease the intensity (brightness, alpha channel) of the alert wall pulse effect.</SW_AlertPulseIntensityDesc>
 
+    
+
 </LanguageData>

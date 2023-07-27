@@ -70,7 +70,7 @@
 
     <ThingDef ParentName="SW_GlitterGlassWallBase" Name="SW_NormalGlitterGlassWallBase" Abstract="True">
         <designatorDropdown>SW_GlitterGlassWall</designatorDropdown>
-        <uiIconPath>Things/Building/Linked/SW_GlitterGlassWall_MenuIcon</uiIconPath> <!-- DEFINE THESE IN THE INDIVIDUAL WALL DEFS SO THEY ARE COLORED -->
+        <uiIconPath>Things/Building/Linked/Icons/SW_GlitterGlassWall_MenuIcon</uiIconPath> <!-- DEFINE THESE IN THE INDIVIDUAL WALL DEFS SO THEY ARE COLORED -->
         <building>
             <blueprintGraphicData>
                 <texPath>Things/Building/Linked/SW_GlitterGlassWall_Blueprint_Atlas</texPath>
@@ -80,28 +80,30 @@
 
     <!--========================= Normal Alert Glitter Glass Wall Base =============================-->
 
-    <ThingDef ParentName="SW_GlitterGlassWallBase" Name="SW_NormalAlertGlitterGlassWallBase" Abstract="True">
+    <ThingDef ParentName="SW_NormalGlitterGlassWallBase" Name="SW_NormalAlertGlitterGlassWallBase" Abstract="True">
+        <description>Structurally and visually the same as there base variants, these walls will also however, emit a visual pulse when enemies are nearby.</description>
         <drawerType>MapMeshAndRealTime</drawerType>
         <tickerType>Normal</tickerType>
-        <designatorDropdown>SW_AlertGlitterGlassWall</designatorDropdown>
-        <uiIconPath>Things/Building/Linked/SW_GlitterGlassWall_MenuIcon</uiIconPath>
-        <building>
-            <blueprintGraphicData>
-                <texPath>Things/Building/Linked/SW_GlitterGlassWall_Blueprint_Atlas</texPath>
-            </blueprintGraphicData>
-        </building>
     </ThingDef>
 
     <!--========================= Rounded Glitter Glass Wall Base =============================-->
 
     <ThingDef ParentName="SW_GlitterGlassWallBase" Name="SW_RoundedGlitterGlassWallBase" Abstract="True">
         <designatorDropdown>SW_RoundedGlitterGlassWall</designatorDropdown>
-        <uiIconPath>Things/Building/Linked/SW_RoundedGlitterGlassWall_MenuIcon</uiIconPath>
+        <uiIconPath>Things/Building/Linked/Icons/SW_RoundedGlitterGlassWall_MenuIcon</uiIconPath>
         <building>
             <blueprintGraphicData>
                 <texPath>Things/Building/Linked/SW_RoundedGlitterGlassWall_Blueprint_Atlas</texPath>
             </blueprintGraphicData>
         </building>
+    </ThingDef>
+
+    <!--========================= Rounded Alert Glitter Glass Wall Base =============================-->
+
+    <ThingDef ParentName="SW_RoundedGlitterGlassWallBase" Name="SW_RoundedAlertGlitterGlassWallBase" Abstract="True">
+        <description>Structurally and visually the same as there base variants, these walls will also however, emit a visual pulse when enemies are nearby.</description>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <tickerType>Normal</tickerType>
     </ThingDef>
 
 </Defs>

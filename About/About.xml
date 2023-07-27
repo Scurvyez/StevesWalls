@@ -13,6 +13,7 @@
     <description>
 O.o + Scurvyez + o.O
 
+1.4 Support Only Now
 This mod adds several new glowing walls to the game.
 
 ~ Must be unlocked via research
@@ -24,46 +25,5 @@ This mod adds several new glowing walls to the game.
 ~ New, clear walls with the 1.4 color picker enables for colored glow
 ~ Legacy pre-colored walls still here as well
     </description>
-
-    <!--
-        TO-DO
-            + [DONE] info graphics for steam page
-                - for walls
-                    + types, colors, flickable on/off, power, color picker
-                - for synthesizer
-                - for printer
-            
-            + Compat for Diagonal Walls?
-
-            + [DONE] fix the texture saving issue -_-
-
-            + [DONE] glitter glass panes resource
-                - [DONE] textures
-                - [DONE] xml
-
-            + [DONE] glitter glass powder resource
-                - [DONE] textures
-                - [DONE] xml
-                - [DONE] fill new workbench with a full drum?
-
-            + [DONE] workbench to make the glitter glass panes (Printer)
-                - [DONE] change location of unfinished product when crafting
-                - [DONE] graphics for...
-                    - [DONE] off
-                    - [DONE] on
-                    - [DONE] on and in use
-
-            + [DONE] workbench to make the glass powder (Synthesizer)
-                - [DONE] change location of unfinished product when crafting
-                - [DONE] graphics for...
-                    - [DONE] off
-                    - [DONE] on
-
-            + [DONE] balance wall HP and rest of stats?
-
-            + [DONE] make walls actually require being built out of glitter glass
-
-            + [OPTIONAL] new motes / flecks for workbenches and the walls themselves?
-    -->
 
 </ModMetaData>
