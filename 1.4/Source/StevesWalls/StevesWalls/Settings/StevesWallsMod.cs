@@ -32,10 +32,17 @@ namespace StevesWalls
             list.Label("<color=#4494E3FF>Alert Walls</color>");
             list.Gap(3.00f);
 
-            float sliderValue = settings._alertPulseIntensity;
-            string sliderValueText = sliderValue.ToString("F2"); // Convert the slider value to a string with two decimal places
-            list.Label(label: "SW_AlertPulseIntensity".Translate(sliderValueText), tooltip: "SW_AlertPulseIntensityDesc".Translate());
+            list.CheckboxLabeled("SW_SyncPulseAlert".Translate(), ref settings._syncAlertPulse, "SW_SyncPulseAlertDesc".Translate());
+
+            float pulseIntensitySlider = settings._alertPulseIntensity;
+            string pulseIntensitySliderText = pulseIntensitySlider.ToString("F2"); // Convert the slider value to a string with two decimal places
+            list.Label(label: "SW_AlertPulseIntensity".Translate(pulseIntensitySliderText), tooltip: "SW_AlertPulseIntensityDesc".Translate());
             settings._alertPulseIntensity = list.Slider(settings._alertPulseIntensity, 0f, 1f);
+
+            float pulseInteravlSlider = settings._alertPulseInterval;
+            string pulseInteravlSliderText = pulseInteravlSlider.ToString("F0"); // Convert the slider value to a string with two decimal places
+            list.Label(label: "SW_AlertPulseInterval".Translate(pulseInteravlSliderText), tooltip: "SW_AlertPulseIntervalDesc".Translate());
+            settings._alertPulseInterval = (int)list.Slider(settings._alertPulseInterval, 60, 720);
 
             list.End();
         }

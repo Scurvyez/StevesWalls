@@ -8,6 +8,10 @@
     <SW_AlertPulseIntensity>Pulse Intensity: {0}</SW_AlertPulseIntensity>
     <SW_AlertPulseIntensityDesc>Adjust the slider to either increase or decrease the intensity (brightness, alpha channel) of the alert wall pulse effect.</SW_AlertPulseIntensityDesc>
 
-    
+    <SW_AlertPulseInterval>Pulse Interval: {0}</SW_AlertPulseInterval>
+    <SW_AlertPulseIntervalDesc>Adjust the slider to either increase or decrease the interval (time between pulses) of the alert wall pulse effect.</SW_AlertPulseIntervalDesc>
+
+    <SW_SyncPulseAlert>Sync Pulse Effect</SW_SyncPulseAlert>
+    <SW_SyncPulseAlertDesc>Turning this off will ensure the individual wall sections pulse at their own timing intervals.</SW_SyncPulseAlertDesc>
 
 </LanguageData>

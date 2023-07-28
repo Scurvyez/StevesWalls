@@ -15,7 +15,7 @@ namespace StevesWalls
         private Color glowerColor;
         private Effecter alertEffect;
         private int ticksUntilNextAlert = 0;
-        private int alertIntervalTicks = 120;
+        private int alertIntervalTicks = StevesWallsSettings.AlertPulseInterval;
 
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
@@ -26,7 +26,7 @@ namespace StevesWalls
         public override void PostExposeData()
         {
             base.PostExposeData();
-            Scribe_Values.Look(ref ticksUntilNextAlert, "ticksUntilNextAlert", ticksUntilNextAlert);
+            Scribe_Values.Look(ref ticksUntilNextAlert, "ticksUntilNextAlert", 0);
         }
 
         public override void CompTick()
@@ -49,7 +49,15 @@ namespace StevesWalls
                     if (ShouldPulse())
                     {
                         Emit();
-                        ticksUntilNextAlert = alertIntervalTicks;
+                        if (StevesWallsSettings.SyncAlertPulse)
+                        {
+                            ticksUntilNextAlert = alertIntervalTicks;
+                        }
+                        else
+                        {
+                            ticksUntilNextAlert = (int)(parent.GetHashCode() / 1.15f) / alertIntervalTicks;
+                        }
+                        Log.Message("Parent Hash: " + (int)(parent.GetHashCode() / 1.15f));
                     }
                 }
             }
