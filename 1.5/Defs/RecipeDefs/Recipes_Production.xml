@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--========================= Make Glitter Glass Powder =============================-->
+
+    <!-- <RecipeDef>
+        <defName>Make_GlitterGlassPowder</defName>
+        <label>make glitter glass powder</label>
+        <description>Synthesize glitter glass powder.</description>
+        <jobString>Synthesizing glitter glass powder.</jobString>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>SW_3DPrinting</effectWorking>
+        <workAmount>250</workAmount>
+        <unfinishedThingDef>SW_UnfinishedGlitterGlassPowder</unfinishedThingDef>
+        <ingredients> --> <!-- IF WE ADD SOMETHING HERE, ADD IT TO THE fixedIngredientFilter AS WELL -->
+            <!-- <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+            <li>
+                <filter>
+                    <categories>
+                        <li>StoneChunks</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+            </thingDefs>
+            <categories>
+                <li>StoneChunks</li>
+            </categories>
+        </fixedIngredientFilter>
+        <products>
+            <SW_GlitterGlassPowder>1</SW_GlitterGlassPowder>
+        </products>
+        <researchPrerequisite>Fabrication</researchPrerequisite>
+        <skillRequirements>
+            <Crafting>6</Crafting>
+        </skillRequirements>
+        <workSkill>Crafting</workSkill>
+        <displayPriority>10</displayPriority>
+    </RecipeDef> -->
+
+    <!--========================= Make Glitter Glass Sheet =============================-->
+
+    <!-- <RecipeDef>
+        <defName>Make_GlitterGlassSheet</defName>
+        <label>make glitter glass sheets</label>
+        <description>Print a sheet of glitter glass.</description>
+        <jobString>Printing glitter glass.</jobString>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>SW_3DPrinting</effectWorking>
+        <workAmount>500</workAmount>
+        <unfinishedThingDef>SW_UnfinishedGlitterGlassSheet</unfinishedThingDef>
+        <ingredients> --> <!-- IF WE ADD SOMETHING HERE, ADD IT TO THE fixedIngredientFilter AS WELL -->
+            <!-- <li>
+                <filter>
+                    <thingDefs>
+                        <li>SW_GlitterGlassPowder</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>SW_GlitterGlassPowder</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <SW_GlitterGlassSheet>1</SW_GlitterGlassSheet>
+        </products>
+        <researchPrerequisite>Fabrication</researchPrerequisite>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+        <workSkill>Crafting</workSkill>
+        <displayPriority>10</displayPriority>
+    </RecipeDef> -->
+
+</Defs>

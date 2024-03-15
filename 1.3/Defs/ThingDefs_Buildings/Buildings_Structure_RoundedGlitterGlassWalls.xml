@@ -7,7 +7,7 @@
         <defName>SW_BlueRoundedGlitterGlassWall</defName>
         <label>blue rounded glitter glass wall</label>
         <graphicData>
-            <texPath>Things/Building/Linked/SW_RoundedGlitterGlassWall/Blue</texPath>
+            <texPath>StevesWalls/Things/Building/Linked/SW_RoundedGlitterGlassWall/Blue</texPath>
         </graphicData>
         <comps>
             <li Class="CompProperties_Flickable"/>
@@ -29,7 +29,7 @@
         <defName>SW_GreenRoundedGlitterGlassWall</defName>
         <label>green rounded glitter glass wall</label>
         <graphicData>
-            <texPath>Things/Building/Linked/SW_RoundedGlitterGlassWall/Green</texPath>
+            <texPath>StevesWalls/Things/Building/Linked/SW_RoundedGlitterGlassWall/Green</texPath>
         </graphicData>
         <comps>
             <li Class="CompProperties_Flickable"/>
@@ -51,7 +51,7 @@
         <defName>SW_YellowRoundedGlitterGlassWall</defName>
         <label>yellow rounded glitter glass wall</label>
         <graphicData>
-            <texPath>Things/Building/Linked/SW_RoundedGlitterGlassWall/Yellow</texPath>
+            <texPath>StevesWalls/Things/Building/Linked/SW_RoundedGlitterGlassWall/Yellow</texPath>
         </graphicData>
         <comps>
             <li Class="CompProperties_Flickable"/>
@@ -73,7 +73,7 @@
         <defName>SW_OrangeRoundedGlitterGlassWall</defName>
         <label>orange rounded glitter glass wall</label>
         <graphicData>
-            <texPath>Things/Building/Linked/SW_RoundedGlitterGlassWall/Orange</texPath>
+            <texPath>StevesWalls/Things/Building/Linked/SW_RoundedGlitterGlassWall/Orange</texPath>
         </graphicData>
         <comps>
             <li Class="CompProperties_Flickable"/>
@@ -95,7 +95,7 @@
         <defName>SW_RedRoundedGlitterGlassWall</defName>
         <label>red rounded glitter glass wall</label>
         <graphicData>
-            <texPath>Things/Building/Linked/SW_RoundedGlitterGlassWall/Red</texPath>
+            <texPath>StevesWalls/Things/Building/Linked/SW_RoundedGlitterGlassWall/Red</texPath>
         </graphicData>
         <comps>
             <li Class="CompProperties_Flickable"/>
@@ -117,7 +117,7 @@
         <defName>SW_PinkRoundedGlitterGlassWall</defName>
         <label>pink rounded glitter glass wall</label>
         <graphicData>
-            <texPath>Things/Building/Linked/SW_RoundedGlitterGlassWall/Pink</texPath>
+            <texPath>StevesWalls/Things/Building/Linked/SW_RoundedGlitterGlassWall/Pink</texPath>
         </graphicData>
         <comps>
             <li Class="CompProperties_Flickable"/>
@@ -139,7 +139,7 @@
         <defName>SW_PurpleRoundedGlitterGlassWall</defName>
         <label>purple rounded glitter glass wall</label>
         <graphicData>
-            <texPath>Things/Building/Linked/SW_RoundedGlitterGlassWall/Purple</texPath>
+            <texPath>StevesWalls/Things/Building/Linked/SW_RoundedGlitterGlassWall/Purple</texPath>
         </graphicData>
         <comps>
             <li Class="CompProperties_Flickable"/>

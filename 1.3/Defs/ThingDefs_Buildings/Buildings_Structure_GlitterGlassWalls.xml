@@ -7,7 +7,7 @@
         <defName>SW_BlueGlitterGlassWall</defName>
         <label>blue glitter glass wall</label>
         <graphicData>
-            <texPath>Things/Building/Linked/SW_GlitterGlassWall/Blue</texPath>
+            <texPath>StevesWalls/Things/Building/Linked/SW_GlitterGlassWall/Blue</texPath>
         </graphicData>
         <comps>
             <li Class="CompProperties_Flickable"/>
@@ -29,7 +29,7 @@
         <defName>SW_GreenGlitterGlassWall</defName>
         <label>green glitter glass wall</label>
         <graphicData>
-            <texPath>Things/Building/Linked/SW_GlitterGlassWall/Green</texPath>
+            <texPath>StevesWalls/Things/Building/Linked/SW_GlitterGlassWall/Green</texPath>
         </graphicData>
         <comps>
             <li Class="CompProperties_Flickable"/>
@@ -51,7 +51,7 @@
         <defName>SW_YellowGlitterGlassWall</defName>
         <label>yellow glitter glass wall</label>
         <graphicData>
-            <texPath>Things/Building/Linked/SW_GlitterGlassWall/Yellow</texPath>
+            <texPath>StevesWalls/Things/Building/Linked/SW_GlitterGlassWall/Yellow</texPath>
         </graphicData>
         <comps>
             <li Class="CompProperties_Flickable"/>
@@ -73,7 +73,7 @@
         <defName>SW_OrangeGlitterGlassWall</defName>
         <label>orange glitter glass wall</label>
         <graphicData>
-            <texPath>Things/Building/Linked/SW_GlitterGlassWall/Orange</texPath>
+            <texPath>StevesWalls/Things/Building/Linked/SW_GlitterGlassWall/Orange</texPath>
         </graphicData>
         <comps>
             <li Class="CompProperties_Flickable"/>
@@ -95,7 +95,7 @@
         <defName>SW_RedGlitterGlassWall</defName>
         <label>red glitter glass wall</label>
         <graphicData>
-            <texPath>Things/Building/Linked/SW_GlitterGlassWall/Red</texPath>
+            <texPath>StevesWalls/Things/Building/Linked/SW_GlitterGlassWall/Red</texPath>
         </graphicData>
         <comps>
             <li Class="CompProperties_Flickable"/>
@@ -117,7 +117,7 @@
         <defName>SW_PinkGlitterGlassWall</defName>
         <label>pink glitter glass wall</label>
         <graphicData>
-            <texPath>Things/Building/Linked/SW_GlitterGlassWall/Pink</texPath>
+            <texPath>StevesWalls/Things/Building/Linked/SW_GlitterGlassWall/Pink</texPath>
         </graphicData>
         <comps>
             <li Class="CompProperties_Flickable"/>
@@ -139,7 +139,7 @@
         <defName>SW_PurpleGlitterGlassWall</defName>
         <label>purple glitter glass wall</label>
         <graphicData>
-            <texPath>Things/Building/Linked/SW_GlitterGlassWall/Purple</texPath>
+            <texPath>StevesWalls/Things/Building/Linked/SW_GlitterGlassWall/Purple</texPath>
         </graphicData>
         <comps>
             <li Class="CompProperties_Flickable"/>

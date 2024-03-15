@@ -3,7 +3,7 @@
 
     <!--========================= Glitter Glass Powder Resource =============================-->
 
-    <ThingDef ParentName="ResourceBase">
+    <!-- <ThingDef ParentName="ResourceBase">
         <defName>SW_GlitterGlassPowder</defName>
         <label>glitter glass powder</label>
         <description>An intricate mix of pulverized stone and steel, inbued with various hues via a crystalline lens.</description>
@@ -16,7 +16,7 @@
         <smeltable>false</smeltable>
         <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
         <graphicData>
-            <texPath>StevesWalls/Things/Item/Resource/GlitterGlassPowder</texPath>
+            <texPath>Things/Item/Resource/GlitterGlassPowder</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <thingCategories>
@@ -35,9 +35,9 @@
         </statBases>
         <stuffProps>
             <commonality>1.00</commonality>
-            <soundImpactStuff>BulletImpact_Metal</soundImpactStuff> <!-- MAKE A NEW ONE -->
-            <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp> <!-- MAKE A NEW ONE -->
-            <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt> <!-- MAKE A NEW ONE -->
+            <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+            <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
             <statFactors>
                 <MaxHitPoints>1</MaxHitPoints>
                 <Beauty>1</Beauty>
@@ -45,11 +45,11 @@
             </statFactors>
             <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
         </stuffProps>
-    </ThingDef>
+    </ThingDef> -->
 
     <!--========================= Glitter Glass Sheet Resource =============================-->
 
-    <ThingDef ParentName="ResourceBase">
+    <!-- <ThingDef ParentName="ResourceBase">
         <defName>SW_GlitterGlassSheet</defName>
         <label>glitter glass sheet</label>
         <description>An extremely durable and scratch-proof glitter-world glass variant.</description>
@@ -62,7 +62,7 @@
         <smeltable>false</smeltable>
         <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
         <graphicData>
-            <texPath>StevesWalls/Things/Item/Resource/GlitterGlassSheets</texPath>
+            <texPath>Things/Item/Resource/GlitterGlassSheets</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <thingCategories>
@@ -81,9 +81,9 @@
         </statBases>
         <stuffProps>
             <commonality>1.00</commonality>
-            <soundImpactStuff>BulletImpact_Metal</soundImpactStuff> <!-- MAKE A NEW ONE -->
-            <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp> <!-- MAKE A NEW ONE -->
-            <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt> <!-- MAKE A NEW ONE -->
+            <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+            <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
             <statFactors>
                 <MaxHitPoints>1</MaxHitPoints>
                 <Beauty>1</Beauty>
@@ -91,11 +91,11 @@
             </statFactors>
             <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
         </stuffProps>
-    </ThingDef>
+    </ThingDef> -->
 
     <!--========================= Unfinished Glitter Glass Powder =============================-->
 
-    <ThingDef ParentName="UnfinishedBase">
+    <!-- <ThingDef ParentName="UnfinishedBase">
         <defName>SW_UnfinishedGlitterGlassPowder</defName>
         <label>unfinished glitter glass powder</label>
         <description>An unfinished batch of glitter glass powder.</description>
@@ -104,15 +104,15 @@
             <Flammability>0.5</Flammability>
         </statBases>
         <graphicData>
-            <texPath>StevesWalls/Things/Building/Workbenches/Synthesizer/SW_GlitterGlassSynthesizerBlank</texPath>
+            <texPath>Things/Building/Workbenches/Synthesizer/SW_GlitterGlassSynthesizerBlank</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <stuffCategories Inherit="false" />
-    </ThingDef>
+    </ThingDef> -->
 
     <!--========================= Unfinished Glitter Glass Sheet =============================-->
 
-    <ThingDef ParentName="UnfinishedBase">
+    <!-- <ThingDef ParentName="UnfinishedBase">
         <defName>SW_UnfinishedGlitterGlassSheet</defName>
         <label>unfinished glitter glass sheet</label>
         <description>An unfinished sheet of glitter glass.</description>
@@ -121,10 +121,10 @@
             <Flammability>0.5</Flammability>
         </statBases>
         <graphicData>
-            <texPath>StevesWalls/Things/Building/Workbenches/Synthesizer/SW_GlitterGlassSynthesizerBlank</texPath>
+            <texPath>Things/Building/Workbenches/Synthesizer/SW_GlitterGlassSynthesizerBlank</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <stuffCategories Inherit="false" />
-    </ThingDef>
+    </ThingDef> -->
 
 </Defs>

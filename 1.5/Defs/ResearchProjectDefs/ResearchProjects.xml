@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ResearchProjectDef>
+        <defName>GlitterGlassResearch</defName>
+        <label>glitter glass</label>
+        <tab>GlitterGlass</tab>
+        <description>Glitter glass is like ballistic glass, capable of stopping anti-vehicle rounds, but prettier!</description>
+        <baseCost>2000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+			<li>Electricity</li>
+			<li>MicroelectronicsBasics</li>
+            <li>SterileMaterials</li>
+		</prerequisites>
+        <researchViewX>0.00</researchViewX>
+        <researchViewY>2.10</researchViewY>
+    </ResearchProjectDef>
+
+</Defs>

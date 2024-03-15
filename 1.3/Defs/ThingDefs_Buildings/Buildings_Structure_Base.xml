@@ -29,7 +29,7 @@
         <fertility>0</fertility>
         <designationHotKey>Misc3</designationHotKey>
         <designatorDropdown>SW_GlitterGlassWall</designatorDropdown>
-        <uiIconPath>Things/Building/Linked/SW_GlitterGlassWall_MenuIcon</uiIconPath>
+        <uiIconPath>StevesWalls/Things/Building/Linked/SW_GlitterGlassWall_MenuIcon</uiIconPath>
         <graphicData>
             <graphicClass>Graphic_Appearances</graphicClass>
             <linkType>CornerFiller</linkType>
@@ -71,10 +71,10 @@
 
     <ThingDef ParentName="SW_GlitterGlassWallBase" Name="SW_NormalGlitterGlassWallBase" Abstract="True">
         <designatorDropdown>SW_GlitterGlassWall</designatorDropdown>
-        <uiIconPath>Things/Building/Linked/SW_GlitterGlassWall_MenuIcon</uiIconPath>
+        <uiIconPath>StevesWalls/Things/Building/Linked/SW_GlitterGlassWall_MenuIcon</uiIconPath>
         <building>
             <blueprintGraphicData>
-                <texPath>Things/Building/Linked/SW_GlitterGlassWall_Blueprint_Atlas</texPath>
+                <texPath>StevesWalls/Things/Building/Linked/SW_GlitterGlassWall_Blueprint_Atlas</texPath>
             </blueprintGraphicData>
         </building>
     </ThingDef>
@@ -83,10 +83,10 @@
 
     <ThingDef ParentName="SW_GlitterGlassWallBase" Name="SW_RoundedGlitterGlassWallBase" Abstract="True">
         <designatorDropdown>SW_RoundedGlitterGlassWall</designatorDropdown>
-        <uiIconPath>Things/Building/Linked/SW_RoundedGlitterGlassWall_MenuIcon</uiIconPath>
+        <uiIconPath>StevesWalls/Things/Building/Linked/SW_RoundedGlitterGlassWall_MenuIcon</uiIconPath>
         <building>
             <blueprintGraphicData>
-                <texPath>Things/Building/Linked/SW_RoundedGlitterGlassWall_Blueprint_Atlas</texPath>
+                <texPath>StevesWalls/Things/Building/Linked/SW_RoundedGlitterGlassWall_Blueprint_Atlas</texPath>
             </blueprintGraphicData>
         </building>
     </ThingDef>

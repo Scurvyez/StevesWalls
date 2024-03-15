@@ -5,19 +5,20 @@
     <author>Scurvyez</author>
     <packageId>Scurvyez.StevesWalls</packageId>
     <supportedVersions>
-  	    <li>1.2</li>
         <li>1.3</li>
         <li>1.4</li>
+        <li>1.5</li>
     </supportedVersions>
+    <modIconPath>StevesWalls/modIcon</modIconPath>
 
     <description>
-O.o + Scurvyez + o.O
+Discord: steveo.o
 
-1.4 Support Only Now
 This mod adds several new glowing walls to the game.
 
 ~ Must be unlocked via research
 ~ Two types, rounded and squared
+~ (Alert) variants for each, a glowing pulse emits while enemies are around
 ~ Walls let light through
 ~ Walls require power to glow
 ~ 3-tile wide glow radius
