@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <ModMetaData>
-    <name>Steves Walls</name>
+    <name>Steve's Walls</name>
     <author>Scurvyez</author>
     <packageId>Scurvyez.StevesWalls</packageId>
     <supportedVersions>
@@ -12,8 +12,6 @@
     <modIconPath>StevesWalls/modIcon</modIconPath>
 
     <description>
-Discord: steveo.o
-
 This mod adds several new glowing walls to the game.
 
 ~ Must be unlocked via research
@@ -25,6 +23,8 @@ This mod adds several new glowing walls to the game.
 ~ Can be flicked on and off
 ~ New, clear walls with the 1.4 color picker enables for colored glow
 ~ Legacy pre-colored walls still here as well
+
+Discord: steveo.o
     </description>
 
 </ModMetaData>
