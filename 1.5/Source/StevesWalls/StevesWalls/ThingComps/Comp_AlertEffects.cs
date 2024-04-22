@@ -66,9 +66,9 @@ namespace StevesWalls
             {
                 foreach (IAttackTarget target in targets)
                 {
-                    if (target is Pawn pawn && !pawn.Fogged())
+                    if (target is Pawn pawn && !pawn.Fogged() && pawn.Map != null)
                     {
-                        if (pawn.health != null && !pawn.health.Dead && !pawn.Downed)
+                        if (!pawn.health.Dead && !pawn.Downed)
                         {
                             return true;
                         }
@@ -93,13 +93,12 @@ namespace StevesWalls
                 {
                     foreach (IAttackTarget target in targets)
                     {
-                        if (target is Pawn pawn && pawn != null)
+                        if (target is Pawn pawn && !pawn.Fogged())
                         {
-                            Log.Message($"Target: {pawn.def.defName}, faction: {pawn.Faction.def}");
-
-                            if (pawn.MentalStateDef == MentalStateDefOf.Manhunter
+                            if (pawn.MentalStateDef != null
+                                && (pawn.MentalStateDef == MentalStateDefOf.Manhunter
                                 || pawn.MentalStateDef == MentalStateDefOf.ManhunterBloodRain
-                                || pawn.MentalStateDef == MentalStateDefOf.ManhunterPermanent)
+                                || pawn.MentalStateDef == MentalStateDefOf.ManhunterPermanent))
                             {
                                 Color manHunterCol = new();
                                 manHunterCol = StevesWallsSettings.AlertColorManhunter;
@@ -139,20 +138,9 @@ namespace StevesWalls
                         }
                     }
                 }
-                
-                if (colors.Count > 0)
-                {
-                    // Calculate the average color component values
-                    float avgR = colors.Average(c => c.r);
-                    float avgG = colors.Average(c => c.g);
-                    float avgB = colors.Average(c => c.b);
-                    float avgA = colors.Average(c => c.a);
 
-                    // Create a new color using the average component values
-                    Color averageColor = new Color(avgR, avgG, avgB, avgA);
-
-                    alertEffect.children[0].def.color = averageColor;
-                }
+                Color blendedColor = ColorBlenderUtil.BlendColors(colors);
+                alertEffect.children[0].def.color = blendedColor;
 
                 alertEffect.children[0].def.color.a = StevesWallsSettings.AlertPulseIntensity;
                 alertEffect.Trigger(parent, parent, -1);
