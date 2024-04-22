@@ -79,6 +79,14 @@ namespace StevesWalls
             }
         }
 
+        public static Color AlertColorTribalsFaction
+        {
+            get
+            {
+                return _instance._alertColorTribalsFaction;
+            }
+        }
+
         public int _alertPulseInterval = 120;
         public bool _useThreatSpecificAlertColors = false;
         public float _alertPulseIntensity = 0.5f;
@@ -88,7 +96,8 @@ namespace StevesWalls
         public Color _alertColorInsectFaction = Color.white;
         public Color _alertColorEntitiesFaction = Color.white;
         public Color _alertColorPiratesFaction = Color.white;
-        
+        public Color _alertColorTribalsFaction = Color.white;
+
         public StevesWallsSettings()
         {
             _instance = this;
@@ -106,6 +115,7 @@ namespace StevesWalls
             Scribe_Values.Look(ref _alertColorInsectFaction, "alertColorInsectFaction", Color.white);
             Scribe_Values.Look(ref _alertColorEntitiesFaction, "alertColorEntitiesFaction", Color.white);
             Scribe_Values.Look(ref _alertColorPiratesFaction, "alertColorPiratesFaction", Color.white);
+            Scribe_Values.Look(ref _alertColorTribalsFaction, "alertColorTribalsFaction", Color.white);
         }
     }
 }

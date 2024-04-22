@@ -4,7 +4,6 @@ using Verse;
 using Verse.AI;
 using System;
 using RimWorld;
-using System.Linq;
 
 namespace StevesWalls
 {
@@ -95,45 +94,63 @@ namespace StevesWalls
                     {
                         if (target is Pawn pawn && !pawn.Fogged())
                         {
-                            if (pawn.MentalStateDef != null
-                                && (pawn.MentalStateDef == MentalStateDefOf.Manhunter
+                            if (pawn.Faction == null)
+                            {
+                                if (pawn.MentalStateDef == MentalStateDefOf.Manhunter
                                 || pawn.MentalStateDef == MentalStateDefOf.ManhunterBloodRain
-                                || pawn.MentalStateDef == MentalStateDefOf.ManhunterPermanent))
-                            {
-                                Color manHunterCol = new();
-                                manHunterCol = StevesWallsSettings.AlertColorManhunter;
-                                colors.Add(manHunterCol);
+                                || pawn.MentalStateDef == MentalStateDefOf.ManhunterPermanent)
+                                {
+                                    Color manHunterCol = new();
+                                    manHunterCol = StevesWallsSettings.AlertColorManhunter;
+                                    colors.Add(manHunterCol);
+                                }
+                                continue;
                             }
-                            if (pawn.Faction.def == FactionDefOf.AncientsHostile)
+                            else
                             {
-                                Color humanlikeCol = new();
-                                humanlikeCol = StevesWallsSettings.AlertColorAncientsFaction;
-                                colors.Add(humanlikeCol);
-                            }
-                            if (pawn.Faction.def == FactionDefOf.Mechanoid)
-                            {
-                                Color mechCol = new();
-                                mechCol = StevesWallsSettings.AlertColorMechFaction;
-                                colors.Add(mechCol);
-                            }
-                            if (pawn.Faction.def == FactionDefOf.Insect)
-                            {
-                                Color insectCol = new();
-                                insectCol = StevesWallsSettings.AlertColorInsectFaction;
-                                colors.Add(insectCol);
-                            }
-                            if (pawn.Faction.def == FactionDefOf.Entities)
-                            {
-                                Color entitiesCol = new();
-                                entitiesCol = StevesWallsSettings.AlertColorEntitiesFaction;
-                                colors.Add(entitiesCol);
-                            }
-                            if (pawn.Faction.def == FactionDefOf.Pirate
-                                || pawn.Faction.def == FactionDefOf.PirateWaster)
-                            {
-                                Color piratesCol = new();
-                                piratesCol = StevesWallsSettings.AlertColorPiratesFaction;
-                                colors.Add(piratesCol);
+                                if (pawn.Faction.def == FactionDefOf.TribeCivil
+                                    || pawn.Faction.def == FactionDefOf.TribeRough)
+                                {
+                                    Color tribeCol = new();
+                                    tribeCol = StevesWallsSettings.AlertColorTribalsFaction;
+                                    colors.Add(tribeCol);
+                                    continue;
+                                }
+                                if (pawn.Faction.def == FactionDefOf.Mechanoid)
+                                {
+                                    Color mechCol = new();
+                                    mechCol = StevesWallsSettings.AlertColorMechFaction;
+                                    colors.Add(mechCol);
+                                    continue;
+                                }
+                                if (pawn.Faction.def == FactionDefOf.Pirate
+                                    || pawn.Faction.def == FactionDefOf.PirateWaster)
+                                {
+                                    Color piratesCol = new();
+                                    piratesCol = StevesWallsSettings.AlertColorPiratesFaction;
+                                    colors.Add(piratesCol);
+                                    continue;
+                                }
+                                if (pawn.Faction.def == FactionDefOf.Insect)
+                                {
+                                    Color insectCol = new();
+                                    insectCol = StevesWallsSettings.AlertColorInsectFaction;
+                                    colors.Add(insectCol);
+                                    continue;
+                                }
+                                if (pawn.Faction.def == FactionDefOf.Entities)
+                                {
+                                    Color entitiesCol = new();
+                                    entitiesCol = StevesWallsSettings.AlertColorEntitiesFaction;
+                                    colors.Add(entitiesCol);
+                                    continue;
+                                }
+                                if (pawn.Faction.def == FactionDefOf.AncientsHostile)
+                                {
+                                    Color humanlikeCol = new();
+                                    humanlikeCol = StevesWallsSettings.AlertColorAncientsFaction;
+                                    colors.Add(humanlikeCol);
+                                }
                             }
                         }
                     }

@@ -15,6 +15,7 @@ namespace StevesWalls
         private Color tempColorInsectFaction;
         private Color tempColorEntitiesFaction;
         private Color tempColorPiratesFaction;
+        private Color tempColorTribalsFaction;
 
         // track state for each color wheel
         private bool manhunterDragging = false;
@@ -23,6 +24,7 @@ namespace StevesWalls
         private bool insectFactionDragging = false;
         private bool entitiesFactionDragging = false;
         private bool piratesFactionDragging = false;
+        private bool tribalsFactionDragging = false;
         
         public StevesWallsMod(ModContentPack content) : base(content)
         {
@@ -36,6 +38,7 @@ namespace StevesWalls
             tempColorInsectFaction = settings._alertColorInsectFaction;
             tempColorEntitiesFaction = settings._alertColorEntitiesFaction;
             tempColorPiratesFaction = settings._alertColorPiratesFaction;
+            tempColorTribalsFaction = settings._alertColorTribalsFaction;
         }
 
         public override void DoSettingsWindowContents(Rect inRect)
@@ -70,28 +73,30 @@ namespace StevesWalls
                 list2.Gap(100f);
 
                 float initialVertOffset = 100f;
-                float rowTwoVertOffset = 100f;
                 float columnOffset = viewRect.xMax / 2.5f;
 
                 // column 1
                 Rect manhunterRect = new Rect(viewRect.x, viewRect.y + initialVertOffset, 1f, 1f);
                 DrawSettingWithTexture(manhunterRect, "Manhunters", ref tempColorManhunter, ref manhunterDragging);
 
-                Rect insectRect = new Rect(viewRect.x, viewRect.y + initialVertOffset + rowTwoVertOffset, 1f, 1f);
+                Rect insectRect = new Rect(viewRect.x, viewRect.y + initialVertOffset + initialVertOffset, 1f, 1f);
                 DrawSettingWithTexture(insectRect, "Insects", ref tempColorInsectFaction, ref insectFactionDragging);
+
+                Rect tribalsRect = new Rect(viewRect.x, viewRect.y + initialVertOffset + initialVertOffset + initialVertOffset, 1f, 1f);
+                DrawSettingWithTexture(tribalsRect, "Tribals", ref tempColorTribalsFaction, ref tribalsFactionDragging);
 
                 // column 2
                 Rect ancientsRect = new Rect(viewRect.x + columnOffset, viewRect.y + initialVertOffset, 1f, 1f);
                 DrawSettingWithTexture(ancientsRect, "Ancients", ref tempColorAncientsFaction, ref ancientsFactionDragging);
 
-                Rect entitiesRect = new Rect(viewRect.x + columnOffset, viewRect.y + initialVertOffset + rowTwoVertOffset, 1f, 1f);
+                Rect entitiesRect = new Rect(viewRect.x + columnOffset, viewRect.y + initialVertOffset + initialVertOffset, 1f, 1f);
                 DrawSettingWithTexture(entitiesRect, "Entities", ref tempColorEntitiesFaction, ref entitiesFactionDragging);
 
                 // column 3
                 Rect mechRect = new Rect(viewRect.x + (columnOffset * 2), viewRect.y + initialVertOffset, 1f, 1f);
                 DrawSettingWithTexture(mechRect, "Mechanoids", ref tempColorMechFaction, ref mechFactionDragging);
 
-                Rect piratesRect = new Rect(viewRect.x + (columnOffset * 2), viewRect.y + initialVertOffset + rowTwoVertOffset, 1f, 1f);
+                Rect piratesRect = new Rect(viewRect.x + (columnOffset * 2), viewRect.y + initialVertOffset + initialVertOffset, 1f, 1f);
                 DrawSettingWithTexture(piratesRect, "Pirates", ref tempColorPiratesFaction, ref piratesFactionDragging);
 
                 list2.End();
@@ -105,6 +110,7 @@ namespace StevesWalls
                 tempColorInsectFaction = settings._alertColorInsectFaction;
                 tempColorEntitiesFaction = settings._alertColorEntitiesFaction;
                 tempColorPiratesFaction = settings._alertColorPiratesFaction;
+                tempColorTribalsFaction = settings._alertColorTribalsFaction;
             }
 
             list.End();
@@ -134,6 +140,7 @@ namespace StevesWalls
             settings._alertColorInsectFaction = tempColorInsectFaction;
             settings._alertColorEntitiesFaction = tempColorEntitiesFaction;
             settings._alertColorPiratesFaction = tempColorPiratesFaction;
+            settings._alertColorTribalsFaction = tempColorTribalsFaction;
 
             // call the base WriteSettings method to save the settings
             base.WriteSettings();

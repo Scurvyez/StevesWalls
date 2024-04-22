@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "S:\\Games\\Steam\\steamapps\\common\\RimWorld\\Mods\\StevesWalls\\1.5\\Source\\StevesWalls\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A9F249DE-E864-430E-9FBD-AAF9981EA296}|StevesWalls\\StevesWalls.csproj|s:\\games\\steam\\steamapps\\common\\rimworld\\mods\\steveswalls\\1.5\\source\\steveswalls\\steveswalls\\thingcomps\\comp_alerteffects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A9F249DE-E864-430E-9FBD-AAF9981EA296}|StevesWalls\\StevesWalls.csproj|solutionrelative:steveswalls\\thingcomps\\comp_alerteffects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A9F249DE-E864-430E-9FBD-AAF9981EA296}|StevesWalls\\StevesWalls.csproj|S:\\Games\\Steam\\steamapps\\common\\RimWorld\\Mods\\StevesWalls\\1.5\\Source\\StevesWalls\\steveswalls\\settings\\steveswallssettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9F249DE-E864-430E-9FBD-AAF9981EA296}|StevesWalls\\StevesWalls.csproj|solutionrelative:steveswalls\\settings\\steveswallssettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A9F249DE-E864-430E-9FBD-AAF9981EA296}|StevesWalls\\StevesWalls.csproj|S:\\Games\\Steam\\steamapps\\common\\RimWorld\\Mods\\StevesWalls\\1.5\\Source\\StevesWalls\\steveswalls\\settings\\steveswallsmod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A9F249DE-E864-430E-9FBD-AAF9981EA296}|StevesWalls\\StevesWalls.csproj|solutionrelative:steveswalls\\settings\\steveswallsmod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A9F249DE-E864-430E-9FBD-AAF9981EA296}|StevesWalls\\StevesWalls.csproj|S:\\Games\\Steam\\steamapps\\common\\RimWorld\\Mods\\StevesWalls\\1.5\\Source\\StevesWalls\\steveswalls\\settings\\steveswallssettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A9F249DE-E864-430E-9FBD-AAF9981EA296}|StevesWalls\\StevesWalls.csproj|solutionrelative:steveswalls\\settings\\steveswallssettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A9F249DE-E864-430E-9FBD-AAF9981EA296}|StevesWalls\\StevesWalls.csproj|s:\\games\\steam\\steamapps\\common\\rimworld\\mods\\steveswalls\\1.5\\source\\steveswalls\\steveswalls\\thingcomps\\comp_alerteffects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9F249DE-E864-430E-9FBD-AAF9981EA296}|StevesWalls\\StevesWalls.csproj|solutionrelative:steveswalls\\thingcomps\\comp_alerteffects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,25 +31,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Comp_AlertEffects.cs",
-              "DocumentMoniker": "S:\\Games\\Steam\\steamapps\\common\\RimWorld\\Mods\\StevesWalls\\1.5\\Source\\StevesWalls\\StevesWalls\\ThingComps\\Comp_AlertEffects.cs",
-              "RelativeDocumentMoniker": "StevesWalls\\ThingComps\\Comp_AlertEffects.cs",
-              "ToolTip": "S:\\Games\\Steam\\steamapps\\common\\RimWorld\\Mods\\StevesWalls\\1.5\\Source\\StevesWalls\\StevesWalls\\ThingComps\\Comp_AlertEffects.cs",
-              "RelativeToolTip": "StevesWalls\\ThingComps\\Comp_AlertEffects.cs",
-              "ViewState": "AQIAAE4AAAAAAAAAAAAQwHEAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T02:30:36.847Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "StevesWallsSettings.cs",
               "DocumentMoniker": "S:\\Games\\Steam\\steamapps\\common\\RimWorld\\Mods\\StevesWalls\\1.5\\Source\\StevesWalls\\StevesWalls\\Settings\\StevesWallsSettings.cs",
               "RelativeDocumentMoniker": "StevesWalls\\Settings\\StevesWallsSettings.cs",
               "ToolTip": "S:\\Games\\Steam\\steamapps\\common\\RimWorld\\Mods\\StevesWalls\\1.5\\Source\\StevesWalls\\StevesWalls\\Settings\\StevesWallsSettings.cs",
               "RelativeToolTip": "StevesWalls\\Settings\\StevesWallsSettings.cs",
-              "ViewState": "AQIAAEcAAAAAAAAAAAAAwF8AAAAAAAAA",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAYwFcAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-21T02:16:10.48Z",
               "EditorCaption": ""
@@ -62,9 +49,22 @@
               "RelativeDocumentMoniker": "StevesWalls\\Settings\\StevesWallsMod.cs",
               "ToolTip": "S:\\Games\\Steam\\steamapps\\common\\RimWorld\\Mods\\StevesWalls\\1.5\\Source\\StevesWalls\\StevesWalls\\Settings\\StevesWallsMod.cs",
               "RelativeToolTip": "StevesWalls\\Settings\\StevesWallsMod.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAAowFEAAAAAAAAA",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAowEwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-21T02:16:11.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Comp_AlertEffects.cs",
+              "DocumentMoniker": "S:\\Games\\Steam\\steamapps\\common\\RimWorld\\Mods\\StevesWalls\\1.5\\Source\\StevesWalls\\StevesWalls\\ThingComps\\Comp_AlertEffects.cs",
+              "RelativeDocumentMoniker": "StevesWalls\\ThingComps\\Comp_AlertEffects.cs",
+              "ToolTip": "S:\\Games\\Steam\\steamapps\\common\\RimWorld\\Mods\\StevesWalls\\1.5\\Source\\StevesWalls\\StevesWalls\\ThingComps\\Comp_AlertEffects.cs",
+              "RelativeToolTip": "StevesWalls\\ThingComps\\Comp_AlertEffects.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T02:30:36.847Z",
               "EditorCaption": ""
             }
           ]
