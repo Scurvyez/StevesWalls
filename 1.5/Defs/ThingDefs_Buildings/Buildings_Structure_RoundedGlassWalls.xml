@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <!--========================= Rounded Glitter-Glass Wall =============================-->
+    <!--========================= Rounded Glass Wall =============================-->
 
     <ThingDef ParentName="SW_RoundedGlitterGlassWallBase">
         <defName>SW_RoundedGlitterGlassWall</defName>
-        <label>rounded glitter glass wall</label>
+        <label>rounded glass wall</label>
         <graphicData>
             <texPath>StevesWalls/Things/Building/Linked/SW_RoundedGlitterGlassWall</texPath>
         </graphicData>
@@ -23,11 +23,11 @@
         </comps>
     </ThingDef>
 
-    <!--========================= Rounded Alert Glitter-Glass Wall =============================-->
+    <!--========================= Rounded Alert Glass Wall =============================-->
 
     <ThingDef ParentName="SW_RoundedAlertGlitterGlassWallBase">
         <defName>SW_RoundedAlertGlitterGlassWall</defName>
-        <label>(Alert) rounded glitter glass wall</label>
+        <label>(Alert) rounded glass wall</label>
         <graphicData>
             <texPath>StevesWalls/Things/Building/Linked/SW_RoundedGlitterGlassWall</texPath>
         </graphicData>
@@ -46,11 +46,11 @@
         </comps>
     </ThingDef>
 
-    <!--========================= Blue Rounded Glitter-Glass Wall =============================-->
+    <!--========================= Blue Rounded Glass Wall =============================-->
 
     <ThingDef ParentName="SW_RoundedGlitterGlassWallBase">
         <defName>SW_BlueRoundedGlitterGlassWall</defName>
-        <label>blue rounded glitter glass wall</label>
+        <label>blue rounded glass wall</label>
         <uiIconPath>StevesWalls/Things/Building/Linked/Icons/SW_BlueRoundedGlitterGlassWall_MenuIcon</uiIconPath>
         <graphicData>
             <texPath>StevesWalls/Things/Building/Linked/SW_RoundedGlitterGlassWall/Blue</texPath>
@@ -69,11 +69,11 @@
         </comps>
     </ThingDef>
 
-    <!--========================= Blue Rounded Alert Glitter-Glass Wall =============================-->
+    <!--========================= Blue Rounded Alert Glass Wall =============================-->
 
     <ThingDef ParentName="SW_RoundedAlertGlitterGlassWallBase">
         <defName>SW_BlueRoundedAlertGlitterGlassWall</defName>
-        <label>(Alert) blue rounded glitter glass wall</label>
+        <label>(Alert) blue rounded glass wall</label>
         <uiIconPath>StevesWalls/Things/Building/Linked/Icons/SW_BlueRoundedGlitterGlassWall_MenuIcon</uiIconPath>
         <graphicData>
             <texPath>StevesWalls/Things/Building/Linked/SW_RoundedGlitterGlassWall/Blue</texPath>
@@ -93,11 +93,11 @@
         </comps>
     </ThingDef>
 
-    <!--========================= Green Rounded Glitter-Glass Wall =============================-->
+    <!--========================= Green Rounded Glass Wall =============================-->
 
     <ThingDef ParentName="SW_RoundedGlitterGlassWallBase">
         <defName>SW_GreenRoundedGlitterGlassWall</defName>
-        <label>green rounded glitter glass wall</label>
+        <label>green rounded glass wall</label>
         <uiIconPath>StevesWalls/Things/Building/Linked/Icons/SW_GreenRoundedGlitterGlassWall_MenuIcon</uiIconPath>
         <graphicData>
             <texPath>StevesWalls/Things/Building/Linked/SW_RoundedGlitterGlassWall/Green</texPath>
@@ -116,11 +116,11 @@
         </comps>
     </ThingDef>
 
-    <!--========================= Green Rounded Alert Glitter-Glass Wall =============================-->
+    <!--========================= Green Rounded Alert Glass Wall =============================-->
 
     <ThingDef ParentName="SW_RoundedAlertGlitterGlassWallBase">
         <defName>SW_GreenRoundedAlertGlitterGlassWall</defName>
-        <label>(Alert) green rounded glitter glass wall</label>
+        <label>(Alert) green rounded glass wall</label>
         <uiIconPath>StevesWalls/Things/Building/Linked/Icons/SW_GreenRoundedGlitterGlassWall_MenuIcon</uiIconPath>
         <graphicData>
             <texPath>StevesWalls/Things/Building/Linked/SW_RoundedGlitterGlassWall/Green</texPath>
@@ -140,11 +140,11 @@
         </comps>
     </ThingDef>
 
-    <!--========================= Yellow Rounded Glitter-Glass Wall =============================-->
+    <!--========================= Yellow Rounded Glass Wall =============================-->
 
     <ThingDef ParentName="SW_RoundedGlitterGlassWallBase">
         <defName>SW_YellowRoundedGlitterGlassWall</defName>
-        <label>yellow rounded glitter glass wall</label>
+        <label>yellow rounded glass wall</label>
         <uiIconPath>StevesWalls/Things/Building/Linked/Icons/SW_YellowRoundedGlitterGlassWall_MenuIcon</uiIconPath>
         <graphicData>
             <texPath>StevesWalls/Things/Building/Linked/SW_RoundedGlitterGlassWall/Yellow</texPath>
@@ -163,11 +163,11 @@
         </comps>
     </ThingDef>
 
-    <!--========================= Yellow Rounded Alert Glitter-Glass Wall =============================-->
+    <!--========================= Yellow Rounded Alert Glass Wall =============================-->
 
     <ThingDef ParentName="SW_RoundedAlertGlitterGlassWallBase">
         <defName>SW_YellowRoundedAlertGlitterGlassWall</defName>
-        <label>(Alert) yellow rounded glitter glass wall</label>
+        <label>(Alert) yellow rounded glass wall</label>
         <uiIconPath>StevesWalls/Things/Building/Linked/Icons/SW_YellowRoundedGlitterGlassWall_MenuIcon</uiIconPath>
         <graphicData>
             <texPath>StevesWalls/Things/Building/Linked/SW_RoundedGlitterGlassWall/Yellow</texPath>
@@ -187,11 +187,11 @@
         </comps>
     </ThingDef>
 
-    <!--========================= Orange Rounded Glitter-Glass Wall =============================-->
+    <!--========================= Orange Rounded Glass Wall =============================-->
 
     <ThingDef ParentName="SW_RoundedGlitterGlassWallBase">
         <defName>SW_OrangeRoundedGlitterGlassWall</defName>
-        <label>orange rounded glitter glass wall</label>
+        <label>orange rounded glass wall</label>
         <uiIconPath>StevesWalls/Things/Building/Linked/Icons/SW_OrangeRoundedGlitterGlassWall_MenuIcon</uiIconPath>
         <graphicData>
             <texPath>StevesWalls/Things/Building/Linked/SW_RoundedGlitterGlassWall/Orange</texPath>
@@ -210,11 +210,11 @@
         </comps>
     </ThingDef>
 
-    <!--========================= Orange Rounded Alert Glitter-Glass Wall =============================-->
+    <!--========================= Orange Rounded Alert Glass Wall =============================-->
 
     <ThingDef ParentName="SW_RoundedAlertGlitterGlassWallBase">
         <defName>SW_OrangeRoundedAlertGlitterGlassWall</defName>
-        <label>(Alert) orange rounded glitter glass wall</label>
+        <label>(Alert) orange rounded glass wall</label>
         <uiIconPath>StevesWalls/Things/Building/Linked/Icons/SW_OrangeRoundedGlitterGlassWall_MenuIcon</uiIconPath>
         <graphicData>
             <texPath>StevesWalls/Things/Building/Linked/SW_RoundedGlitterGlassWall/Orange</texPath>
@@ -234,11 +234,11 @@
         </comps>
     </ThingDef>
 
-    <!--========================= Red Rounded Glitter-Glass Wall =============================-->
+    <!--========================= Red Rounded Glass Wall =============================-->
 
     <ThingDef ParentName="SW_RoundedGlitterGlassWallBase">
         <defName>SW_RedRoundedGlitterGlassWall</defName>
-        <label>red rounded glitter glass wall</label>
+        <label>red rounded glass wall</label>
         <uiIconPath>StevesWalls/Things/Building/Linked/Icons/SW_RedRoundedGlitterGlassWall_MenuIcon</uiIconPath>
         <graphicData>
             <texPath>StevesWalls/Things/Building/Linked/SW_RoundedGlitterGlassWall/Red</texPath>
@@ -257,11 +257,11 @@
         </comps>
     </ThingDef>
 
-    <!--========================= Red Rounded Alert Glitter-Glass Wall =============================-->
+    <!--========================= Red Rounded Alert Glass Wall =============================-->
 
     <ThingDef ParentName="SW_RoundedAlertGlitterGlassWallBase">
         <defName>SW_RedRoundedAlertGlitterGlassWall</defName>
-        <label>(Alert) red rounded glitter glass wall</label>
+        <label>(Alert) red rounded glass wall</label>
         <uiIconPath>StevesWalls/Things/Building/Linked/Icons/SW_RedRoundedGlitterGlassWall_MenuIcon</uiIconPath>
         <graphicData>
             <texPath>StevesWalls/Things/Building/Linked/SW_RoundedGlitterGlassWall/Red</texPath>
@@ -281,11 +281,11 @@
         </comps>
     </ThingDef>
 
-    <!--========================= Pink Rounded Glitter-Glass Wall =============================-->
+    <!--========================= Pink Rounded Glass Wall =============================-->
 
     <ThingDef ParentName="SW_RoundedGlitterGlassWallBase">
         <defName>SW_PinkRoundedGlitterGlassWall</defName>
-        <label>pink rounded glitter glass wall</label>
+        <label>pink rounded glass wall</label>
         <uiIconPath>StevesWalls/Things/Building/Linked/Icons/SW_PinkRoundedGlitterGlassWall_MenuIcon</uiIconPath>
         <graphicData>
             <texPath>StevesWalls/Things/Building/Linked/SW_RoundedGlitterGlassWall/Pink</texPath>
@@ -304,11 +304,11 @@
         </comps>
     </ThingDef>
 
-    <!--========================= Pink Rounded Alert Glitter-Glass Wall =============================-->
+    <!--========================= Pink Rounded Alert Glass Wall =============================-->
 
     <ThingDef ParentName="SW_RoundedAlertGlitterGlassWallBase">
         <defName>SW_PinkRoundedAlertGlitterGlassWall</defName>
-        <label>(Alert) pink rounded glitter glass wall</label>
+        <label>(Alert) pink rounded glass wall</label>
         <uiIconPath>StevesWalls/Things/Building/Linked/Icons/SW_PinkRoundedGlitterGlassWall_MenuIcon</uiIconPath>
         <graphicData>
             <texPath>StevesWalls/Things/Building/Linked/SW_RoundedGlitterGlassWall/Pink</texPath>
@@ -328,11 +328,11 @@
         </comps>
     </ThingDef>
 
-    <!--========================= Purple Rounded Glitter-Glass Wall =============================-->
+    <!--========================= Purple Rounded Glass Wall =============================-->
 
     <ThingDef ParentName="SW_RoundedGlitterGlassWallBase">
         <defName>SW_PurpleRoundedGlitterGlassWall</defName>
-        <label>purple rounded glitter glass wall</label>
+        <label>purple rounded glass wall</label>
         <uiIconPath>StevesWalls/Things/Building/Linked/Icons/SW_PurpleRoundedGlitterGlassWall_MenuIcon</uiIconPath>
         <graphicData>
             <texPath>StevesWalls/Things/Building/Linked/SW_RoundedGlitterGlassWall/Purple</texPath>
@@ -351,11 +351,11 @@
         </comps>
     </ThingDef>
 
-    <!--========================= Purple Rounded Alert Glitter-Glass Wall =============================-->
+    <!--========================= Purple Rounded Alert Glass Wall =============================-->
 
     <ThingDef ParentName="SW_RoundedAlertGlitterGlassWallBase">
         <defName>SW_PurpleRoundedAlertGlitterGlassWall</defName>
-        <label>(Alert) purple rounded glitter glass wall</label>
+        <label>(Alert) purple rounded glass wall</label>
         <uiIconPath>StevesWalls/Things/Building/Linked/Icons/SW_PurpleRoundedGlitterGlassWall_MenuIcon</uiIconPath>
         <graphicData>
             <texPath>StevesWalls/Things/Building/Linked/SW_RoundedGlitterGlassWall/Purple</texPath>

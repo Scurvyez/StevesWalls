@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <!--========================= Glitter Glass Wall Base =============================-->
+    <!--========================= Glass Wall Base =============================-->
 
     <ThingDef ParentName="BuildingBase" Name="SW_GlitterGlassWallBase" Abstract="True">
         <description>A clear and elegant wall capable of supporting a roof. The seemless glass-like panels allow light to enter unhindered. Expertly constructed and intricately designed, yet snug-fitting, damage-resistant panels make this a solid choice among colonies under constant threat of invaders. The adjustable glow eases the hearts and minds of those who slumber behind them in the dark hours of night.</description>
@@ -66,7 +66,7 @@
         </researchPrerequisites>
     </ThingDef>
 
-    <!--========================= Normal Glitter Glass Wall Base =============================-->
+    <!--========================= Normal Glass Wall Base =============================-->
 
     <ThingDef ParentName="SW_GlitterGlassWallBase" Name="SW_NormalGlitterGlassWallBase" Abstract="True">
         <designatorDropdown>SW_GlitterGlassWall</designatorDropdown>
@@ -78,7 +78,7 @@
         </building>
     </ThingDef>
 
-    <!--========================= Normal Alert Glitter Glass Wall Base =============================-->
+    <!--========================= Normal Alert Glass Wall Base =============================-->
 
     <ThingDef ParentName="SW_NormalGlitterGlassWallBase" Name="SW_NormalAlertGlitterGlassWallBase" Abstract="True">
         <description>Structurally and visually the same as there base variants, these walls will also however, emit a visual pulse when enemies are nearby.</description>
@@ -86,7 +86,7 @@
         <tickerType>Normal</tickerType>
     </ThingDef>
 
-    <!--========================= Rounded Glitter Glass Wall Base =============================-->
+    <!--========================= Rounded Glass Wall Base =============================-->
 
     <ThingDef ParentName="SW_GlitterGlassWallBase" Name="SW_RoundedGlitterGlassWallBase" Abstract="True">
         <designatorDropdown>SW_RoundedGlitterGlassWall</designatorDropdown>
@@ -98,7 +98,7 @@
         </building>
     </ThingDef>
 
-    <!--========================= Rounded Alert Glitter Glass Wall Base =============================-->
+    <!--========================= Rounded Alert Glass Wall Base =============================-->
 
     <ThingDef ParentName="SW_RoundedGlitterGlassWallBase" Name="SW_RoundedAlertGlitterGlassWallBase" Abstract="True">
         <description>Structurally and visually the same as there base variants, these walls will also however, emit a visual pulse when enemies are nearby.</description>

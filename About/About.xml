@@ -9,19 +9,18 @@
         <li>1.4</li>
         <li>1.5</li>
     </supportedVersions>
-    <modIconPath>StevesWalls/modIcon</modIconPath>
 
     <description>
 This mod adds several new glowing walls to the game.
 
 ~ Must be unlocked via research
 ~ Two types, rounded and squared
-~ (Alert) variants for each, a glowing pulse emits while enemies are around
+~ (Alert) variants for each, a glowing pulse emits while enemies are around (can be adjusted in the mod settings)
 ~ Walls let light through
 ~ Walls require power to glow
 ~ 3-tile wide glow radius
 ~ Can be flicked on and off
-~ New, clear walls with the 1.4 color picker enables for colored glow
+~ New, clear walls with the 1.4 color picker enables colored glow
 ~ Legacy pre-colored walls still here as well
 
 Discord: steveo.o

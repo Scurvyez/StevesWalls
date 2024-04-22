@@ -3,6 +3,8 @@ using UnityEngine;
 using Verse;
 using Verse.AI;
 using System;
+using RimWorld;
+using System.Linq;
 
 namespace StevesWalls
 {
@@ -14,6 +16,8 @@ namespace StevesWalls
         private Effecter alertEffect;
         private int ticksUntilNextAlert = 0;
         private int alertIntervalTicks = StevesWallsSettings.AlertPulseInterval;
+        private HashSet<IAttackTarget> targets = new();
+        private List<Color> colors = new();
 
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
@@ -30,6 +34,7 @@ namespace StevesWalls
         public override void CompTick()
         {
             base.CompTick();
+            targets = parent.Map.attackTargetsCache.TargetsHostileToColony;
 
             if (glowerComp != null && glowerComp.Glows)
             {
@@ -59,8 +64,6 @@ namespace StevesWalls
 
             if (map != null && map.attackTargetsCache != null)
             {
-                HashSet<IAttackTarget> targets = map.attackTargetsCache.TargetsHostileToColony;
-
                 foreach (IAttackTarget target in targets)
                 {
                     if (target is Pawn pawn && !pawn.Fogged())
@@ -72,7 +75,6 @@ namespace StevesWalls
                     }
                 }
             }
-
             return false;
         }
 
@@ -81,7 +83,77 @@ namespace StevesWalls
             if (parent.def.defName.IndexOf("AlertGlitterGlassWall", StringComparison.OrdinalIgnoreCase) >= 0)
             {
                 alertEffect = SW_DefOf.SW_DefaultWallAlert.Spawn();
-                alertEffect.children[0].def.color = glowerColor;
+                colors.Clear();
+
+                if (!StevesWallsSettings.UseThreatSpecificAlertColors)
+                {
+                    alertEffect.children[0].def.color = glowerColor;
+                }
+                else
+                {
+                    foreach (IAttackTarget target in targets)
+                    {
+                        if (target is Pawn pawn && pawn != null)
+                        {
+                            Log.Message($"Target: {pawn.def.defName}, faction: {pawn.Faction.def}");
+
+                            if (pawn.MentalStateDef == MentalStateDefOf.Manhunter
+                                || pawn.MentalStateDef == MentalStateDefOf.ManhunterBloodRain
+                                || pawn.MentalStateDef == MentalStateDefOf.ManhunterPermanent)
+                            {
+                                Color manHunterCol = new();
+                                manHunterCol = StevesWallsSettings.AlertColorManhunter;
+                                colors.Add(manHunterCol);
+                            }
+                            if (pawn.Faction.def == FactionDefOf.AncientsHostile)
+                            {
+                                Color humanlikeCol = new();
+                                humanlikeCol = StevesWallsSettings.AlertColorAncientsFaction;
+                                colors.Add(humanlikeCol);
+                            }
+                            if (pawn.Faction.def == FactionDefOf.Mechanoid)
+                            {
+                                Color mechCol = new();
+                                mechCol = StevesWallsSettings.AlertColorMechFaction;
+                                colors.Add(mechCol);
+                            }
+                            if (pawn.Faction.def == FactionDefOf.Insect)
+                            {
+                                Color insectCol = new();
+                                insectCol = StevesWallsSettings.AlertColorInsectFaction;
+                                colors.Add(insectCol);
+                            }
+                            if (pawn.Faction.def == FactionDefOf.Entities)
+                            {
+                                Color entitiesCol = new();
+                                entitiesCol = StevesWallsSettings.AlertColorEntitiesFaction;
+                                colors.Add(entitiesCol);
+                            }
+                            if (pawn.Faction.def == FactionDefOf.Pirate
+                                || pawn.Faction.def == FactionDefOf.PirateWaster)
+                            {
+                                Color piratesCol = new();
+                                piratesCol = StevesWallsSettings.AlertColorPiratesFaction;
+                                colors.Add(piratesCol);
+                            }
+                        }
+                    }
+                }
+                
+                if (colors.Count > 0)
+                {
+                    // Calculate the average color component values
+                    float avgR = colors.Average(c => c.r);
+                    float avgG = colors.Average(c => c.g);
+                    float avgB = colors.Average(c => c.b);
+                    float avgA = colors.Average(c => c.a);
+
+                    // Create a new color using the average component values
+                    Color averageColor = new Color(avgR, avgG, avgB, avgA);
+
+                    alertEffect.children[0].def.color = averageColor;
+                }
+
                 alertEffect.children[0].def.color.a = StevesWallsSettings.AlertPulseIntensity;
                 alertEffect.Trigger(parent, parent, -1);
             }
