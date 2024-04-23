@@ -11,7 +11,7 @@
     <SW_AlertPulseInterval>Pulse Interval (Requires reload): {0}</SW_AlertPulseInterval>
     <SW_AlertPulseIntervalDesc>Adjust the slider to either increase or decrease the interval (time between pulses) of the alert wall pulse effect.</SW_AlertPulseIntervalDesc>
 
-    <SW_UseThreatSpecificAlertColors>Use Threat-Specific Alert Colors (changes saved on closing of settings)</SW_UseThreatSpecificAlertColors>
-    <SW_UseThreatSpecificAlertColorsDesc>Turning this off will negate default alert wall pulse colors and override them with those specified in additional settings below.\n\nIf multiple different threats are present the colors are averaged.</SW_UseThreatSpecificAlertColorsDesc>
+    <SW_UseThreatSpecificAlertColors>Use Threat-Specific Alert Colors (changes saved on closing of settings | unchecking resets colors to previous state)</SW_UseThreatSpecificAlertColors>
+    <SW_UseThreatSpecificAlertColorsDesc>Turning this on will negate default alert wall pulse colors and override them with those specified in additional settings below.\n\nIf multiple different threats are present the colors are averaged.</SW_UseThreatSpecificAlertColorsDesc>
 
 </LanguageData>

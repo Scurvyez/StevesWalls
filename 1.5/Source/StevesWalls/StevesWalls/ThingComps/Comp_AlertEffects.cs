@@ -103,6 +103,13 @@ namespace StevesWalls
                                     Color manHunterCol = new();
                                     manHunterCol = StevesWallsSettings.AlertColorManhunter;
                                     colors.Add(manHunterCol);
+                                    continue;
+                                }
+                                if (pawn.MentalStateDef.category == MentalStateCategory.Aggro)
+                                {
+                                    Color mBAggroCol = new();
+                                    mBAggroCol = StevesWallsSettings.AlertColorMentalBreakAggro;
+                                    colors.Add(mBAggroCol);
                                 }
                                 continue;
                             }

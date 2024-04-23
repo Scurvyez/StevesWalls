@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Reflection;
+using UnityEngine;
 using Verse;
 
 namespace StevesWalls
@@ -16,6 +17,7 @@ namespace StevesWalls
         private Color tempColorEntitiesFaction;
         private Color tempColorPiratesFaction;
         private Color tempColorTribalsFaction;
+        private Color tempColorMentalBreakAggro;
 
         // track state for each color wheel
         private bool manhunterDragging = false;
@@ -25,7 +27,8 @@ namespace StevesWalls
         private bool entitiesFactionDragging = false;
         private bool piratesFactionDragging = false;
         private bool tribalsFactionDragging = false;
-        
+        private bool mentalBreakAggroDragging = false;
+
         public StevesWallsMod(ModContentPack content) : base(content)
         {
             mod = this;
@@ -39,6 +42,7 @@ namespace StevesWalls
             tempColorEntitiesFaction = settings._alertColorEntitiesFaction;
             tempColorPiratesFaction = settings._alertColorPiratesFaction;
             tempColorTribalsFaction = settings._alertColorTribalsFaction;
+            tempColorMentalBreakAggro = settings._alertColorMentalBreakAggro;
         }
 
         public override void DoSettingsWindowContents(Rect inRect)
@@ -55,7 +59,7 @@ namespace StevesWalls
             float pulseIntensitySlider = settings._alertPulseIntensity;
             string pulseIntensitySliderText = pulseIntensitySlider.ToString("F2");
             list.Label(label: "SW_AlertPulseIntensity".Translate(pulseIntensitySliderText), tooltip: "SW_AlertPulseIntensityDesc".Translate());
-            settings._alertPulseIntensity = list.Slider(settings._alertPulseIntensity, 0f, 1f);
+            settings._alertPulseIntensity = list.Slider(settings._alertPulseIntensity, 0f, 2f);
 
             float pulseIntervalSlider = settings._alertPulseInterval;
             string pulseIntervalSliderText = pulseIntervalSlider.ToString("F0");
@@ -72,32 +76,45 @@ namespace StevesWalls
                 list2.Begin(viewRect);
                 list2.Gap(100f);
 
-                float initialVertOffset = 100f;
-                float columnOffset = viewRect.xMax / 2.5f;
+                float initialVertOffset = 110f;
+                float initialHorzOffset = 40f;
+                float columnOffset = viewRect.xMax / 4f;
 
                 // column 1
-                Rect manhunterRect = new Rect(viewRect.x, viewRect.y + initialVertOffset, 1f, 1f);
-                DrawSettingWithTexture(manhunterRect, "Manhunters", ref tempColorManhunter, ref manhunterDragging);
+                // manhunters
+                // insects
+                Rect manhunterRect = new Rect(viewRect.x + initialHorzOffset, viewRect.y + initialVertOffset, 1f, 1f);
+                DrawSettingWithTextures(manhunterRect, "Manhunters", ref tempColorManhunter, ref manhunterDragging);
 
-                Rect insectRect = new Rect(viewRect.x, viewRect.y + initialVertOffset + initialVertOffset, 1f, 1f);
-                DrawSettingWithTexture(insectRect, "Insects", ref tempColorInsectFaction, ref insectFactionDragging);
-
-                Rect tribalsRect = new Rect(viewRect.x, viewRect.y + initialVertOffset + initialVertOffset + initialVertOffset, 1f, 1f);
-                DrawSettingWithTexture(tribalsRect, "Tribals", ref tempColorTribalsFaction, ref tribalsFactionDragging);
+                Rect insectRect = new Rect(viewRect.x + initialHorzOffset, viewRect.y + initialVertOffset + initialVertOffset, 1f, 1f);
+                DrawSettingWithTextures(insectRect, "Insects", ref tempColorInsectFaction, ref insectFactionDragging);
 
                 // column 2
-                Rect ancientsRect = new Rect(viewRect.x + columnOffset, viewRect.y + initialVertOffset, 1f, 1f);
-                DrawSettingWithTexture(ancientsRect, "Ancients", ref tempColorAncientsFaction, ref ancientsFactionDragging);
+                // ancients
+                // entities (anomaly)
+                Rect ancientsRect = new Rect(viewRect.x + initialHorzOffset + columnOffset, viewRect.y + initialVertOffset, 1f, 1f);
+                DrawSettingWithTextures(ancientsRect, "Ancients", ref tempColorAncientsFaction, ref ancientsFactionDragging);
 
-                Rect entitiesRect = new Rect(viewRect.x + columnOffset, viewRect.y + initialVertOffset + initialVertOffset, 1f, 1f);
-                DrawSettingWithTexture(entitiesRect, "Entities", ref tempColorEntitiesFaction, ref entitiesFactionDragging);
+                Rect entitiesRect = new Rect(viewRect.x + initialHorzOffset + columnOffset, viewRect.y + initialVertOffset + initialVertOffset, 1f, 1f);
+                DrawSettingWithTextures(entitiesRect, "Entities", ref tempColorEntitiesFaction, ref entitiesFactionDragging);
 
                 // column 3
-                Rect mechRect = new Rect(viewRect.x + (columnOffset * 2), viewRect.y + initialVertOffset, 1f, 1f);
-                DrawSettingWithTexture(mechRect, "Mechanoids", ref tempColorMechFaction, ref mechFactionDragging);
+                // mechanoids
+                //pirates
+                Rect mechRect = new Rect(viewRect.x + initialHorzOffset + (columnOffset * 2f), viewRect.y + initialVertOffset, 1f, 1f);
+                DrawSettingWithTextures(mechRect, "Mechanoids", ref tempColorMechFaction, ref mechFactionDragging);
 
-                Rect piratesRect = new Rect(viewRect.x + (columnOffset * 2), viewRect.y + initialVertOffset + initialVertOffset, 1f, 1f);
-                DrawSettingWithTexture(piratesRect, "Pirates", ref tempColorPiratesFaction, ref piratesFactionDragging);
+                Rect piratesRect = new Rect(viewRect.x + initialHorzOffset + (columnOffset * 2f), viewRect.y + initialVertOffset + initialVertOffset, 1f, 1f);
+                DrawSettingWithTextures(piratesRect, "Pirates", ref tempColorPiratesFaction, ref piratesFactionDragging);
+
+                // column 4
+                // tribals
+                // mental breaks aggro
+                Rect tribalsRect = new Rect(viewRect.x + initialHorzOffset + (columnOffset * 3f), viewRect.y + initialVertOffset, 1f, 1f);
+                DrawSettingWithTextures(tribalsRect, "Tribals", ref tempColorTribalsFaction, ref tribalsFactionDragging);
+
+                Rect mBAggroRect = new Rect(viewRect.x + initialHorzOffset + (columnOffset * 3f), viewRect.y + initialVertOffset + initialVertOffset, 1f, 1f);
+                DrawSettingWithTextures(mBAggroRect, "Mental Breaks (Aggro)", ref tempColorMentalBreakAggro, ref mentalBreakAggroDragging);
 
                 list2.End();
             }
@@ -111,23 +128,30 @@ namespace StevesWalls
                 tempColorEntitiesFaction = settings._alertColorEntitiesFaction;
                 tempColorPiratesFaction = settings._alertColorPiratesFaction;
                 tempColorTribalsFaction = settings._alertColorTribalsFaction;
+                tempColorMentalBreakAggro = settings._alertColorMentalBreakAggro;
             }
 
             list.End();
         }
 
-        private static void DrawSettingWithTexture(Rect refRect, string label, ref Color value, ref bool currentlyDragging)
+        private static void DrawSettingWithTextures(Rect refRect, string label, ref Color value, ref bool currentlyDragging)
         {
-            float textureSize = 70f; // size of the color wheel and box textures
-            //Rect labelRect = list.GetRect(textureSize); // get the rect for the label
-            float padding = 5f; // padding between the texture and the label
+            float colorWheelScale = 70f;
+            float pulseTexScale = 70f;
+            float wallTexScale = 35f;
+            float padding = 5f; // padding between the textures and the label
 
-            Widgets.Label(new Rect(refRect.x, refRect.y - 25f, 200f, 20f), label);
-            Rect textureRect = new Rect(refRect.x, refRect.y, textureSize, textureSize);
-            Widgets.DrawBoxSolid(textureRect, value);
-            refRect.x += textureSize + padding;
-            refRect.width -= textureSize + padding;
-            Rect colorWheelRect = new Rect(refRect.x, refRect.y, textureSize, textureSize);
+            Widgets.DrawLineHorizontal(refRect.x, refRect.y, colorWheelScale + pulseTexScale); // text underscore
+            Widgets.Label(new Rect(refRect.x, refRect.y - 25f, 200f, 25f), label); // our text
+            Rect pulseTexRect = new Rect(refRect.x - (wallTexScale / 2), (refRect.y + padding) - (wallTexScale / 2), pulseTexScale + wallTexScale, pulseTexScale + wallTexScale);
+            Rect wallTexRect = new Rect(refRect.x + (wallTexScale / 2f), refRect.y + (wallTexScale / 2f), wallTexScale, wallTexScale);
+
+            GUI.DrawTexture(wallTexRect, Assets.WallSectionTex);
+            GUI.DrawTexture(pulseTexRect, Assets.PulseEffectTex, ScaleMode.ScaleToFit, true, 1f, value, 0f, 0f);
+
+            refRect.x += pulseTexScale + padding;
+            refRect.width -= pulseTexScale + padding;
+            Rect colorWheelRect = new Rect(refRect.x, refRect.y + padding, colorWheelScale, colorWheelScale);
             Widgets.HSVColorWheel(colorWheelRect, ref value, ref currentlyDragging);
         }
 
@@ -141,6 +165,7 @@ namespace StevesWalls
             settings._alertColorEntitiesFaction = tempColorEntitiesFaction;
             settings._alertColorPiratesFaction = tempColorPiratesFaction;
             settings._alertColorTribalsFaction = tempColorTribalsFaction;
+            settings._alertColorMentalBreakAggro = tempColorMentalBreakAggro;
 
             // call the base WriteSettings method to save the settings
             base.WriteSettings();
