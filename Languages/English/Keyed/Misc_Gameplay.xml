@@ -5,6 +5,9 @@
 
     <SW_ModName>Steve's Walls</SW_ModName>
 
+    <SW_ShowPowerOffIcon>Show Power Off Icon (requires map reload)</SW_ShowPowerOffIcon>
+    <SW_ShowPowerOffIconDesc>Toggle off to hide the power-off icon for wall sections currently flicked off of power.</SW_ShowPowerOffIconDesc>
+
     <SW_AlertPulseIntensity>Pulse Intensity: {0}</SW_AlertPulseIntensity>
     <SW_AlertPulseIntensityDesc>Adjust the slider to either increase or decrease the intensity (brightness, alpha channel) of the alert wall pulse effect.</SW_AlertPulseIntensityDesc>
 

@@ -66,8 +66,10 @@ namespace StevesWalls
             list.Label(label: "SW_AlertPulseInterval".Translate(pulseIntervalSliderText), tooltip: "SW_AlertPulseIntervalDesc".Translate());
             settings._alertPulseInterval = (int)list.Slider(settings._alertPulseInterval, 60, 720);
 
-            list.CheckboxLabeled("SW_UseThreatSpecificAlertColors".Translate(), ref settings._useThreatSpecificAlertColors, "SW_UseThreatSpecificAlertColorsDesc".Translate());
+            list.CheckboxLabeled("SW_ShowPowerOffIcon".Translate(), ref settings._showPowerOffIcon, "SW_ShowPowerOffIconDesc".Translate());
 
+            list.CheckboxLabeled("SW_UseThreatSpecificAlertColors".Translate(), ref settings._useThreatSpecificAlertColors, "SW_UseThreatSpecificAlertColorsDesc".Translate());
+            
             // all threat-specific color settings
             // 3 options per row
             if (settings._useThreatSpecificAlertColors)
@@ -76,7 +78,7 @@ namespace StevesWalls
                 list2.Begin(viewRect);
                 list2.Gap(100f);
 
-                float initialVertOffset = 110f;
+                float initialVertOffset = 120f;
                 float initialHorzOffset = 40f;
                 float columnOffset = viewRect.xMax / 4f;
 

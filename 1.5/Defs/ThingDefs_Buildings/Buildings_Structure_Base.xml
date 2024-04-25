@@ -64,6 +64,11 @@
         <researchPrerequisites>
             <li>GlitterGlassResearch</li>
         </researchPrerequisites>
+        <modExtensions>
+            <li Class="StevesWalls.GlassWallsExtension">
+                <canTogglePowerOverlay>true</canTogglePowerOverlay>
+            </li>
+        </modExtensions>
     </ThingDef>
 
     <!--========================= Normal Glass Wall Base =============================-->

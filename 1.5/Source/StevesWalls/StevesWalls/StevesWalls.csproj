@@ -66,6 +66,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DefModExtensions\GlassWallsExtension.cs" />
+    <Compile Include="HarmonyPatches.cs" />
     <Compile Include="DefOfs\SW_DefOf.cs" />
     <Compile Include="Settings\StevesWallsMod.cs" />
     <Compile Include="Settings\StevesWallsSettings.cs" />

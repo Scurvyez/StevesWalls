@@ -31,6 +31,14 @@ namespace StevesWalls
             }
         }
 
+        public static bool ShowPowerOffIcon
+        {
+            get
+            {
+                return _instance._showPowerOffIcon;
+            }
+        }
+
         public static Color AlertColorManhunter
         {
             get
@@ -97,6 +105,7 @@ namespace StevesWalls
 
         public int _alertPulseInterval = 120;
         public bool _useThreatSpecificAlertColors = false;
+        public bool _showPowerOffIcon = true;
         public float _alertPulseIntensity = 0.5f;
         public Color _alertColorManhunter = Color.white;
         public Color _alertColorAncientsFaction = Color.white;
@@ -118,6 +127,7 @@ namespace StevesWalls
             Scribe_Values.Look(ref _alertPulseIntensity, "alertPulseIntensity", 0.5f);
             Scribe_Values.Look(ref _alertPulseInterval, "alertPulseInterval", 120);
             Scribe_Values.Look(ref _useThreatSpecificAlertColors, "useThreatSpecificAlertColors", false);
+            Scribe_Values.Look(ref _showPowerOffIcon, "showPowerOffIcon", true);
             Scribe_Values.Look(ref _alertColorManhunter, "alertColorManhunter", Color.white);
             Scribe_Values.Look(ref _alertColorAncientsFaction, "alertColorAncientsFaction", Color.white);
             Scribe_Values.Look(ref _alertColorMechFaction, "alertColorMechFaction", Color.white);

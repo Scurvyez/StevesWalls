@@ -105,7 +105,7 @@ namespace StevesWalls
                                     colors.Add(manHunterCol);
                                     continue;
                                 }
-                                if (pawn.MentalStateDef.category == MentalStateCategory.Aggro)
+                                else if (pawn.MentalStateDef.category == MentalStateCategory.Aggro)
                                 {
                                     Color mBAggroCol = new();
                                     mBAggroCol = StevesWallsSettings.AlertColorMentalBreakAggro;
