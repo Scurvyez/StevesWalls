@@ -78,6 +78,7 @@
     <Compile Include="ThingComps\CompProperties\CompProperties_AlertEffects.cs" />
     <Compile Include="Utils\AnimationUtil.cs" />
     <Compile Include="Utils\Assets.cs" />
+    <Compile Include="Utils\SWLog.cs" />
     <Compile Include="Utils\ColorBlenderUtil.cs" />
   </ItemGroup>
   <ItemGroup>
