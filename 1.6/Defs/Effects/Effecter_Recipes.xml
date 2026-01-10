@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--========================= Default Alert Wall Effecter =============================-->
+
+    <FleckDef ParentName="FleckBase_Thrown">
+        <defName>SW_DefaultWallAlertFleck</defName>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <fleckSystemClass>FleckSystemThrown</fleckSystemClass>
+        <fadeInTime>0.5</fadeInTime>
+        <solidTime>1.5</solidTime>
+        <fadeOutTime>0.5</fadeOutTime>
+        <growthRate>0.333</growthRate>
+        <graphicData>
+            <graphicClass>Graphic_FleckPulse</graphicClass>
+            <texPath>StevesWalls/Effects/AlertEffect</texPath>
+            <shaderType>MoteGlowPulse</shaderType>
+            <shaderParameters>
+                <_Interval>0.475</_Interval>
+            </shaderParameters>
+        </graphicData>
+    </FleckDef>
+
+    <EffecterDef>
+        <defName>SW_DefaultWallAlert</defName>
+        <children>
+            <li>
+                <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+                <fleckDef>SW_DefaultWallAlertFleck</fleckDef>
+                <scale>3.0~3.0</scale>
+                <spawnLocType>OnSource</spawnLocType>
+                <absoluteAngle>true</absoluteAngle>
+                <attachToSpawnThing>true</attachToSpawnThing>
+            </li>
+        </children>
+    </EffecterDef>
+    
+</Defs>

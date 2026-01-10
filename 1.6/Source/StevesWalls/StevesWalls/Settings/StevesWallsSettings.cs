@@ -1,0 +1,58 @@
+﻿using UnityEngine;
+using Verse;
+
+namespace StevesWalls
+{
+    public class StevesWallsSettings : ModSettings
+    {
+        private static StevesWallsSettings _instance;
+
+        public static float AlertPulseIntensity => _instance._alertPulseIntensity;
+        public static int AlertPulseInterval => _instance._alertPulseInterval;
+        public static bool UseThreatSpecificAlertColors => _instance._useThreatSpecificAlertColors;
+        public static bool ShowPowerOffIcon => _instance._showPowerOffIcon;
+        public static Color AlertColorManhunter => _instance._alertColorManhunter;
+        public static Color AlertColorAncientsFaction => _instance._alertColorAncientsFaction;
+        public static Color AlertColorMechFaction => _instance._alertColorMechFaction;
+        public static Color AlertColorInsectFaction => _instance._alertColorInsectFaction;
+        public static Color AlertColorEntitiesFaction => _instance._alertColorEntitiesFaction;
+        public static Color AlertColorPiratesFaction => _instance._alertColorPiratesFaction;
+        public static Color AlertColorTribalsFaction => _instance._alertColorTribalsFaction;
+        public static Color AlertColorMentalBreakAggro => _instance._alertColorMentalBreakAggro;
+
+        public int _alertPulseInterval = 120;
+        public bool _useThreatSpecificAlertColors = false;
+        public bool _showPowerOffIcon = true;
+        public float _alertPulseIntensity = 0.5f;
+        public Color _alertColorManhunter = Color.white;
+        public Color _alertColorAncientsFaction = Color.white;
+        public Color _alertColorMechFaction = Color.white;
+        public Color _alertColorInsectFaction = Color.white;
+        public Color _alertColorEntitiesFaction = Color.white;
+        public Color _alertColorPiratesFaction = Color.white;
+        public Color _alertColorTribalsFaction = Color.white;
+        public Color _alertColorMentalBreakAggro = Color.white;
+
+        public StevesWallsSettings()
+        {
+            _instance = this;
+        }
+
+        public override void ExposeData()
+        {
+            base.ExposeData();
+            Scribe_Values.Look(ref _alertPulseIntensity, "alertPulseIntensity", 0.5f);
+            Scribe_Values.Look(ref _alertPulseInterval, "alertPulseInterval", 120);
+            Scribe_Values.Look(ref _useThreatSpecificAlertColors, "useThreatSpecificAlertColors", false);
+            Scribe_Values.Look(ref _showPowerOffIcon, "showPowerOffIcon", true);
+            Scribe_Values.Look(ref _alertColorManhunter, "alertColorManhunter", Color.white);
+            Scribe_Values.Look(ref _alertColorAncientsFaction, "alertColorAncientsFaction", Color.white);
+            Scribe_Values.Look(ref _alertColorMechFaction, "alertColorMechFaction", Color.white);
+            Scribe_Values.Look(ref _alertColorInsectFaction, "alertColorInsectFaction", Color.white);
+            Scribe_Values.Look(ref _alertColorEntitiesFaction, "alertColorEntitiesFaction", Color.white);
+            Scribe_Values.Look(ref _alertColorPiratesFaction, "alertColorPiratesFaction", Color.white);
+            Scribe_Values.Look(ref _alertColorTribalsFaction, "alertColorTribalsFaction", Color.white);
+            Scribe_Values.Look(ref _alertColorMentalBreakAggro, "alertColorMentalBreakAggro", Color.white);
+        }
+    }
+}

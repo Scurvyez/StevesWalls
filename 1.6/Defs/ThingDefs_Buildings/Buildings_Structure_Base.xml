@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--========================= Glass Wall Base =============================-->
+
+    <ThingDef ParentName="BuildingBase" Name="SW_GlitterGlassWallBase" Abstract="True">
+        <description>A clear and elegant wall capable of supporting a roof. The seamless glass-like panels allow light to enter unhindered. Expertly constructed and intricately designed, yet snug-fitting, damage-resistant panels make this a solid choice among colonies under constant threat of invaders. The adjustable glow eases the hearts and minds of those who slumber behind them in the dark hours of night.</description>
+        <thingClass>Building</thingClass>
+        <category>Building</category>
+        <noRightClickDraftAttack>true</noRightClickDraftAttack>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>Impassable</passability>
+        <blockWind>true</blockWind>
+        <castEdgeShadows>true</castEdgeShadows>
+        <fillPercent>1</fillPercent>
+        <coversFloor>false</coversFloor>
+        <drawStyleCategory>Walls</drawStyleCategory>
+        <rotatable>false</rotatable>
+        <selectable>true</selectable>
+        <neverMultiSelect>false</neverMultiSelect>
+        <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <holdsRoof>true</holdsRoof>
+        <uiOrder>2100</uiOrder>
+        <designationCategory>Structure</designationCategory>
+        <staticSunShadowHeight>1</staticSunShadowHeight>
+        <blockLight>false</blockLight>
+        <canOverlapZones>false</canOverlapZones>
+        <fertility>0</fertility>
+        <designationHotKey>Misc3</designationHotKey>
+        <designatorDropdown>SW_GlitterGlassWall</designatorDropdown>
+        <uiIconPath>StevesWalls/Things/Building/Linked/SW_GlitterGlassWall_MenuIcon</uiIconPath>
+        <replaceTags>
+            <li>Wall</li>
+        </replaceTags>
+        <graphicData>
+            <graphicClass>Graphic_Appearances</graphicClass>
+            <linkType>CornerFiller</linkType>
+            <linkFlags>
+                <li>Wall</li>
+                <li>Rock</li>
+            </linkFlags>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+                <edgeTop>Damage/Edge</edgeTop>
+                <edgeBot>Damage/Edge</edgeBot>
+                <edgeLeft>Damage/Edge</edgeLeft>
+                <edgeRight>Damage/Edge</edgeRight>
+            </damageData>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>425</MaxHitPoints>
+            <WorkToBuild>195</WorkToBuild>
+            <Flammability>0.02</Flammability>
+            <MeditationFocusStrength>0.22</MeditationFocusStrength>
+            <Beauty>1.25</Beauty>
+        </statBases>
+        <costList>
+            <Steel>3</Steel>
+        </costList>
+        <building>
+            <isInert>true</isInert>
+            <paintable>true</paintable>
+            <isWall>true</isWall>
+            <isPlaceOverableWall>true</isPlaceOverableWall>
+            <supportsWallAttachments>true</supportsWallAttachments>
+            <ai_chillDestination>false</ai_chillDestination>
+            <relatedBuildCommands>
+                <li>Door</li>
+                <li>Autodoor</li>
+                <li>OrnateDoor</li>
+                <li MayRequire="Ludeon.RimWorld.Anomaly">SecurityDoor</li>
+                <li MayRequire="Ludeon.RimWorld.Odyssey">VacBarrier</li>
+                <li>Cooler</li>
+                <li>Vent</li>
+            </relatedBuildCommands>
+        </building>
+        <researchPrerequisites>
+            <li>GlitterGlassResearch</li>
+        </researchPrerequisites>
+        <modExtensions>
+            <li Class="StevesWalls.GlassWallsExtension">
+                <canTogglePowerOverlay>true</canTogglePowerOverlay>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <!--========================= Normal Glass Wall Base =============================-->
+
+    <ThingDef ParentName="SW_GlitterGlassWallBase" Name="SW_NormalGlitterGlassWallBase" Abstract="True">
+        <designatorDropdown>SW_GlitterGlassWall</designatorDropdown>
+        <uiIconPath>StevesWalls/Things/Building/Linked/Icons/SW_GlitterGlassWall_MenuIcon</uiIconPath> <!-- DEFINE THESE IN THE INDIVIDUAL WALL DEFS SO THEY ARE COLORED -->
+        <building>
+            <blueprintGraphicData>
+                <texPath>StevesWalls/Things/Building/Linked/SW_GlitterGlassWall_Blueprint_Atlas</texPath>
+            </blueprintGraphicData>
+        </building>
+    </ThingDef>
+
+    <!--========================= Normal Alert Glass Wall Base =============================-->
+
+    <ThingDef ParentName="SW_NormalGlitterGlassWallBase" Name="SW_NormalAlertGlitterGlassWallBase" Abstract="True">
+        <description>Structurally and visually the same as there base variants, these walls will also however, emit a visual pulse when enemies are nearby.</description>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <tickerType>Normal</tickerType>
+    </ThingDef>
+
+    <!--========================= Rounded Glass Wall Base =============================-->
+
+    <ThingDef ParentName="SW_GlitterGlassWallBase" Name="SW_RoundedGlitterGlassWallBase" Abstract="True">
+        <designatorDropdown>SW_RoundedGlitterGlassWall</designatorDropdown>
+        <uiIconPath>StevesWalls/Things/Building/Linked/Icons/SW_RoundedGlitterGlassWall_MenuIcon</uiIconPath>
+        <building>
+            <blueprintGraphicData>
+                <texPath>StevesWalls/Things/Building/Linked/SW_RoundedGlitterGlassWall_Blueprint_Atlas</texPath>
+            </blueprintGraphicData>
+        </building>
+    </ThingDef>
+
+    <!--========================= Rounded Alert Glass Wall Base =============================-->
+
+    <ThingDef ParentName="SW_RoundedGlitterGlassWallBase" Name="SW_RoundedAlertGlitterGlassWallBase" Abstract="True">
+        <description>Structurally and visually the same as there base variants, these walls will also however, emit a visual pulse when enemies are nearby.</description>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <tickerType>Normal</tickerType>
+    </ThingDef>
+
+</Defs>

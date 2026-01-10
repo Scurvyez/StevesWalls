@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--========================= Rounded Glass Wall =============================-->
+
+    <ThingDef ParentName="SW_RoundedGlitterGlassWallBase">
+        <defName>SW_RoundedGlitterGlassWall</defName>
+        <label>rounded glass wall</label>
+        <graphicData>
+            <texPath>StevesWalls/Things/Building/Linked/SW_RoundedGlitterGlassWall</texPath>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>1</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>3</glowRadius>
+                <colorPickerEnabled>true</colorPickerEnabled>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!--========================= Rounded Alert Glass Wall =============================-->
+
+    <ThingDef ParentName="SW_RoundedAlertGlitterGlassWallBase">
+        <defName>SW_RoundedAlertGlitterGlassWall</defName>
+        <label>(Alert) rounded glass wall</label>
+        <graphicData>
+            <texPath>StevesWalls/Things/Building/Linked/SW_RoundedGlitterGlassWall</texPath>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>1</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>3</glowRadius>
+                <colorPickerEnabled>true</colorPickerEnabled>
+            </li>
+            <li Class="StevesWalls.CompProperties_AlertEffects" />
+        </comps>
+    </ThingDef>
+
+    <!--========================= Blue Rounded Glass Wall =============================-->
+
+    <ThingDef ParentName="SW_RoundedGlitterGlassWallBase">
+        <defName>SW_BlueRoundedGlitterGlassWall</defName>
+        <label>blue rounded glass wall</label>
+        <uiIconPath>StevesWalls/Things/Building/Linked/Icons/SW_BlueRoundedGlitterGlassWall_MenuIcon</uiIconPath>
+        <graphicData>
+            <texPath>StevesWalls/Things/Building/Linked/SW_RoundedGlitterGlassWall/Blue</texPath>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>1</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>3</glowRadius>
+                <glowColor>(0,183,255)</glowColor>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!--========================= Blue Rounded Alert Glass Wall =============================-->
+
+    <ThingDef ParentName="SW_RoundedAlertGlitterGlassWallBase">
+        <defName>SW_BlueRoundedAlertGlitterGlassWall</defName>
+        <label>(Alert) blue rounded glass wall</label>
+        <uiIconPath>StevesWalls/Things/Building/Linked/Icons/SW_BlueRoundedGlitterGlassWall_MenuIcon</uiIconPath>
+        <graphicData>
+            <texPath>StevesWalls/Things/Building/Linked/SW_RoundedGlitterGlassWall/Blue</texPath>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>1</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>3</glowRadius>
+                <glowColor>(0,183,255)</glowColor>
+            </li>
+            <li Class="StevesWalls.CompProperties_AlertEffects" />
+        </comps>
+    </ThingDef>
+
+    <!--========================= Green Rounded Glass Wall =============================-->
+
+    <ThingDef ParentName="SW_RoundedGlitterGlassWallBase">
+        <defName>SW_GreenRoundedGlitterGlassWall</defName>
+        <label>green rounded glass wall</label>
+        <uiIconPath>StevesWalls/Things/Building/Linked/Icons/SW_GreenRoundedGlitterGlassWall_MenuIcon</uiIconPath>
+        <graphicData>
+            <texPath>StevesWalls/Things/Building/Linked/SW_RoundedGlitterGlassWall/Green</texPath>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>1</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>3</glowRadius>
+                <glowColor>(0,235,86)</glowColor>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!--========================= Green Rounded Alert Glass Wall =============================-->
+
+    <ThingDef ParentName="SW_RoundedAlertGlitterGlassWallBase">
+        <defName>SW_GreenRoundedAlertGlitterGlassWall</defName>
+        <label>(Alert) green rounded glass wall</label>
+        <uiIconPath>StevesWalls/Things/Building/Linked/Icons/SW_GreenRoundedGlitterGlassWall_MenuIcon</uiIconPath>
+        <graphicData>
+            <texPath>StevesWalls/Things/Building/Linked/SW_RoundedGlitterGlassWall/Green</texPath>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>1</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>3</glowRadius>
+                <glowColor>(0,235,86)</glowColor>
+            </li>
+            <li Class="StevesWalls.CompProperties_AlertEffects" />
+        </comps>
+    </ThingDef>
+
+    <!--========================= Yellow Rounded Glass Wall =============================-->
+
+    <ThingDef ParentName="SW_RoundedGlitterGlassWallBase">
+        <defName>SW_YellowRoundedGlitterGlassWall</defName>
+        <label>yellow rounded glass wall</label>
+        <uiIconPath>StevesWalls/Things/Building/Linked/Icons/SW_YellowRoundedGlitterGlassWall_MenuIcon</uiIconPath>
+        <graphicData>
+            <texPath>StevesWalls/Things/Building/Linked/SW_RoundedGlitterGlassWall/Yellow</texPath>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>1</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>3</glowRadius>
+                <glowColor>(226,233,28)</glowColor>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!--========================= Yellow Rounded Alert Glass Wall =============================-->
+
+    <ThingDef ParentName="SW_RoundedAlertGlitterGlassWallBase">
+        <defName>SW_YellowRoundedAlertGlitterGlassWall</defName>
+        <label>(Alert) yellow rounded glass wall</label>
+        <uiIconPath>StevesWalls/Things/Building/Linked/Icons/SW_YellowRoundedGlitterGlassWall_MenuIcon</uiIconPath>
+        <graphicData>
+            <texPath>StevesWalls/Things/Building/Linked/SW_RoundedGlitterGlassWall/Yellow</texPath>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>1</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>3</glowRadius>
+                <glowColor>(226,233,28)</glowColor>
+            </li>
+            <li Class="StevesWalls.CompProperties_AlertEffects" />
+        </comps>
+    </ThingDef>
+
+    <!--========================= Orange Rounded Glass Wall =============================-->
+
+    <ThingDef ParentName="SW_RoundedGlitterGlassWallBase">
+        <defName>SW_OrangeRoundedGlitterGlassWall</defName>
+        <label>orange rounded glass wall</label>
+        <uiIconPath>StevesWalls/Things/Building/Linked/Icons/SW_OrangeRoundedGlitterGlassWall_MenuIcon</uiIconPath>
+        <graphicData>
+            <texPath>StevesWalls/Things/Building/Linked/SW_RoundedGlitterGlassWall/Orange</texPath>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>1</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>3</glowRadius>
+                <glowColor>(236,121,14)</glowColor>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!--========================= Orange Rounded Alert Glass Wall =============================-->
+
+    <ThingDef ParentName="SW_RoundedAlertGlitterGlassWallBase">
+        <defName>SW_OrangeRoundedAlertGlitterGlassWall</defName>
+        <label>(Alert) orange rounded glass wall</label>
+        <uiIconPath>StevesWalls/Things/Building/Linked/Icons/SW_OrangeRoundedGlitterGlassWall_MenuIcon</uiIconPath>
+        <graphicData>
+            <texPath>StevesWalls/Things/Building/Linked/SW_RoundedGlitterGlassWall/Orange</texPath>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>1</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>3</glowRadius>
+                <glowColor>(236,121,14)</glowColor>
+            </li>
+            <li Class="StevesWalls.CompProperties_AlertEffects" />
+        </comps>
+    </ThingDef>
+
+    <!--========================= Red Rounded Glass Wall =============================-->
+
+    <ThingDef ParentName="SW_RoundedGlitterGlassWallBase">
+        <defName>SW_RedRoundedGlitterGlassWall</defName>
+        <label>red rounded glass wall</label>
+        <uiIconPath>StevesWalls/Things/Building/Linked/Icons/SW_RedRoundedGlitterGlassWall_MenuIcon</uiIconPath>
+        <graphicData>
+            <texPath>StevesWalls/Things/Building/Linked/SW_RoundedGlitterGlassWall/Red</texPath>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>1</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>3</glowRadius>
+                <glowColor>(236,21,41)</glowColor>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!--========================= Red Rounded Alert Glass Wall =============================-->
+
+    <ThingDef ParentName="SW_RoundedAlertGlitterGlassWallBase">
+        <defName>SW_RedRoundedAlertGlitterGlassWall</defName>
+        <label>(Alert) red rounded glass wall</label>
+        <uiIconPath>StevesWalls/Things/Building/Linked/Icons/SW_RedRoundedGlitterGlassWall_MenuIcon</uiIconPath>
+        <graphicData>
+            <texPath>StevesWalls/Things/Building/Linked/SW_RoundedGlitterGlassWall/Red</texPath>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>1</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>3</glowRadius>
+                <glowColor>(236,121,14)</glowColor>
+            </li>
+            <li Class="StevesWalls.CompProperties_AlertEffects" />
+        </comps>
+    </ThingDef>
+
+    <!--========================= Pink Rounded Glass Wall =============================-->
+
+    <ThingDef ParentName="SW_RoundedGlitterGlassWallBase">
+        <defName>SW_PinkRoundedGlitterGlassWall</defName>
+        <label>pink rounded glass wall</label>
+        <uiIconPath>StevesWalls/Things/Building/Linked/Icons/SW_PinkRoundedGlitterGlassWall_MenuIcon</uiIconPath>
+        <graphicData>
+            <texPath>StevesWalls/Things/Building/Linked/SW_RoundedGlitterGlassWall/Pink</texPath>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>1</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>3</glowRadius>
+                <glowColor>(235,15,147)</glowColor>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!--========================= Pink Rounded Alert Glass Wall =============================-->
+
+    <ThingDef ParentName="SW_RoundedAlertGlitterGlassWallBase">
+        <defName>SW_PinkRoundedAlertGlitterGlassWall</defName>
+        <label>(Alert) pink rounded glass wall</label>
+        <uiIconPath>StevesWalls/Things/Building/Linked/Icons/SW_PinkRoundedGlitterGlassWall_MenuIcon</uiIconPath>
+        <graphicData>
+            <texPath>StevesWalls/Things/Building/Linked/SW_RoundedGlitterGlassWall/Pink</texPath>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>1</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>3</glowRadius>
+                <glowColor>(235,15,147)</glowColor>
+            </li>
+            <li Class="StevesWalls.CompProperties_AlertEffects" />
+        </comps>
+    </ThingDef>
+
+    <!--========================= Purple Rounded Glass Wall =============================-->
+
+    <ThingDef ParentName="SW_RoundedGlitterGlassWallBase">
+        <defName>SW_PurpleRoundedGlitterGlassWall</defName>
+        <label>purple rounded glass wall</label>
+        <uiIconPath>StevesWalls/Things/Building/Linked/Icons/SW_PurpleRoundedGlitterGlassWall_MenuIcon</uiIconPath>
+        <graphicData>
+            <texPath>StevesWalls/Things/Building/Linked/SW_RoundedGlitterGlassWall/Purple</texPath>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>1</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>3</glowRadius>
+                <glowColor>(166,14,236)</glowColor>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!--========================= Purple Rounded Alert Glass Wall =============================-->
+
+    <ThingDef ParentName="SW_RoundedAlertGlitterGlassWallBase">
+        <defName>SW_PurpleRoundedAlertGlitterGlassWall</defName>
+        <label>(Alert) purple rounded glass wall</label>
+        <uiIconPath>StevesWalls/Things/Building/Linked/Icons/SW_PurpleRoundedGlitterGlassWall_MenuIcon</uiIconPath>
+        <graphicData>
+            <texPath>StevesWalls/Things/Building/Linked/SW_RoundedGlitterGlassWall/Purple</texPath>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>1</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>3</glowRadius>
+                <glowColor>(166,14,236)</glowColor>
+            </li>
+            <li Class="StevesWalls.CompProperties_AlertEffects" />
+        </comps>
+    </ThingDef>
+
+</Defs>
